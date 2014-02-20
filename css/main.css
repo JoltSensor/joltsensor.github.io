@@ -18,6 +18,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 200;
   text-align: center;
+  min-height: 700px;
 }
 
 h1 { 
@@ -54,6 +55,7 @@ p.copyright {
   width: 400px;
   margin: 0 auto;
   padding: 50px;
+  position: relative;
   background-color: rgb(249,249,249);
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -175,6 +177,7 @@ p.copyright {
 
   body {
     background-color: rgb(249,249,249);
+    min-height: 568px;
   }
 
   #container{
