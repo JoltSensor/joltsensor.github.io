@@ -101,19 +101,19 @@ p.copyright {
 }
 
 ::-webkit-input-placeholder { /* WebKit browsers */
-  color: rgb(230,230,230);
+  color: rgb(179,179,179);
 }
 
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-  color: rgb(230,230,230);
+  color: rgb(179,179,179);
 }
 
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-  color: rgb(230,230,230);
+  color: rgb(179,179,179);
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10+ */
-  color: rgb(230,230,230) !important;
+  color: rgb(179,179,179) !important;
 }
 
 #mc_embed_signup .button {

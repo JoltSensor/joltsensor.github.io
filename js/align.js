@@ -1,10 +1,6 @@
 $(document).ready(function(){
-    align();
+	align();
 });
-
-window.onresize = function(event) {
-    align();
-}
 
 function align() {
     window_height = $(window).height();
