@@ -89,6 +89,8 @@ p a {
   padding-bottom: 0;
 }
 
+.slide {}
+
 #header img {
   margin-bottom: -50px;
   display: inline-block;
