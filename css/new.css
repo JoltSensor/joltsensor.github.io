@@ -1,0 +1,296 @@
+/*
+joltsensor.com v1
+Benjamin D. Harvatine
+02.19.2014
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body { 
+  height: 100%;
+}
+
+body {
+  background-color: rgb(63,124,215);
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
+  text-align: center;
+  min-height: 700px;
+}
+
+h1 { 
+  color: rgb(77,77,77);
+  font-size: 36px;
+  font-weight: 200;
+  margin-bottom: 15px;
+}
+
+p { 
+  font-size: 18px;
+  color: rgb(153,153,153);
+  margin-bottom: 15px;
+}
+
+p a {
+  color: rgb(153,153,153);
+  text-decoration: none;
+  border-bottom: 1.5px dotted rgb(153,153,153);
+}
+
+p a:hover {
+  color: rgb(100,100,100);
+}
+
+p.copyright {
+  color: rgb(200,200,200);
+  font-size: 12px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+#container {
+  width: 100%;
+  /*max-width: 1200px;*/
+  margin: 0 auto;
+  position: relative;
+}
+
+#header, #details, #footer, .pane, .tile {
+  height: auto;
+  overflow: auto;
+}
+
+#header, #details, #footer {
+  position: relative;
+  padding: 50px 5%;
+  width: 90%;
+}
+
+
+#header {
+
+}
+
+#header .pane #logo {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  float: left;
+}
+
+#header .pane img{
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.pane {
+  width: 46%;
+  margin: 2%;
+  float:left;
+}
+
+.special.pane {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin-bottom: -55px;
+  padding-bottom: 0;
+}
+
+#header img {
+  margin-bottom: -50px;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 46%;
+  right: 0;
+}
+
+.pane p{
+  text-align:left;
+  color: rgb(255,255,255);
+  margin-left: 23%;
+  margin-bottom: 50px;
+  font-size: 32px;
+}
+
+.button {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin-left: 23%;
+  border: 0 none;
+  width: 220px;
+  height: 80px;
+  cursor: pointer;
+  background-color: rgb(57,112,194);
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgb(255,255,255); 
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 80px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+#details {
+  background-color: rgb(249,249,249);
+  border-top: 5px solid rgba(0,0,0,.1);
+  border-bottom: 5px solid rgba(0,0,0,.1);
+}
+
+.tile {
+  width: 21%;
+  margin: 2%;
+  float: left;
+  font-size: 22px;
+  color: rgb(150,150,150);
+  text-align: center;
+}
+
+.tile img {
+  display: block;
+  width: 50%;
+  max-width: 100px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+#footer p{
+  font-size: 24px;
+  color: rgb(255,255,255);
+  margin-bottom: 50px;
+}
+
+#mc_embed_signup form {
+  position: relative;
+  text-align: center;
+  margin:0 auto;
+  width: 80%;
+  height: auto;
+  overflow: auto;
+}
+ 
+#mc_embed_signup input {
+  -webkit-appearance: none;
+  position: relative;
+  display: inline-block;
+  float: left;
+  padding: 0 25px;
+  border: 0 none;
+  width: 450px;
+  height: 80px;
+  background-color: rgb(255,255,255);
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgb(153,153,153); 
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 80px;
+  text-align: left;
+  text-decoration: none;
+  vertical-align: middle;
+  border: 1px solid rgb(230,230,230);
+  outline: none;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: rgb(179,179,179);
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: rgb(179,179,179);
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: rgb(179,179,179);
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: rgb(179,179,179) !important;
+}
+
+#mc_embed_signup .button {
+  -webkit-appearance: none;
+  position: relative;
+  display: inline-block;
+  float: left;
+  padding: 0 25px;
+  border: 0 none;
+  width: 220px;
+  height: 80px;
+  cursor: pointer;
+  background-color: rgb(57,112,194);
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgb(255,255,255); 
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 80px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: center;
+}
+
+#mc_embed_signup .button:hover {
+  box-shadow: 0px 0px 5px rgba(0,0,0,.05);
+}
+
+#mc_embed_signup .button:active {
+  top: 2px;
+}
+
+#notification_container {
+  display: block;
+  margin: 0 auto;
+  padding-top: 0px;
+}
+
+#notification_container .alert, #notification_container .success {
+  display: block;
+  width: 260px;
+  padding: 10px;
+  margin: 0 auto;
+  border: 1px solid;
+  font-size: 16px;
+}
+
+#notification_container .alert {
+  color: rgb(160,44,44);
+  background-color: rgb(233,175,175);
+  border-color: rgb(160,44,44);
+}
+
+#notification_container .success {
+  color: rgb(44,160,90);
+  background-color: rgb(175,233,198);
+  border-color: rgb(44,160,90);
+}
+
+@media (max-width:500px) {
+
+  body {
+    background-color: rgb(249,249,249);
+    min-height: 568px;
+  }
+
+  #container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10% 5%;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    box-shadow: none;
+  }
+
+  p {
+      text-align: justify;
+  }
+
+}
