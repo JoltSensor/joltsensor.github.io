@@ -35,20 +35,9 @@ p {
 }
 
 p a {
-  color: rgb(153,153,153);
+  color: rgb(255,255,255);
   text-decoration: none;
-  border-bottom: 1.5px dotted rgb(153,153,153);
-}
-
-p a:hover {
-  color: rgb(100,100,100);
-}
-
-p.copyright {
-  color: rgb(200,200,200);
-  font-size: 12px;
-  text-align: center;
-  margin-top: 25px;
+  border-bottom: 1.5px dotted rgb(255,255,255);
 }
 
 #container {
@@ -167,6 +156,21 @@ a {
   font-size: 24px;
   color: rgb(255,255,255);
   margin-bottom: 50px;
+}
+
+#footer img {
+  width: 40px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+#footer p.copyright {
+  color: rgb(255,255,255);
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: -20px;
+  opacity: 0.5;
 }
 
 #mc_embed_signup form {
