@@ -173,7 +173,7 @@ a {
   position: relative;
   text-align: center;
   margin:0 auto;
-  width: 80%;
+  width: 685px;
   height: auto;
   overflow: auto;
 }
@@ -181,18 +181,18 @@ a {
 #mc_embed_signup input {
   -webkit-appearance: none;
   position: relative;
-  display: inline-block;
-  float: left;
-  padding: 0 25px;
+  float:left;
+  margin:0;
+  padding: 15px;
   border: 0 none;
   width: 450px;
-  height: 80px;
+  height: 30px;
   background-color: rgb(255,255,255);
   font-family: "Source Sans Pro", sans-serif;
   color: rgb(153,153,153); 
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 200;
-  line-height: 80px;
+  line-height: 30px;
   text-align: left;
   text-decoration: none;
   vertical-align: middle;
@@ -220,18 +220,17 @@ a {
   -webkit-appearance: none;
   position: relative;
   display: inline-block;
-  float: left;
   padding: 0 25px;
   border: 0 none;
-  width: 220px;
-  height: 80px;
+  width: 200px;
+  height: 62px;
   cursor: pointer;
   background-color: rgb(57,112,194);
   font-family: "Source Sans Pro", sans-serif;
   color: rgb(255,255,255); 
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 200;
-  line-height: 80px;
+  line-height: 62px;
   text-align: center;
   text-decoration: none;
   vertical-align: center;
@@ -275,18 +274,7 @@ a {
 @media (max-width:500px) {
 
   body {
-    background-color: rgb(249,249,249);
     min-height: 568px;
-  }
-
-  #container{
-    width: 90%;
-    margin: 0 auto;
-    padding: 10% 5%;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
-    box-shadow: none;
   }
 
   p {
