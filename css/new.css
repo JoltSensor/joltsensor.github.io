@@ -64,7 +64,7 @@ p a {
 }
 
 #header .pane img{
-  width: 60%;
+  width: 100%;
   margin-bottom: 50px;
 }
 
@@ -114,6 +114,7 @@ p a {
   width: 220px;
   height: 80px;
   cursor: pointer;
+  cursor: hand;
   background-color: rgb(57,112,194);
   font-family: "Source Sans Pro", sans-serif;
   color: rgb(255,255,255); 
@@ -316,26 +317,13 @@ a {
   .pane p{
     margin-left: 0;
     text-align: center;
+    font-size: 22px;
   }
 
   .button {
-    display: block;
-    position: relative;
-    padding: 0;
-    margin-left: 23%;
-    border: 0 none;
-    width: 220px;
-    height: 80px;
-    cursor: pointer;
-    background-color: rgb(57,112,194);
-    font-family: "Source Sans Pro", sans-serif;
-    color: rgb(255,255,255); 
-    font-size: 24px;
-    font-weight: 200;
-    line-height: 80px;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: center;
+    margin-left: 0;
+    width: 100%;
+    font-size: 22px;
   }
 
 }
