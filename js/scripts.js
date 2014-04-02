@@ -29,15 +29,19 @@ function fader() {
 	var elem = $(".first.slide");
 	elem.fadeIn(rate);
     setInterval(function() {
-    	if(elem.next().length>0){
-    		elem.fadeOut(rate);
-    		elem.next().fadeIn(rate);
-    		elem = elem.next();
+    	if($(window).width()<1000){
+    		slide.hide();
     	}else{
-    		elem.fadeOut(rate);
-    		elem.siblings(':first').fadeIn(rate);
-    		elem = elem.siblings(':first');
-    	}
+	    	if(elem.next().length>0){
+	    		elem.fadeOut(rate);
+	    		elem.next().fadeIn(rate);
+	    		elem = elem.next();
+	    	}else{
+	    		elem.fadeOut(rate);
+	    		elem.siblings(':first').fadeIn(rate);
+	    		elem = elem.siblings(':first');
+	    	}
+	    }
 	}, 4000);
 }
 
