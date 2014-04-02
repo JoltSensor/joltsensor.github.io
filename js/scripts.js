@@ -1,6 +1,9 @@
 $(document).ready(function(){
 	scroller();
 	fader();
+	$("#mc_embed_signup .button").click(function(){
+		$('#notification_container').fadeIn();
+	});
 });
 
 window.onresize = function(event) {}
@@ -8,7 +11,13 @@ window.onresize = function(event) {}
 function scroller() {
 	$(".button").click(function(){
 		$('html, body').animate({
-        	scrollTop: $("#footer").offset().top
+        	scrollTop: $("#mce-EMAIL").offset().top
+    	}, 800);
+    	$("#mce-EMAIL").focus();
+	});
+	$("#footer img").click(function(){
+		$('html, body').animate({
+        	scrollTop: $("#header").offset().top
     	}, 800);
     	$("#mce-EMAIL").focus();
 	});
@@ -32,3 +41,4 @@ function fader() {
     	}
 	}, 4000);
 }
+
