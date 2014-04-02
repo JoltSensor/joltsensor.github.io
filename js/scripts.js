@@ -19,7 +19,6 @@ function scroller() {
 		$('html, body').animate({
         	scrollTop: $("#header").offset().top
     	}, 800);
-    	$("#mce-EMAIL").focus();
 	});
 }
 
