@@ -83,13 +83,17 @@ p a {
 
 .special.pane {
   position: absolute;
+  display: block;
   bottom: 0px;
   right: 0px;
   margin-bottom: -55px;
   padding-bottom: 0;
 }
 
-.slide {}
+.slide {
+  height: auto;
+  overflow: auto;
+}
 
 #header img {
   margin-bottom: -50px;
