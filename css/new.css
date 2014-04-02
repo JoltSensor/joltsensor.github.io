@@ -63,13 +63,6 @@ p a {
 
 }
 
-#header .pane #logo {
-  width: 100%;
-  height: auto;
-  overflow: auto;
-  float: left;
-}
-
 #header .pane img{
   width: 100%;
   margin-bottom: 50px;
@@ -86,20 +79,22 @@ p a {
   display: block;
   bottom: 0px;
   right: 0px;
-  margin-bottom: -55px;
+  margin-bottom: 0px;
   padding-bottom: 0;
 }
 
 .slide {
   height: auto;
   overflow: auto;
+  position: absolute;
+  bottom:0px;
 }
 
-#header img {
-  margin-bottom: -50px;
+#header .slide img {
+  margin-bottom: 0px;
   display: inline-block;
   vertical-align: bottom;
-  width: 46%;
+  width: 100%;
   right: 0;
 }
 
