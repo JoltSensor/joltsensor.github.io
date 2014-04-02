@@ -325,6 +325,10 @@ a {
     font-size: 22px;
   }
 
+  #mc_embed_signup input, #mc_embed_signup .button{
+    font-size: 18px;
+  }
+
   #footer p{
     font-size: 22px;
   }
