@@ -1,4 +1,5 @@
-name: Your New Jekyll Site
+name: Jolt
 pygments: true
 
 permalink: none
+markdown: kramdown
