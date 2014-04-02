@@ -284,8 +284,7 @@ a {
 @media (max-width:760px) {
 
   #mc_embed_signup form{
-    width:auto;
-    overflow:hidden;
+    width:100%;
   }
 
   #mc_embed_signup input, #mc_embed_signup .button{
