@@ -24,24 +24,29 @@ function scroller() {
 
 function fader() {
 	var rate = 1500;
+	var interval = 3000;
 	var slide = $(".slide");
 	slide.hide();
 	var elem = $(".first.slide");
-	elem.fadeIn(rate);
+	//elem.fadeIn(rate);
     setInterval(function() {
     	if($(window).width()<1000){
     		slide.hide();
     	}else{
-	    	if(elem.next().length>0){
-	    		elem.fadeOut(rate);
-	    		elem.next().fadeIn(rate);
-	    		elem = elem.next();
+	    	if(elem.prev().length>0){
+	    		elem.fadeIn(rate);
+	    		elem.prev().fadeOut(rate);
+	    		if(elem.next().length>0){
+	    			elem = elem.next();
+	    		}else{
+	    			elem = elem.siblings(':first');
+	    		}
 	    	}else{
-	    		elem.fadeOut(rate);
-	    		elem.siblings(':first').fadeIn(rate);
-	    		elem = elem.siblings(':first');
+	    		elem.fadeIn(rate);
+	    		elem.siblings(':last').fadeOut(rate);
+	    		elem = elem.next();
 	    	}
 	    }
-	}, 4000);
+	}, interval);
 }
 
