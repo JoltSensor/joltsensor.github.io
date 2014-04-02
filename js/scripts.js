@@ -1,10 +1,11 @@
 $(document).ready(function(){
-	align();
+	//align();
 	scroller();
+	//fader();
 });
 
 window.onresize = function(event) {
-    align();
+    //align();
 }
 
 function align() {
@@ -27,14 +28,20 @@ function scroller() {
 }
 
 function fader() {
+	var rate = 1500;
 	var slide = $(".slide");
-    var count = 0;
-    function fader() {
-        slide.eq(count % quotes.length)
-            .fadeIn(2000)
-            .delay(1000)
-            .fadeOut(2000, fader);
-    	++count;
-    }
-    fader();
+	slide.hide();
+	var elem = $(".first.slide");
+	elem.fadeIn(rate);
+    setInterval(function() {
+    	if(elem.next().length>0){
+    		elem.fadeOut(rate);
+    		elem.next().fadeIn(rate);
+    		elem = elem.next();
+    	}else{
+    		elem.fadeOut(rate);
+    		elem.siblings(':first').fadeIn(rate);
+    		elem = elem.siblings(':first');
+    	}
+	}, 4000);
 }

@@ -74,20 +74,19 @@ p a {
   float:left;
 }
 
-.special.pane {
-  position: absolute;
-  display: block;
-  bottom: 0px;
-  right: 0px;
-  margin-bottom: 0px;
-  padding-bottom: 0;
-}
+.slideshow{}
 
 .slide {
   height: auto;
   overflow: auto;
   position: absolute;
-  bottom:0px;
+  display: block;
+  width:46%;
+  margin: 0 2%;
+  bottom: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0;
 }
 
 #header .slide img {
@@ -147,8 +146,8 @@ a {
 
 .tile img {
   display: block;
-  width: 50%;
-  max-width: 100px;
+  width: 100%;
+  max-width: 80px;
   margin: 0 auto;
   margin-bottom: 20px;
 }
@@ -165,11 +164,16 @@ a {
   margin-bottom: 10px;
 }
 
+#footer p.tagline {
+  font-size:20px;
+  margin-bottom: 0px;
+}
+
 #footer p.copyright {
   color: rgb(255,255,255);
   font-size: 16px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: -10px;
   margin-bottom: -20px;
   opacity: 0.5;
 }
@@ -178,7 +182,7 @@ a {
   position: relative;
   text-align: center;
   margin:0 auto;
-  width: 685px;
+  width: 682px;
   height: auto;
   overflow: auto;
 }
@@ -241,14 +245,6 @@ a {
   vertical-align: center;
 }
 
-#mc_embed_signup .button:hover {
-  box-shadow: 0px 0px 5px rgba(0,0,0,.05);
-}
-
-#mc_embed_signup .button:active {
-  top: 2px;
-}
-
 #notification_container {
   display: block;
   margin: 0 auto;
@@ -257,33 +253,91 @@ a {
 
 #notification_container .alert, #notification_container .success {
   display: block;
-  width: 260px;
-  padding: 10px;
+  width: 652px;
+  padding: 15px;
   margin: 0 auto;
-  border: 1px solid;
+  margin-top: 15px;
   font-size: 16px;
+  line-height: 30px;
+  text-align: left;
+  color: rgb(255,255,255);
+  border: dotted 1px rgba(255,255,255,0.5);
 }
 
-#notification_container .alert {
-  color: rgb(160,44,44);
-  background-color: rgb(233,175,175);
-  border-color: rgb(160,44,44);
-}
-
-#notification_container .success {
-  color: rgb(44,160,90);
-  background-color: rgb(175,233,198);
-  border-color: rgb(44,160,90);
-}
-
-@media (max-width:500px) {
-
-  body {
-    min-height: 568px;
+@media (max-width:1000px) {
+  
+  .pane{
+    width: 100%;
+    z-index:99;
   }
 
-  p {
-      text-align: justify;
+  #header .pane img{
+    width:80%;
+  }
+
+  .tile{
+    width: 46%;
+    margin: 4% 2%;
+  }
+}
+
+@media (max-width:760px) {
+
+  #mc_embed_signup form{
+    width:auto;
+    overflow:hidden;
+  }
+
+  #mc_embed_signup input, #mc_embed_signup .button{
+    width:100%;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  #mc_embed_signup .button{
+    margin-top: 5px;
+  }
+
+}
+
+@media (max-width:550px) {
+  
+  .tile{
+    width: 100%;
+    margin: 6% 0px;
+  }
+
+  .pane{
+    overflow:hidden;
+  }
+
+  #header .pane img{
+    margin-left: 0;
+  }
+
+  .pane p{
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .button {
+    display: block;
+    position: relative;
+    padding: 0;
+    margin-left: 23%;
+    border: 0 none;
+    width: 220px;
+    height: 80px;
+    cursor: pointer;
+    background-color: rgb(57,112,194);
+    font-family: "Source Sans Pro", sans-serif;
+    color: rgb(255,255,255); 
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 80px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: center;
   }
 
 }
