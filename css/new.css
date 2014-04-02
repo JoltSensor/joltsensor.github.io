@@ -187,6 +187,7 @@ a {
 #mc_embed_signup form {
   position: relative;
   text-align: center;
+  width: 680px;
   margin:0 auto;
   height: auto;
   overflow: auto;
@@ -280,6 +281,10 @@ a {
 }
 
 @media (max-width:760px) {
+
+  #mc_embed_signup form {
+    width: 100%;
+  }
 
   #mc_embed_signup input, #mc_embed_signup .button{
     width:100%;
