@@ -291,6 +291,7 @@ a {
     padding: 15px 0;
     margin: 0;
     text-align: center;
+    line-height: 22px;
   }
 
   #notification_container{
@@ -327,6 +328,7 @@ a {
 
   #mc_embed_signup input, #mc_embed_signup .button{
     font-size: 20px;
+    line-height: 20px;
   }
 
   #footer p{
