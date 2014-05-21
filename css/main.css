@@ -32,6 +32,10 @@ h2 {
   font-size: 24px;
 }
 
+h2.nobottom {
+  margin-bottom: 0;
+}
+
 h3 {  
   font-family: "Raleway", sans-serif;
   font-weight: 700;
