@@ -1,104 +1,321 @@
-/*
-joltsensor.com v1
-Benjamin D. Harvatine
-02.19.2014
-*/
-
 * {
   margin: 0;
   padding: 0;
 }
 
 html, body { 
-  height: 100%;
+  height: 100%; 
 }
 
 body {
-  background-color: rgb(63,124,215);
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 200;
-  text-align: center;
-  min-height: 700px;
-}
-
-h1 { 
-  color: rgb(77,77,77);
-  font-size: 36px;
-  font-weight: 200;
-  margin-bottom: 15px;
-}
-
-p { 
-  font-size: 18px;
-  color: rgb(153,153,153);
-  margin-bottom: 15px;
-}
-
-p a {
-  color: rgb(153,153,153);
-  text-decoration: none;
-  border-bottom: 1.5px dotted rgb(153,153,153);
-}
-
-p a:hover {
-  color: rgb(100,100,100);
-}
-
-p.copyright {
-  color: rgb(200,200,200);
-  font-size: 12px;
-  text-align: center;
-  margin-top: 25px;
-}
-
-#container {
-  width: 400px;
-  margin: 0 auto;
-  padding: 50px;
-  position: relative;
   background-color: rgb(249,249,249);
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
-  box-shadow: 0px 0px 20px rgba(0,0,0,.2);
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  text-align: center;
 }
 
-#logo {
-  width: 140px;
-  height: 40px;
+h1, h2, h3, h4 {
+  font-weight: 200;
+}
+
+h1 {  
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  max-width: 500px;
   margin: 0 auto;
-  margin-bottom: 15px;
-  background-image: url('/assets/jolt_word_logo.png');
-  background-size: 100%;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+h3 {  
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+p {
+  color: rgb(128,128,128);
+  text-align: justify;
+  margin: 20px 0;
+}
+
+a {}
+
+a:hover   {}
+
+a:visited {}
+
+.wrapper{
+  width: 100%;
+  height: auto;
+  overflow: auto;
+}
+
+header {
+  width: 100%;
+  height: 30px;
+  padding: 20px 0;
+  background: rgb(255,255,255);
+  line-height: 30px;
+}
+
+nav a {
+  color: rgb(179,179,179);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: rgb(63,124,215);
+}
+
+nav a.active {
+  color: rgb(63,124,215);
+}
+
+nav {}
+
+nav.left {
+  float: left;
+  margin-left: 20px;
+}
+
+nav.right {
+  float: right;
+  margin-right: 20px;
+}
+
+nav img {
+  width: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+nav li, footer li {
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+nav.left {
+  color: rgb(179,179,179);
+}
+
+nav.left li {
+  margin-right: 7px;
+  font-size: 18px;
+}
+
+nav.left:hover {
+  color: rgb(63,124,215);
+}
+
+nav.right li {
+  margin-left: 10px;
+  font-size: 12px;
+  color: rgb(179,179,179);
+}
+
+.hero {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  position: relative;
+  padding: 150px 0;
+  background-size: cover;
   background-position: center;
 }
 
-#mc_embed_signup form {
-  display: block; 
+.hero img {
+  height:60px;
+  margin-bottom: 20px;
+}
+
+.hero h1, .hero h2 {
+  color: rgb(255,255,255);
+}
+
+button {
+  margin-top: 20px;
+  padding: 14px 20px;
+  background: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.hero button{
+  color: rgb(255,255,255);
+  border: 1px solid rgb(255,255,255);
+  cursor: pointer;
+}
+
+.hero.contact button {
+  color: rgb(63,124,215);
+  border: 1px solid rgb(63,124,215); 
+}
+
+.hero.shell {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.hero.contact {
+  min-height: 500px;
+  display: block;
+  position: absolute;
+  top:-800px;
+  background: rgb(255,255,255);
+}
+
+.hero.contact h2 {
+  color: rgb(63,124,215);
+}
+
+#hide_form{
+  font-size: 16px;
+  color: rgb(179,179,179);
+  border-bottom: 1px dotted rgb(179,179,179);
+  cursor: pointer;
+}
+
+.section {
+  width: 80%;
+  height: auto;
+  overflow: auto;
   position: relative;
-  text-align: left; 
-  padding: 10px 0;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.tile {
+  width: 27%;
+  padding: 0 3%;
+  float: left;
+}
+
+.team.tile h3 {
+  font-size: 24px;
+}
+
+.team.tile h4 {
+  margin-top: 0;
+}
+
+.team.tile p {
+  margin-top: 5px;
+}
+
+.section a {
+  color: rgb(63,124,215);
+  text-decoration: none;
+  border-bottom: 1px dotted rgb(63,124,215);
+}
+
+.section h3, .section h4 {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.section h3 {
+  color: rgb(63,124,215);
+}
+
+.section h4 {
+  color: rgb(128,128,128);
+}
+
+.section img.icon {
+  width: 60px;
+}
+
+img.headshot {
+  width: 100px;
+  border-radius: 50px;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  position: relative;
+  padding: 30px 0;
+  background: rgb(63,124,215);
+  color: rgb(255,255,255);
+  font-size: 12px;
+}
+
+footer li {
+  margin: 10px 5px;
+  font-size: 12px;
+  color: rgb(255,255,255);
+}
+
+footer img {
+  height: 30px;
+}
+
+footer h4{
+  margin-bottom: 0;
+}
+
+footer li a {
+  color: rgb(255,255,255);
+  text-decoration: none;
+}
+
+footer li a:hover {
+  border-bottom: 1px dotted rgb(255,255,255);
+}
+
+/* MAILCHIMP FORM COMPONENTS
+============================================================*/
+
+#mc_embed_signup form {
+  position: relative;
+  text-align: center;
+  /* width: 680px; */
+  margin:0 auto;
+  height: auto;
+  overflow: auto;
 }
  
 #mc_embed_signup input {
   -webkit-appearance: none;
-  display: block;
   position: relative;
-  padding: 0;
-  margin: 10px auto;
+  margin:0;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 450px;
+  height: 30px;
   border: 0 none;
-  width: 280px;
-  height: 40px;
-  background-color: rgb(255,255,255);
+  border-bottom: 1px solid rgb(179,179,179);
   font-family: "Source Sans Pro", sans-serif;
   color: rgb(153,153,153); 
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 200;
-  line-height: 20px;
+  line-height: 30px;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
-  border: 1px solid rgb(230,230,230);
   outline: none;
 }
 
@@ -119,79 +336,101 @@ p.copyright {
 }
 
 #mc_embed_signup .button {
-  display: block;
+  -webkit-appearance: none;
   position: relative;
-  padding: 0;
-  margin: 0 auto;
+  display: inline-block;
+  padding: 14px 20px;
+  margin-top: 20px;
   border: 0 none;
-  width: 280px;
-  height: 40px;
+  border-radius: 10px;
+  width: auto;
+  height: auto;
   cursor: pointer;
-  background-color: rgb(63,124,215);
-  font-family: "Source Sans Pro", sans-serif;
-  color: rgb(255,255,255); 
-  font-size: 16px;
-  font-weight: 200;
-  line-height: 40px;
+  color: rgb(63,124,215);
+  border: 1px solid rgb(63,124,215);
+  background: none;
+  font-family: "Raleway", sans-serif;
+  color: rgb(63,124,215); 
+  font-size: 18px;
+  font-weight: 400;
   text-align: center;
   text-decoration: none;
   vertical-align: center;
+  outline: none;
 }
 
-#mc_embed_signup .button:hover {
-  box-shadow: 0px 0px 15px rgba(0,0,0,.15);
-}
+@media (max-width:1060px){
 
-#mc_embed_signup .button:active {
-  top: 2px;
-}
-
-#notification_container {
-  display: block;
-  margin: 0 auto;
-  padding-top: 0px;
-}
-
-#notification_container .alert, #notification_container .success {
-  display: block;
-  width: 260px;
-  padding: 10px;
-  margin: 0 auto;
-  border: 1px solid;
-  font-size: 16px;
-}
-
-#notification_container .alert {
-  color: rgb(160,44,44);
-  background-color: rgb(233,175,175);
-  border-color: rgb(160,44,44);
-}
-
-#notification_container .success {
-  color: rgb(44,160,90);
-  background-color: rgb(175,233,198);
-  border-color: rgb(44,160,90);
-}
-
-@media (max-width:500px) {
-
-  body {
-    background-color: rgb(249,249,249);
-    min-height: 568px;
+  .tile {
+    width: 100%;
+    margin: 20px auto;
+    padding: 0;
   }
 
-  #container{
-    width: 90%;
+}
+
+@media (max-width:625px){
+
+  h1 {  
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    max-width: 500px;
     margin: 0 auto;
-    padding: 10% 5%;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
-    box-shadow: none;
+    margin-bottom: 20px;
+    font-size: 20px;
+    width: 80%;
   }
 
-  p {
-      text-align: justify;
+  h3 {  
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  h4 {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .hero {
+    padding: 50px 0;
+  }
+
+  .section img.icon {
+    width: 40px;
+  }
+
+  #mc_embed_signup input {
+    width: 80%;
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width:490px){
+
+  #mc_embed_signup input {
+    margin-bottom: 10px;
+  }
+
+  nav.right li {
+    margin-left: 5px;
+  }
+
+  footer li {
+    margin: 10px 2px;
+    font-size: 12px;
+    color: rgb(255,255,255);
+  }
+
+  .section {
+    padding: 30px 0;
   }
 
 }

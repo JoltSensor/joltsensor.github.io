@@ -1,5 +1,2 @@
-name: Jolt
+name: Your New Jekyll Site
 pygments: true
-
-permalink: none
-markdown: kramdown
