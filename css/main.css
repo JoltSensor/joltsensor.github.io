@@ -1,3 +1,7 @@
+/*
+CSS DOCUMENT - JOLTSENSOR.COM, UPDATED: 05.25.2014
+============================================================*/
+
 * {
   margin: 0;
   padding: 0;
@@ -32,7 +36,7 @@ h2 {
   font-size: 24px;
 }
 
-h2.nobottom {
+.nobottom {
   margin-bottom: 0;
 }
 
@@ -62,11 +66,29 @@ a:hover   {}
 
 a:visited {}
 
+button {
+  margin-top: 20px;
+  padding: 14px 20px;
+  background: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* WRAPPER
+============================================================*/
+
 .wrapper{
   width: 100%;
   height: auto;
   overflow: auto;
 }
+
+/* HEADER
+============================================================*/
 
 header {
   width: 100%;
@@ -75,6 +97,11 @@ header {
   background: rgb(255,255,255);
   line-height: 30px;
 }
+
+/* NAVIGATION
+============================================================*/
+
+nav {}
 
 nav a {
   color: rgb(179,179,179);
@@ -89,24 +116,6 @@ nav a.active {
   color: rgb(63,124,215);
 }
 
-nav {}
-
-nav.left {
-  float: left;
-  margin-left: 20px;
-}
-
-nav.right {
-  float: right;
-  margin-right: 20px;
-}
-
-nav img {
-  width: 30px;
-  display: inline-block;
-  vertical-align: middle;
-}
-
 nav li, footer li {
   display: inline-block;
   font-family: "Raleway", sans-serif;
@@ -115,7 +124,15 @@ nav li, footer li {
   vertical-align: middle;
 }
 
+nav img {
+  width: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 nav.left {
+  float: left;
+  margin-left: 20px;
   color: rgb(179,179,179);
 }
 
@@ -128,11 +145,19 @@ nav.left:hover {
   color: rgb(63,124,215);
 }
 
+nav.right {
+  float: right;
+  margin-right: 20px;
+}
+
 nav.right li {
   margin-left: 10px;
   font-size: 12px;
   color: rgb(179,179,179);
 }
+
+/* HERO
+============================================================*/
 
 .hero {
   width: 100%;
@@ -153,24 +178,12 @@ nav.right li {
   color: rgb(255,255,255);
 }
 
-button {
-  margin-top: 20px;
-  padding: 14px 20px;
-  background: none;
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  border-radius: 10px;
-  outline: none;
-}
-
 .hero button{
   color: rgb(255,255,255);
   border: 1px solid rgb(255,255,255);
-  cursor: pointer;
 }
 
-.hero.contact button {
+.hero.hidden button {
   color: rgb(63,124,215);
   border: 1px solid rgb(63,124,215); 
 }
@@ -182,7 +195,37 @@ button {
   overflow: hidden;
 }
 
-.hero.contact {
+/* HERO BACKGROUNDS
+============================================================*/
+
+.about.hero {
+  background-image: url('/assets/hero_mit_1400.png');
+}
+
+.blog.hero {
+  background-image: url('/assets/hero_desk_1400.png');
+}
+
+.careers.hero {
+  background-image: url('/assets/hero_huddle_1400.png');
+}
+
+.contact.hero {
+  background-image: url('/assets/hero_lights_1400.png');
+}
+
+.home.hero {
+  background-image: url('/assets/hero_football_1400.png');
+}
+
+.news.hero {
+  background-image: url('/assets/hero_hockey_1400.png');
+}
+
+/* HIDDEN HERO CONTACT FORM
+============================================================*/
+
+.hero.hidden {
   min-height: 500px;
   display: block;
   position: absolute;
@@ -190,7 +233,7 @@ button {
   background: rgb(255,255,255);
 }
 
-.hero.contact h2 {
+.hero.hidden h2 {
   color: rgb(63,124,215);
 }
 
@@ -201,6 +244,9 @@ button {
   cursor: pointer;
 }
 
+/* CONTENT SECTION
+============================================================*/
+
 .section {
   width: 80%;
   height: auto;
@@ -210,25 +256,7 @@ button {
   padding: 50px 0;
 }
 
-.tile {
-  width: 27%;
-  padding: 0 3%;
-  float: left;
-}
-
-.team.tile h3 {
-  font-size: 24px;
-}
-
-.team.tile h4 {
-  margin-top: 0;
-}
-
-.team.tile p {
-  margin-top: 5px;
-}
-
-.section a {
+.section p a {
   color: rgb(63,124,215);
   text-decoration: none;
   border-bottom: 1px dotted rgb(63,124,215);
@@ -251,10 +279,98 @@ button {
   width: 60px;
 }
 
+.section img.illustration {
+  width: 200px;
+}
+
+.section button {
+  color: rgb(63,124,215);
+  border: 1px solid rgb(63,124,215);
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.tile {
+  width: 27%;
+  padding: 0 3%;
+  float: left;
+}
+
+/* HEADSHOTS & DETAILS
+============================================================*/
+
+.team.tile h3 {
+  font-size: 24px;
+}
+
+.team.tile h4 {
+  margin-top: 0;
+}
+
+.team.tile p {
+  margin-top: 5px;
+}
+
 img.headshot {
   width: 100px;
   border-radius: 50px;
 }
+
+/* PRESS ITEMS
+============================================================*/
+
+.press {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.press p.info {
+  margin-bottom: 0;
+  color: rgb(179,179,179);
+}
+
+.press p.title {
+  margin-top: 5px;
+}
+
+/* AFFILIATE LOGO SECTION
+============================================================*/
+
+.logo.section {
+  width: 100%;
+  padding: 30px 0;
+  background: rgb(230,230,230);
+}
+
+.vms, .mass, .arch {
+  background-size: cover;
+  background-position: right;
+  height: 30px;
+  margin: 0 20px;
+  display: inline-block;
+}
+
+.vms:hover, .mass:hover, .arch:hover {
+  background-position: right;
+}
+
+.vms {
+  width: 114px;
+  background-image: url('/assets/logo_vms.png');
+}
+
+.mass {
+  width: 152px;
+  background-image: url('/assets/logo_mass.png');
+}
+
+.arch {
+  width: 83px;
+  background-image: url('/assets/logo_arch.png');
+}
+
+/* FOOTER
+============================================================*/
 
 footer {
   width: 100%;
@@ -290,7 +406,7 @@ footer li a:hover {
   border-bottom: 1px dotted rgb(255,255,255);
 }
 
-/* MAILCHIMP FORM COMPONENTS
+/* MAILCHIMP SIGN-UP FORM
 ============================================================*/
 
 #mc_embed_signup form {
@@ -301,7 +417,11 @@ footer li a:hover {
   height: auto;
   overflow: auto;
 }
- 
+
+footer #mc_embed_signup form {
+  margin-bottom: 20px;
+}
+
 #mc_embed_signup input {
   -webkit-appearance: none;
   position: relative;
@@ -323,20 +443,48 @@ footer li a:hover {
   outline: none;
 }
 
+footer #mc_embed_signup input {
+  border-bottom: 1px solid rgb(255,255,255);
+  color: rgb(255,255,255); 
+  background: none;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
 ::-webkit-input-placeholder { /* WebKit browsers */
   color: rgb(179,179,179);
+}
+
+footer ::-webkit-input-placeholder { /* WebKit browsers */
+  color: rgb(255,255,255);
+  opacity: 0.5;
 }
 
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
   color: rgb(179,179,179);
 }
 
+footer :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: rgb(255,255,255);
+  opacity: 0.5;
+}
+
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
   color: rgb(179,179,179);
 }
 
+footer ::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: rgb(255,255,255);
+  opacity: 0.5;
+}
+
 :-ms-input-placeholder { /* Internet Explorer 10+ */
   color: rgb(179,179,179) !important;
+}
+
+footer :-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: rgb(255,255,255) !important;
+  opacity: 0.5;
 }
 
 #mc_embed_signup .button {
@@ -363,7 +511,48 @@ footer li a:hover {
   outline: none;
 }
 
-@media (max-width:1060px){
+footer #mc_embed_signup .button {
+  color: rgb(255,255,255);
+  border: 1px solid rgb(255,255,255);
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+/* MEDIA QUERY - 1024PX
+============================================================*/
+
+@media (max-width:1024px){
+
+  .about.hero {
+    background-image: url('/assets/hero_mit_1024.png');
+  }
+
+  .blog.hero {
+    background-image: url('/assets/hero_desk_1024.png');
+  }
+
+  .careers.hero {
+    background-image: url('/assets/hero_huddle_1024.png');
+  }
+
+  .contact.hero {
+    background-image: url('/assets/hero_lights_1024.png');
+  }
+
+  .home.hero {
+    background-image: url('/assets/hero_football_1024.png');
+  }
+
+  .news.hero {
+    background-image: url('/assets/hero_hockey_1024.png');
+  }
+
+}
+
+/* MEDIA QUERY - 900PX
+============================================================*/
+
+@media (max-width:900px){
 
   .tile {
     width: 100%;
@@ -372,6 +561,40 @@ footer li a:hover {
   }
 
 }
+
+/* MEDIA QUERY - 768PX
+============================================================*/
+
+@media (max-width:625px){
+
+  .about.hero {
+    background-image: url('/assets/hero_mit_768.png');
+  }
+
+  .blog.hero {
+    background-image: url('/assets/hero_desk_768.png');
+  }
+
+  .careers.hero {
+    background-image: url('/assets/hero_huddle_768.png');
+  }
+
+  .contact.hero {
+    background-image: url('/assets/hero_lights_768.png');
+  }
+
+  .home.hero {
+    background-image: url('/assets/hero_football_768.png');
+  }
+
+  .news.hero {
+    background-image: url('/assets/hero_hockey_768.png');
+  }
+
+}
+
+/* MEDIA QUERY - 625PX
+============================================================*/
 
 @media (max-width:625px){
 
@@ -417,6 +640,9 @@ footer li a:hover {
 
 }
 
+/* MEDIA QUERY - 490PX
+============================================================*/
+
 @media (max-width:490px){
 
   #mc_embed_signup input {
@@ -435,6 +661,70 @@ footer li a:hover {
 
   .section {
     padding: 30px 0;
+  }
+
+  .vms, .mass, .arch {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .mass {
+    margin: 20px auto;
+  }
+
+  .about.hero {
+    background-image: url('/assets/hero_mit_490.png');
+  }
+
+  .blog.hero {
+    background-image: url('/assets/hero_desk_490.png');
+  }
+
+  .careers.hero {
+    background-image: url('/assets/hero_huddle_490.png');
+  }
+
+  .contact.hero {
+    background-image: url('/assets/hero_lights_490.png');
+  }
+
+  .home.hero {
+    background-image: url('/assets/hero_football_490.png');
+  }
+
+  .news.hero {
+    background-image: url('/assets/hero_hockey_490.png');
+  }
+
+}
+
+/* MEDIA QUERY - 320PX
+============================================================*/
+
+@media (max-width:320px){
+
+  .about.hero {
+    background-image: url('/assets/hero_mit_320.png');
+  }
+
+  .blog.hero {
+    background-image: url('/assets/hero_desk_320.png');
+  }
+
+  .careers.hero {
+    background-image: url('/assets/hero_huddle_320.png');
+  }
+
+  .contact.hero {
+    background-image: url('/assets/hero_lights_320.png');
+  }
+
+  .home.hero {
+    background-image: url('/assets/hero_football_320.png');
+  }
+
+  .news.hero {
+    background-image: url('/assets/hero_hockey_320.png');
   }
 
 }

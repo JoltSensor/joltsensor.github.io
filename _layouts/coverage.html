@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Jolt</title>
+        <title>Coverage</title>
         <meta name="viewport" content="width=device-width">
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
         <link rel="stylesheet" href="/css/main.css">
@@ -37,46 +37,17 @@
       </header>
       <!-- End of header -->
       <div class="wrapper">
-        <div class="hero shell">
-          <div class="home hero">
-            <img src="/assets/icon_jolt_white.png"/>
-            <h1>PEACE OF MIND </h1>
-            <h2>Real-time head impact tracking for youth athletes, peace of mind for parents & coaches</h2>
-            <button id="show_form">LEARN MORE</button>
-          </div>
-          <div class="hero hidden" id="slide_me">
-            <h2>We're launching soon! Want to be the first to hear about it? Reserve your spot in line for the latest updates, promotions, and development news.</h2>
-            <div id="mc_embed_signup">
-              <form action="http://joltsensor.us3.list-manage.com/subscribe/post?u=30b31dec2dac04ee2d025ff98&amp;id=fb4cff7c0c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email address" required>
-                <div style="position: absolute; left: -5000px;">
-                  <input type="text" name="b_30b31dec2dac04ee2d025ff98_fb4cff7c0c" value="">
-                </div>
-                <div class="clear"><input type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-              </form>
-            </div>
-            <!-- End of sign-up form -->
-            <span id="hide_form">Cancel</span>
-          </div>
-          <!-- End of contact hero -->
+        <div class="news hero">
+          <h1 class="nobottom">PRESS COVERAGE</h1>
         </div>
-        <!-- End of hero shell -->
+        <!-- End of hero -->
         <div class="section">
-          <div class="tile">
-            <img class="illustration" src="/assets/illustration_sensor.png"/>
-            <h3>MOUNT & WEAR</h3>
-            <h4>Attach to whatever you wear on your head -- one sensor for all activities</h2>
-          </div>
-          <div class="tile">
-            <img class="illustration" src="/assets/illustration_app.png"/>
-            <h3>CONNECT & PLAY</h3>
-            <h4>Intuitive dashboard lets you track head impacts in real-time</h2>
-          </div>
-          <div class="tile">
-            <img class="illustration" src="/assets/illustration_test.png"/>
-            <h3>ALERT & EVALUATE</h3>
-            <h4>Dangerous impacts trigger alerts and in-app evaluation protocol</h2>
-          </div>
+          {% for post in site.categories.press %}
+            <div class="press">
+              <p class="info">{{ post.date || date:"%m/%d/%Y" }} - {{ post.source }}</p>
+              <p class="title"><a href="{{ post.link }}">{{ post.title }}</a></p>
+            </div>
+          {% endfor %}
         </div>
         <!-- End of section -->
         <div class="logo section">
