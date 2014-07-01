@@ -1,0 +1,7 @@
+{% assign author = site.data.authors[page.author] %}
+{% if author %}
+	<div class="author tile">
+		<li><img class="headshot" src="{{ author.picture }}"/></li>
+		<li>Posted by <a href=/people/{{ author.permalink | downcase }}>{{ author.name }}</a> in <a href=/blog/{{ page.category | downcase }}>{{ page.category }}</a></li>
+	</div>
+{% endif %}

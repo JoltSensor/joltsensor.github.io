@@ -1,9 +1,13 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
-
-<div class="post">
-{{ content }}
+<div class="empty hero" style="background-image: url('{{ page.hero }}');">
+	<div class="blog screen">
+		<h1>{{ page.title }}</h1>
+		<h2 class="nobottom">{{ page.date | date: "%A, %B %d, %Y" }}</h2> 
+	</div> 
+</div>
+<div class="section">
+	{{ content }}
+	{% include author-bio.html %}
 </div>

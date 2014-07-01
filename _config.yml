@@ -1,2 +1,4 @@
 name: Jolt
-pygments: true
+highlighter: pygments
+permalink: none
+paginate: 5

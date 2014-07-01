@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Jolt</title>
-        <meta name="viewport" content="width=device-width">
-        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-        <link rel="stylesheet" href="/css/main.css">
-        <link rel="icon" type="image/png" href="/assets/favicon.ico">
-        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300" rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-          ga('create', 'UA-48252918-1', 'joltsensor.com');
-          ga('send', 'pageview');
-        </script>
-    </head>
-    <body>
-      <header>
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>{{ page.title }}</title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+      <link rel="stylesheet" href="/css/main.css">
+      <link rel="stylesheet" href="/css/mailchimp.css">
+      <link rel="icon" type="image/png" href="/assets/favicon.ico">
+      <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic' rel='stylesheet' type='text/css'>
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-48252918-1', 'joltsensor.com');
+        ga('send', 'pageview');
+      </script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
         <nav class="left">
           <a href="/">
             <li><img src="/assets/icon_jolt_blue.png"/></li>
@@ -28,76 +32,38 @@
           </a>
         </nav>
         <nav class="right">
-          <li><a href="/about">ABOUT</a></li>
+          <li><a {% if page.title == "About" %} class="active" {% endif %} href="/about">ABOUT</a></li>
           <li>&middot;</li>
-          <li><a href="/news">NEWS</a></li>
+          <li><a {% if page.title == "News" %} class="active" {% endif %} href="/news">NEWS</a></li>
           <li>&middot;</li>
-          <li><a href="/blog">BLOG</a></li>
+          <li><a {% if page.title == "Blog" %} class="active" {% endif %} href="/blog">BLOG</a></li>
         </nav>
-      </header>
-      <!-- End of header -->
-      <div class="wrapper">
-        <div class="hero shell">
-          <div class="home hero">
-            <img src="/assets/icon_jolt_white.png"/>
-            <h1>PEACE OF MIND </h1>
-            <h2>Real-time head impact tracking for youth athletes, peace of mind for parents & coaches</h2>
-            <button id="show_form">LEARN MORE</button>
-          </div>
-          <div class="hero hidden" id="slide_me">
-            <h2>We're launching soon! Want to be the first to hear about it? Reserve your spot in line for the latest updates, promotions, and development news.</h2>
-            <div id="mc_embed_signup">
-              <form action="http://joltsensor.us3.list-manage.com/subscribe/post?u=30b31dec2dac04ee2d025ff98&amp;id=fb4cff7c0c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email address" required>
-                <div style="position: absolute; left: -5000px;">
-                  <input type="text" name="b_30b31dec2dac04ee2d025ff98_fb4cff7c0c" value="">
-                </div>
-                <div class="clear"><input type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-              </form>
-            </div>
-            <!-- End of sign-up form -->
-            <span id="hide_form">Cancel</span>
-          </div>
-          <!-- End of contact hero -->
-        </div>
-        <!-- End of hero shell -->
-        <div class="section">
-          <div class="tile">
-            <img class="illustration" src="/assets/illustration_sensor.png"/>
-            <h3>MOUNT & WEAR</h3>
-            <h4>Attach to whatever you wear on your head -- one sensor for all activities</h2>
-          </div>
-          <div class="tile">
-            <img class="illustration" src="/assets/illustration_app.png"/>
-            <h3>CONNECT & PLAY</h3>
-            <h4>Intuitive dashboard lets you track head impacts in real-time</h2>
-          </div>
-          <div class="tile">
-            <img class="illustration" src="/assets/illustration_test.png"/>
-            <h3>ALERT & EVALUATE</h3>
-            <h4>Dangerous impacts trigger alerts and in-app evaluation protocol</h2>
-          </div>
-        </div>
-        <!-- End of section -->
-        <div class="logo section">
-          <a href="http://vms.mit.edu"><div class="vms"></div></a>
-          <a href="http://masschallenge.org"><div class="mass"></div></a>
-          <a href="http://archgrants.org"><div class="arch"></div></a>
-        </div>
-        <!-- End of logo section -->
-        <footer>
-          <h4>Want to learn more? Subscribe to our mailing list for the latest updates, promotions, and development news.</h4>
+      </div>
+      <div class="shadow"></div>
+    </header>
+    <!-- End of header -->
+    <div class="wrapper">
+
+<!-- Content Start -->
+
+{{ content }}
+
+<!-- Content End -->
+
+      <footer>
+        <div class="container">
+          <h2>Don't miss out on the latest updates,</br>promotions, &amp; development news</h2>
           <div id="mc_embed_signup">
             <form action="http://joltsensor.us3.list-manage.com/subscribe/post?u=30b31dec2dac04ee2d025ff98&amp;id=fb4cff7c0c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email address" required>
+              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email address" required>
               <div style="position: absolute; left: -5000px;">
                 <input type="text" name="b_30b31dec2dac04ee2d025ff98_fb4cff7c0c" value="">
               </div>
-              <div class="clear"><input type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+              <div class="clear"><input type="submit" value="Sign me up!" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
             </form>
           </div>
           <!-- End of sign-up form -->
-          <a href="/"><img class="icon" src="/assets/icon_jolt_white.png"/></a>
+          <a href="/"><img class="icon" src="/assets/icon_jolt_blue.png"/></a>
           </br>
           <li><a href="/about">ABOUT</a></li>
           <li>&middot;</li>
@@ -109,11 +75,11 @@
           <li>&middot;</li>
           <li><a href="/contact">CONTACT</a></li>
           </br>&copy; 2014, Jolt Sensors LLC
-        </footer>
-      </div>
-      <!-- End of wrapper -->
-    </body>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="/js/scripts.js"></script>
-    
+        </div>
+      </footer>
+    </div>
+    <!-- End of wrapper -->
+  </body>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="/js/scripts.js"></script>
 </html>

@@ -1,0 +1,7 @@
+---
+date:   2014-05-21 10:17:00
+source:  "KMOV St. Louis"
+title: "Arch Grants awards $1 million in funding to 20 start-up companies"
+categories: press
+link: http://www.kmov.com/news/local/Arch-Grants-awards-1-million-in-funding-to-20-start-up-companies-260112551.html
+---

@@ -1,0 +1,21 @@
+{% assign author = site.data.authors[page.author] %}
+{% if author %}
+	<div class="empty hero" style="background-image: url('{{ author.hero }}');">
+		<div class="blog screen">
+			<h1>{{ author.name }}</h1>
+			<h2>{{ author.title }}</br>{{ author.permalink }}@joltsensor.com</br><a href="http://twitter.com/{{ author.twitter }}">@{{ author.twitter}}</a></h2>
+		</div> 
+	</div>
+	<div class="section">
+		<p>{{ author.long_bio }}</p>
+		<h2>Blog posts by {{ author.permalink | capitalize }}:</h2>
+		<ul>
+		{% for post in site.categories.blog %}
+	    	{% assign author_match = site.data.authors[post.author] %}
+	    	{% if author == author_match %}
+				<li style="font-family: 'Source Sans Pro', sans-serif; font-weight: 300;">{{ post.date || date:"%m.%d.%Y" }} - <a href="{{ post.url }}">{{ post.title }}</a> posted in <a href=/blog/{{ post.category | downcase }}>{{ post.category }}</a></p>
+		    {% endif %}
+	  	{% endfor %}
+		</ul>
+	</div>
+{% endif %}

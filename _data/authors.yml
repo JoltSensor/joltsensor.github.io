@@ -1,0 +1,21 @@
+ben:
+  name: Ben Harvatine
+  permalink: ben
+  twitter: bdharva
+  linkedin: bdharva
+  picture: /assets/team_ben.png
+  hero: /assets/team_ben_banner.jpg
+  title: "Founder & CEO"
+  short_bio: "A quick learner, an inquisitive mind, and a passionate designer"
+  long_bio: "Ben was born and raised in central Maryland. Growing up, he played sports year-round and was actively involved in Boy Scouts of America. A three-season varsity athlete in high school, he graduated in three years, ranked first in his class. He attended the Massachusetts Institute of Technology, where he majored in Mechanical Engineering, with a minor in Architecture. At MIT, Ben was an brother of the Phi Kappa Sigma fraternity, a member of the Interfraternity Council Executive Board, a founding member of MIT for Liberty, an NCWA national-qualifier for the MIT Wrestling Team, and rowed for the Men's Heavyweight Crew as a senior walk-on. Following graduation, he worked for a year at Anheuser-Busch InBev, completing the global management trainee program. When he's not working on Jolt, he enjoys running, mountaineering, tennis, fishing, outdoor photography, and woodworking."
+
+seth:
+  name: Seth Berg
+  permalink: seth
+  twitter: seth_berg
+  linkedin: thesethberg
+  picture: /assets/team_seth.png
+  hero: /assets/team_seth_banner.jpg
+  title: "Co-Founder & CTO"
+  short_bio: Seth does cool shit with stuff
+  long_bio: "Seth grew up in New York City where he attended Stuyvesant High School. During his time at Stuyvesant he played on the Stuyvesant football team, and served as president of engineering for two years on the FIRST robotics team (during which time he won the 2010 FIRST Dean’s List Award). After graduating high school he went on to MIT, where he studied mechanical engineering, electrical engineering and computer science, graduating with a degree in computer science. During his time at MIT he was heavily involved in the Phi Kappa Sigma fraternity, serving as both vice-president and president of the fraternity. Seth began working on Jolt right after graduating in the spring of 2014. In his free time you can find Seth cooking, working in the woodshop, rock climbing or playing squash."

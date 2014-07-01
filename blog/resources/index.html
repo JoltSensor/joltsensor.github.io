@@ -1,15 +1,15 @@
 ---
 layout: default
-title: Blog
+title: Resources
 ---
 <div class="empty hero" style="background-image: url('/assets/hero_desk_1400.jpg');">
 	<div class="screen">
-		<h1 class="nobottom">JOLT BLOG</h1>
+		<h1 class="nobottom">RESOURCES</h1>
 	</div>
 </div>
 <!-- End of hero -->
 <div class="section">
-	{% for post in site.categories.blog %}
+	{% for post in site.categories.resources %}
     	{% assign author = site.data.authors[post.author] %}
 		{% if author %}
 			<div class="press">

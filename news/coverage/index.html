@@ -1,4 +1,19 @@
 ---
-layout: coverage
-title: Jolt
+layout: default
+title: Coverage
 ---
+<div class="empty hero" style="background-image: url('/assets/hero_hockey_1400.jpg');">
+  <div class="screen">
+  	<h1 class="nobottom">PRESS COVERAGE</h1>
+  </div>
+</div>
+<!-- End of hero -->
+<div class="section">
+  {% for post in site.categories.press %}
+    <div class="press">
+      <p class="info">{{ post.date || date:"%m/%d/%Y" }} - {{ post.source }}</p>
+      <p class="title"><a href="{{ post.link }}">{{ post.title }}</a></p>
+    </div>
+  {% endfor %}
+</div>
+<!-- End of section -->
