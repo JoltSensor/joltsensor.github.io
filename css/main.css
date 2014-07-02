@@ -92,6 +92,10 @@ button {
   cursor: pointer;
 }
 
+button a:hover {
+  border-bottom: none;
+}
+
 .nobottom, .screen .nobottom, .hero .nobottom {
   margin-bottom: 0;
 }
@@ -479,11 +483,11 @@ img.headshot {
   width: 100%;
   max-width: 500px;
   margin: 30px auto;
-  margin-bottom: 0;
+  margin-top: 0;
   float: none;
   text-align: center;
   color: rgb(150,150,150);
-  border-top: 1px solid rgb(229,229,229);
+  border-bottom: 1px solid rgb(229,229,229);
 }
 
 .author.tile li {
@@ -493,7 +497,6 @@ img.headshot {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  margin: 20px 0 0 0;
 }
 
 .author img.headshot {
@@ -501,6 +504,55 @@ img.headshot {
   border-radius: 20px;
   display: inline-block;
   margin: 0;
+}
+
+/* SHARE TILE
+============================================================*/
+
+.share.tile {
+  width: 100%;
+  max-width: 500px;
+  margin: 30px auto;
+  margin-bottom: 0;
+  float: none;
+  text-align: center;
+  color: rgb(150,150,150);
+  border-top: 1px solid rgb(229,229,229);
+}
+
+.share.tile li {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 5px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  margin: 20px 0 10px 0;
+}
+
+
+.facebook, .twitter, .linkedin {
+  height: 45px;
+  width: 45px;
+  display:block;
+  background-size: cover;
+  background-position: left;
+}
+
+.facebook:hover, .twitter:hover, .linkedin:hover {
+  background-position: right;
+}
+
+.facebook {
+  background-image: url('/assets/icon_facebook.png');
+}
+
+.twitter {
+  background-image: url('/assets/icon_twitter.png');
+}
+
+.linkedin {
+  background-image: url('/assets/icon_linkedin.png');
 }
 
 /* SOCIAL SECTION
