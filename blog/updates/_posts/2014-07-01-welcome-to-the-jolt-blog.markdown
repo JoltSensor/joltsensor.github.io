@@ -5,6 +5,7 @@ author: ben
 layout: post
 category: Updates
 hero: /assets/blog_banner_esplanade.jpg
+comments: true
 ---
 
 Welcome to the Jolt blog. We've been working hard over the course of the last year, and are nearly ready to bring Jolt to market. We've finally approached a point in our development process where we're comfortable being a little less "stealthy" about what we're doing. And the timing couldn't be better. In the coming months we'll be completing the MassChallenge accelerator in Boston, moving our headquarters to St. Louis for Arch Grants, and launching the 1st-generation Jolt Sensor. We look forward to sharing the details of our development process as we experience the challenges and excitement of our startup journey.
