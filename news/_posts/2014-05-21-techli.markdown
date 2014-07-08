@@ -1,7 +1,0 @@
----
-date:   2014-05-21 00:00:00
-source:  "Techli"
-title: "2014 Arch Grants Recipients Announced"
-categories: press
-link: http://techli.com/2014/05/2014-arch-grants-recipients-announced/#.
----

@@ -9,10 +9,10 @@ title: News
 </div>
 <!-- End of hero -->
 <div class="section">
-  {% for post in site.categories.press limit:5 %}
+  {% for article in site.data.articles limit:5 %}
     <div class="press">
-      <p class="info">{{ post.date || date:"%m/%d/%Y" }} - {{ post.source }}</p>
-      <p class="title"><a href="{{ post.link }}">{{ post.title }}</a></p>
+      <p class="info">{{ article.date || date:"%m/%d/%Y" }} - {{ article.source }}</p>
+      <p class="title"><a href="{{ article.link }}">{{ article.title }}</a></p>
     </div>
   {% endfor %}
   <a href="/news/coverage"><button id="show_form">ALL PRESS COVERAGE</button></a>
