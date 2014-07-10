@@ -4,7 +4,7 @@ title: "Post Concussion Syndrome:</br>5 Ways to Make it More Bearable"
 author: seth
 layout: post
 category: Resources
-hero: /assets/blog_banner_san_diego_lens_glare.jpg
+hero: /assets/blog/banners/san_diego_lens_glare.jpg
 comments: true
 ---
 

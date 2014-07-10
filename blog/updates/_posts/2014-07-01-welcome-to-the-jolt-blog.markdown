@@ -4,7 +4,7 @@ title: Welcome to the Jolt Blog
 author: ben
 layout: post
 category: Updates
-hero: /assets/blog_banner_esplanade.jpg
+hero: /assets/blog/banners/esplanade.jpg
 comments: true
 ---
 

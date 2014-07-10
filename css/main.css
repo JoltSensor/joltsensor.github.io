@@ -54,8 +54,12 @@ img {
   width: 100%;  
 }
 
+p img {
+  margin: 20px 0;
+}
+
 blockquote {
-    border-left: 5px solid rgb(0,125,189);
+    border-left: 3px solid rgba(63,124,215,0.75);
     padding: 0 0 0 30px;
     text-align: justify;
     font-style: italic;
@@ -713,6 +717,10 @@ footer p a:hover {
     font-size:18px;
     line-height:30px;
     margin: 20px 0;
+  }
+
+  p img {
+    margin: 0;
   }
 
   .press p.title {
