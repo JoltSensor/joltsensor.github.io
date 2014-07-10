@@ -8,7 +8,7 @@ hero: /assets/blog/banners/mascherano.jpg
 comments: true
 ---
 
-Concussions have been big news in recent week, between the NCAA releasing a new set of standards for sideline concussion evaluations and a federal judge approving the NFL concussion settlement. Throughout continous coverage of sports-related concussions football has been at the forefront of public discourse. But recent events at the World Cup have propelled soccer and its international governing body FIFA into the headlines.
+Concussions have been big news in recent weeks, between the NCAA releasing a new set of standards for sideline concussion evaluations and a federal judge approving the NFL concussion settlement. Throughout continous coverage of sports-related concussions football has been at the forefront of public discourse. But recent events at the World Cup have propelled soccer and its international governing body FIFA into the headlines.
 
 To many unfamiliar with the mechanics and physiology of concussions, soccer seems an unlikely culprit. Although it can get rough, it is decidedly a non-contact sport. The athletes wear no helmets, and the only protective pads to speak of are worn on their shins. The sport, particularly on the international stage, has even drawn criticism for players grossly exagerating the small contact that does occur, "flopping" to the ground theatrically in the hopes of drawing a penalty.
 
@@ -22,7 +22,7 @@ After being [struck by a knee in the side of his head](http://www.smh.com.au/fif
 
 ![](/assets/blog/images/mascherano_down.jpg)
 
-Concussions can sometimes be difficult to recognize and diagnose, as the symptoms sometimes do not present fully until some time after the impact. And there is a full-spectrum of post-concussion symptoms that vary in severity, with the milder ones potentially harder to recognize. Yesterday, and last month, there was no ambiguity in the immediate aftermath of the impacts. Loss of consciousness. Falling down. Lying on the ground. Clutching head. Dazed vacant look. These athletes were visibly injured and certainly not in the right state of mind to be making any decisions regarding their return to play. The failures by their coaches, team doctors, and officials to step in and take decisive action to ensure their health and safety is simply inexcusable.
+Concussions can sometimes be difficult to recognize and diagnose, as the symptoms sometimes do not present fully until some time after the impact. And there is a full spectrum of post-concussion symptoms that vary in severity, with the milder ones potentially harder to recognize. Yesterday, and last month, there was no ambiguity in the immediate aftermath of the impacts. Loss of consciousness. Falling down. Lying on the ground. Clutching head. Dazed vacant look. These athletes were visibly injured and certainly not in the right state of mind to be making any decisions regarding their return to play. The failures by their coaches, team doctors, and officials to step in and take decisive action to ensure their health and safety is simply inexcusable.
 
 Following yesterday's events, ESPN Analyst [Taylor Twellman wasted no time in explaining](http://www.espnfc.com/video/highlights/114/video/1942207/was-mascherano-treated-appropriately) everything that was so wrong with what he had just witnessed:
 
