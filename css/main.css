@@ -66,6 +66,10 @@ blockquote {
     line-height: 25px;
   }
 
+blockquote p {
+  width: 99%;
+}
+
 em {
   font-style: italic;
 }
