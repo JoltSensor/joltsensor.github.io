@@ -1,5 +1,8 @@
 $(document).ready(function(){
 	align();
+	setTimeout(function(){
+ 		align();
+	}, 3000);
 });
 
 window.onresize = function(event) {
