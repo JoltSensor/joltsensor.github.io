@@ -19,6 +19,9 @@
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
         ga('create', 'UA-48252918-1', 'joltsensor.com');
         ga('send', 'pageview');
+        $('#facebook').on('click', function() {
+          ga('send', 'event', 'button', 'click', 'facebook');
+        });
       </script>
   </head>
   <body>
@@ -29,7 +32,7 @@
     <div class="shell">
       <img id="logo" src="/assets/logo_word.png"/>
       <h1>{{ content }}</h1>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=kck.st/1qgZFFR"><button id="show_form">Vote on Facebook</button></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=kck.st/1qgZFFR"><button id="facebook">Vote on Facebook</button></a>
     </div>
   </body>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

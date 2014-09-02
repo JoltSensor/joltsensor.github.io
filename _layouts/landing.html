@@ -19,6 +19,15 @@
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
         ga('create', 'UA-48252918-1', 'joltsensor.com');
         ga('send', 'pageview');
+        $('#facebook').on('click', function() {
+          ga('send', 'event', 'button', 'click', 'facebook');
+        });
+        $('#twitter').on('click', function() {
+          ga('send', 'event', 'button', 'click', 'twitter');
+        });
+        $('#kickstarter').on('click', function() {
+          ga('send', 'event', 'button', 'click', 'kickstarter');
+        });
       </script>
   </head>
   <body>
@@ -29,9 +38,9 @@
     <div class="shell">
       <img id="logo" src="/assets/logo_word.png"/>
       <h1>{{ content }}</h1>
-      <a href="/giveasensor/facebook" target="_blank"><button id="show_form">Vote on Facebook</button></a>
-      <a href="https://twitter.com/intent/tweet?text=@joltsensor%20%23giveasensor%20to%20%3CTeam%20Name%20Here%3E!%20--%20http://kck.st/1tdu5fS" target="_blank"><button id="show_form">Vote on Twitter</button></a>
-      <a href="https://www.kickstarter.com/projects/2098685356/jolt-sensor-better-concussion-detection-for-youth"><button id="show_form">Learn more</button></a>
+      <a href="/giveasensor/facebook" target="_blank"><button id="facebook">Vote on Facebook</button></a>
+      <a href="https://twitter.com/intent/tweet?text=@joltsensor%20%23giveasensor%20to%20%3CTeam%20Name%20Here%3E!%20--%20http://kck.st/1tdu5fS" target="_blank"><button id="twitter">Vote on Twitter</button></a>
+      <a href="https://www.kickstarter.com/projects/2098685356/jolt-sensor-better-concussion-detection-for-youth"><button id="kickstarter">Learn more</button></a>
     </div>
   </body>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
