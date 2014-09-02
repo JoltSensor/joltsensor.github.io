@@ -21,13 +21,15 @@
         ga('send', 'pageview');
       </script>
   </head>
-  <body style="background-image: url({{ page.background }}); background-position:{{ page.align }}">
-    <div class="wrapper">
-      <div class="shell">
-        <img id="logo" src="/assets/logo_word.png"/>
-        <h1>{{ content }}</h1>
-        <a href="https://www.facebook.com/sharer/sharer.php?u=kck.st/1qgZFFR"><button id="show_form">Vote on Facebook</button></a>
+  <body>
+    <div class="hero wrapper" style="background-image: url({{ page.background }}); background-position:{{ page.align }}">
+      <div class="color wrapper">
       </div>
+    </div>
+    <div class="shell">
+      <img id="logo" src="/assets/logo_word.png"/>
+      <h1>{{ content }}</h1>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=kck.st/1qgZFFR"><button id="show_form">Vote on Facebook</button></a>
     </div>
   </body>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
