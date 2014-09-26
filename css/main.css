@@ -577,16 +577,6 @@ footer p a:hover {
     margin-bottom: 20px;
   }
 
-  .hero h1 {
-    font-size: 34px;
-    margin-bottom: 20px;
-  }
-
-  .hero h2 {
-    font-size: 22px;
-    margin-bottom: 30px;
-  }
-
   p, li {
     font-size:18px;
     line-height:30px;
@@ -612,6 +602,18 @@ footer p a:hover {
   blockquote {
     padding: 0 0 0 30px;
     line-height: 25px;
+  }
+
+}
+
+
+/* MEDIA QUERY - 570PX
+============================================================*/
+
+@media (max-width:570px){
+
+  .hero button{
+    margin: 100px 0 55px 0;
   }
 
 }
@@ -656,10 +658,13 @@ footer p a:hover {
 
 }
 
-/* MEDIA QUERY - 400PX
+/* MEDIA QUERY - 396PX
 ============================================================*/
 
-@media (max-width:380px){
+@media (max-width:396px){
 
+  .hero button{
+    margin: 40px 0 91px 0;
+  }
 
 }
