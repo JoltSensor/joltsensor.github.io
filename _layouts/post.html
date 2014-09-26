@@ -1,34 +1,22 @@
 ---
-layout: default
+layout: blog
 ---
-<div class="empty hero" style="background-image: url('{{ page.hero }}');">
-	<div class="blog screen">
-		<h1>{{ page.title }}</h1>
-		<h2 class="nobottom">{{ page.date | date: "%A, %B %d, %Y" }}</h2> 
-	</div> 
-</div>
-<div class="section">
-	{% include author-bio.html %}
-	{{ content }}
-	{% include share-tile.html %}
-</div>
-</div>
-<div class="wrapper" style="background: rgb(255,255,255); margin-top: 0;">
-	<div class="section">
-		{% if page.comments %}
-	    <div id="disqus_thread"></div>
-	    <script type="text/javascript">
-	        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-	        var disqus_shortname = 'jolt'; // required: replace example with your forum shortname
-
-	        /* * * DON'T EDIT BELOW THIS LINE * * */
-	        (function() {
-	            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-	            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	        })();
-	    </script>
-	    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-	    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-		{% endif %}  
+<div id="wrapper">
+  	<div class="section shell">
+    	<div class="section contents">
+			<h2 class="info">{{ page.date | date: "%A, %B %d, %Y" }}</h2>
+			<h1 class="title">{{ page.title }}</h1>
+			{{ content }}
+			{% include share-tile.html %}
+		</div>
 	</div>
+	<div class="section shell" style="background-image:url('/assets/hero_desk_1400.jpg'); background-position: bottom center; background-size: cover;">
+	    <div class="section shell blue">
+	      <div class="section contents">
+		        <h1 style="max-width: 650px; text-align: center; position: relative; margin: 0 auto; margin-top: 50px;">Our tight-knit team is dedicated to using technology to make the world a better place. If you share our vision and are up to the challenge, we're always on the lookout for our next great addition.</h1>
+		        <div class="section shell" style="text-align:center;">
+		          	<a href="mailto:careers@joltsensor.com?subject=Job%20Inquiry"><button style="display: inline block; margin: 40px auto;">Join our team</button></a>
+		        </div>
+	      </div>
+	    </div>
+	  </div>
