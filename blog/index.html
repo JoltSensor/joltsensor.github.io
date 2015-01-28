@@ -1,79 +1,23 @@
 ---
-layout: blog
-title: Jolt Blog - Concussion management through real-time head impact tracking
+layout: default
+title: Jolt Blog - Better concussion detection through real-time head impact tracking
 ---
-	<div id="wrapper">
-	  	<div class="section shell">
-		    <div class="section contents">
-				{% for post in site.posts %}
-		    		<h2 class="info">{{ post.date | date: "%A, %B %d, %Y" }}</h2>
-			      	<h1 class="title"><a href="{{ post.url }}">{{ post.title | replace: "</br>", " " }}</a></h1>
-			  	{% endfor %}
-			</div>
-		</div> <!-- End of section -->
-	  	<div class="section shell" style="background-image:url('/assets/bg_huddle.jpg'); background-position: bottom center; background-size: cover;">
-		    <div class="section shell blue">
-		      	<div class="section contents">
-			        <h1 style="max-width: 650px; text-align: center; position: relative; margin: 40px auto; margin-top: 50px;">We're not the only ones writing about us. Check out some of our recent press coverage!</h1>
-			        <div class="card">
-					    <a href="http://www.fastcolabs.com/3035730/these-athletic-wearables-will-stop-injuries-before-they-happen">
-					        <div class="container" style="margin: 0 25px;">
-					        	<img src="/assets/news_fastco.png" style="width:100%;"/>
-					        </div>
-					    </a>
-			        </div>
-			        <div class="card">
-				        <a href="http://www.foxnews.com/health/2014/09/12/former-college-wrestler-aims-to-boost-concussion-prevention-with-clip-on-device/">
-				          	<div class="container" style="margin: 0 25px;">
-				            	<img src="/assets/news_fox.png" style="width:100%;"/>
-				          	</div>
-				        </a>
-			        </div>
-			        <div class="card">
-			        	<a href="http://www.cnbc.com/id/102004267#.">
-				          	<div class="container" style="margin: 0 25px;">
-				            	<img src="/assets/news_cnbc.png" style="width:100%;"/>
-				          	</div>
-				        </a>
-			        </div>
-			        <div class="card">
-			        	<a href="http://www.washingtonpost.com/blogs/early-lead/wp/2014/09/02/mit-graduates-are-on-a-quest-to-make-sports-related-head-injuries-history-with-better-technology/">
-				          	<div class="container" style="margin: 0 25px;">
-				            	<img src="/assets/news_washpo.png" style="width:100%;"/>
-				          	</div>
-				        </a>
-			        </div>
-			        <div class="card">
-			        	<a href="http://www.dailymail.co.uk/sciencetech/article-2741887/The-clip-sensor-prevents-concussion-Tiny-monitor-sends-alerts-referees-player-bangs-head.html">
-					        <div class="container" style="margin: 0 25px;">
-					        	<img src="/assets/news_dailymail.png" style="width:100%;"/>
-					        </div>
-					    </a>
-			        </div>
-			        <div class="card">
-			        	<a href="http://www.wired.co.uk/news/archive/2014-08/28/jolt-sensor">
-			          		<div class="container" style="margin: 0 25px;">
-			            		<img src="/assets/news_wired.png" style="width:100%;"/>
-			          		</div>
-			          	</a>
-			        </div>
-			        <div class="card">
-			        	<a href="http://www.buzzfeed.com/autodeskeducation/unbelievable-inventions-created-by-students?b=1#3z11lc">
-				          	<div class="container" style="margin: 0 25px;">
-				            	<img src="/assets/news_buzzfeed.png" style="width:100%;"/>
-				          	</div>
-				        </a>
-			        </div>
-			        <div class="card">
-			        	<a href="https://www.yahoo.com/tech/mit-students-invent-gadget-to-detect-concussions-in-95944765704.html">
-				          	<div class="container" style="margin: 0 25px;">
-				            	<img src="/assets/news_yahoo.png" style="width:100%;"/>
-				          	</div>
-				        </a>
-			        </div>
-			        <div class="section shell" style="text-align:center;">
-			          	<a href="mailto:press@joltsensor.com?subject=Press%20Inquiry"><button style="display: inline block; margin: 40px auto;">Submit a press inquiry</button></a>
-			        </div>
-		      	</div>
-	    	</div>
-  		</div>
+
+<div id="wrapper">
+  <div class="section shell">
+    <div class="section contents">
+		<h1 class="notop">The Jolt Blog</h1>
+		<p>
+			As we work to build amazing products and experiences for our loyal customers, we like to take time to reflect on our process and share insights, updates, and inspiration drawn from our work. If you like what you read, join our mailing list (using the form at the bottom of this page) to be alerted to new posts or <a href="/feed.xml">subscribe to the RSS feed</a>.
+		</p>
+		<h2>Recent Posts</h2>
+		{% for post in site.posts limit:8 %}
+			<div class="icon shell">
+		        <div class="icon holder">
+		          	<img src={% if post.category == "Updates" %}"/assets/icons/general/update.png"{% elsif post.category == "Thoughts" %}"/assets/icons/general/lightbulb.png"{% endif %}/>
+		        </div>
+		        <li><a href="{{ post.url }}">{{ post.title | replace: "</br>", " " }}</a> posted in {{ post.category }} on {{ post.date | date: "%m/%d/%Y" }}</li>
+		    </div>
+	  	{% endfor %}
+	</div>
+  </div> <!-- End of section -->

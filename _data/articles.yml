@@ -1,3 +1,59 @@
+- date: 2015-01-24
+  source: "The Boston Globe"
+  title: "Reebok, others have technology to help prevent concussions, but few sports adopt it"
+  author: "Scott Kirsner"
+  link: http://www.bostonglobe.com/business/2015/01/23/reebok-others-have-technology-help-prevent-concussions-but-few-sports-adopt/ToxlcL95oQEK6L5zBF9nsN/story.html
+  icon: /assets/icons/press/bostonglobe.png
+
+- date: 2015-01-15
+  source: "Outside Magazine"
+  title: "The JoltSensor: Take the guesswork out of head injuries"
+  author: "Duncan Larkin"
+  link: http://www.outsideonline.com/outdoor-gear/gear-shed/covet/The-JoltSensor.html
+  icon: /assets/icons/press/outsidemagazine.png
+
+- date: 2014-09-18
+  source: "Fast Company"
+  title: "These Athletic Wearables Aim To Stop Injuries Before They Happen"
+  author: "Steven Melendez"
+  link: http://www.fastcolabs.com/3035730/these-athletic-wearables-will-stop-injuries-before-they-happen
+  icon: /assets/icons/press/fastcompany.png
+
+- date: 2014-09-12
+  source: "Fox News"
+  title: "Former college wrestler aims to boost concussion prevention with clip-on device"
+  author: "Alexandria Hein"
+  link: http://www.foxnews.com/health/2014/09/12/former-college-wrestler-aims-to-boost-concussion-prevention-with-clip-on-device/
+  icon: /assets/icons/press/foxnews.png
+
+- date: 2014-09-03
+  source: "Daily Mail"
+  title: "The clip-on sensor that could prevent concussion: Tiny monitor sends alerts to referees when a player bangs their head"
+  author: " Jonathan O'Callaghan"
+  link: http://www.dailymail.co.uk/sciencetech/article-2741887/The-clip-sensor-prevents-concussion-Tiny-monitor-sends-alerts-referees-player-bangs-head.html
+  icon: /assets/icons/press/dailymail.png
+
+- date: 2014-09-02
+  source: "The Washington Post"
+  title: "MIT graduates are on a quest to make sports-related head injuries history with better technology"
+  author: "Marissa Payne"
+  link: http://www.washingtonpost.com/blogs/early-lead/wp/2014/09/02/mit-graduates-are-on-a-quest-to-make-sports-related-head-injuries-history-with-better-technology/
+  icon: /assets/icons/press/washingtonpost.png
+
+- date: 2014-08-28
+  source: "WIRED"
+  title: "Sensor warns of concussion in young athletes"
+  author: "Katie Collins"
+  link: http://www.wired.co.uk/news/archive/2014-08/28/jolt-sensor
+  icon: /assets/icons/press/wired.png
+
+- date: 2014-08-27
+  source: "Yahoo"
+  title: "MIT Students Invent Gadget to Detect Concussions in Young Athletes"
+  author: "Mary-Ann Russon"
+  link: https://www.yahoo.com/tech/mit-students-invent-gadget-to-detect-concussions-in-95944765704.html
+  icon: /assets/icons/press/yahoo.png
+
 - date: 2014-07-07 09:00:00
   source: "Downtown T-REX"
   title: "Arch Grants Class of 2014 Moves into T-REX"

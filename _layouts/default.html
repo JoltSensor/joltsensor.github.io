@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/mailchimp.css">
     <link rel="icon" type="image/png" href="/assets/favicon.ico">
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500" rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
     <link href='http://joltsensor.com/feed.xml' rel='alternate' type='application/atom+xml'>
     <script>
@@ -27,15 +27,14 @@
       <div id="header">
         <nav class="left">
           <a href="/">
-            <img src="/assets/icon_jolt_white.png"/>
-            <li class="hidden">JOLT</li>
+            <img src="/assets/logos/white_text_small.png"/>
           </a>
         </nav>
         <nav class="right">
-          <li><a {% if page.title == "About Jolt - Concussion management through real-time head impact tracking" %} class="active" {% endif %} href="/about">About</a></li>
-          <li class="hidden">&middot;</li>
-          <li><a {% if page.title == "Jolt Blog - Concussion management through real-time head impact tracking" %} class="active" {% endif %} href="/blog">Blog</a></li>
-          <button data-celery="joltsensor">Order Now</button>
+          <li class="hidden"><a {% if page.title == "About Jolt - Better concussion detection through real-time head impact tracking" %} class="active" {% endif %} href="/about">About</a></li>
+          <li><a {% if page.title == "Jolt Products - Better concussion detection through real-time head impact tracking" %} class="active" {% endif %} href="/products">Products</a></li>
+          <li><a {% if page.title == "Jolt Blog - Better concussion detection through real-time head impact tracking" %} class="active" {% endif %} href="/blog">Blog</a></li>
+          <li data-celery="joltsensor"><a style="cursor: pointer;">Pre-Order</a></li>
           <script type="text/javascript" src="https://www.trycelery.com/js/celery.js"></script>
         </nav>
       </div>
@@ -46,32 +45,35 @@
     {{ content }}
 
       <!-- Content End -->
-
-      <footer>
-        <div class="container">
-          <h2>Don't miss out on the latest updates,</br>promotions, &amp; development news</h2>
+      <div class="signup section shell">
+        <div class="section contents">
+          <p>Join our mailing list for the latest updates &amp; promotions:</p>
           <div id="mc_embed_signup">
             <form action="http://joltsensor.us3.list-manage.com/subscribe/post?u=30b31dec2dac04ee2d025ff98&amp;id=fb4cff7c0c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
               <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email address" required>
               <div style="position: absolute; left: -5000px;">
                 <input type="text" name="b_30b31dec2dac04ee2d025ff98_fb4cff7c0c" value="">
               </div>
-              <div class="clear"><input type="submit" value="Sign me up!" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+              <div class="clear"><input type="submit" value="SIGN ME UP" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
             </form>
           </div><!-- End of sign-up form -->
-          <li><a href="http://www.facebook.com/joltsensor"><div class="facebook social"/></div></a></li>
-          <li><a href="http://twitter.com/joltsensor"><div class="twitter social"/></div></a></li>
-          <li><a href="/feed.xml"><div class="rss social"/></div></a></li>
-          </br>
-          <li><a href="mailto:careers@joltsensor.com?subject=Job%20Inquiry">CAREERS</a></li>
-          <li>&middot;</li>
-          <li><a href="mailto:press@joltsensor.com?subject=Press%20Inquiry">PRESS</a></li>
-          <li>&middot;</li>
-          <li><a href="mailto:contact@joltsensor.com">CONTACT</a></li>
-          </br>911 Washington Ave, St. Louis, MO
-          </br>&copy; 2014, Jolt Athletics LLC
         </div>
-      </footer> <!-- End of footer -->
+      </div>
+      <footer>
+        <div class="container">
+          <nav class="left">
+            <li><a href="/">© 2015, Jolt Athletics LLC</a></li>
+          </nav>
+          <nav class="right">
+            <li><a href="/about">About</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/press">Press</a></li>
+            <li><a href="/jobs">Jobs</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </nav>
+        </div>
+      </footer><!-- End of footer -->
     </div> <!-- End of wrapper -->
       <!-- AdRoll tracking pixel start -->
     <script type="text/javascript">
@@ -93,6 +95,6 @@
     </script>
     <!-- AdRoll tracking pixel end -->
   </body>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="/js/scripts.js"></script>
 </html>

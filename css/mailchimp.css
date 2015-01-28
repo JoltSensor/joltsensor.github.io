@@ -19,66 +19,37 @@ footer #mc_embed_signup form {
   position: relative;
   margin:0;
   margin-bottom: 20px;
-  padding: 12px 0;
-  width: 450px;
+  padding-bottom: 8px;
+  width: 400px;
   height: 22px;
   border: 0 none;
-  border-bottom: 1px solid rgb(179,179,179);
-  font-family: "Source Sans Pro", sans-serif;
-  color: rgb(153,153,153); 
-  font-size: 22px;
-  font-weight: 200;
+  border-bottom: 3px solid rgb(179,179,179);
+  font-family: "Roboto", sans-serif;
+  color: rgb(102,102,102); 
+  font-size: 19px;
+  font-weight: 400;
   line-height: 22px;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
   outline: none;
-}
-
-footer #mc_embed_signup input {
-  border: 1px solid rgb(220,220,220);
-  background: rgb(242,242,242);
-  color: rgb(150,150,150);
-  font-size: 18px;
-  margin: 20px 0 10px 0;
-  height: 21px;
-  width: 300px;
+  background: none;
 }
 
 ::-webkit-input-placeholder { /* WebKit browsers */
-  color: rgb(179,179,179);
-}
-
-footer ::-webkit-input-placeholder { /* WebKit browsers */
-  color: rgb(150,150,150);
-  opacity: 0.8;
+  color: rgb(153,153,153);
 }
 
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-  color: rgb(179,179,179);
-}
-
-footer :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-  color: rgb(150,150,150);
-  opacity: 0.8;
+  color: rgb(153,153,153);
 }
 
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-  color: rgb(179,179,179);
-}
-
-footer ::-moz-placeholder { /* Mozilla Firefox 19+ */
-  color: rgb(150,150,150);
-  opacity: 0.8;
+  color: rgb(153,153,153);
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10+ */
-  color: rgb(179,179,179) !important;
-}
-
-footer :-ms-input-placeholder { /* Internet Explorer 10+ */
-  color: rgb(150,150,150) !important;
-  opacity: 0.8;
+  color: rgb(153,153,153) !important;
 }
 
 #mc_embed_signup .button {
@@ -90,37 +61,17 @@ footer :-ms-input-placeholder { /* Internet Explorer 10+ */
   text-align: center;
   text-decoration: none;
   vertical-align: center;
-  line-height: 21px;
-  
-  margin-top: 20px;
-  padding: 14px 20px;
+  line-height: 22px;
+  margin-top: 8px;
+  padding: 0;
   background: none;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+  font-weight: 400;
   outline: none;
   cursor: pointer;
-
-  color: rgb(63,124,215);
-  border: 1px solid rgb(63,124,215);
-}
-
-footer #mc_embed_signup .button {
-  font-size: 14px;
-  margin: 0 0 10px 0;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-family: "Source Sans Pro", sans-serif;
-  border: 1px solid rgb(220,220,220);
-  border-radius: 3px;
-  background: rgb(228,228,228);
-  color: rgb(150,150,150);
-  width: 300px;
-  font-weight: 300;
-  color: rgb(150,150,150);
-  font-size: 18px;
-  width: 300px;
+  color: rgb(26,102,216);
+  border: none;
 }
 
 /* MEDIA QUERY - 625PX
@@ -129,8 +80,15 @@ footer #mc_embed_signup .button {
 @media (max-width:625px){
 
   #mc_embed_signup input {
-    width: 80%;
-    font-size: 20px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 26px;
+    border-bottom-width: 2px;
+  }
+
+  #mc_embed_signup .button {
+    line-height: 26px;
+    font-size: 16px;
   }
 
 }

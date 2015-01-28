@@ -1,22 +1,12 @@
 ---
-layout: blog
+layout: default
 ---
 <div id="wrapper">
   	<div class="section shell">
     	<div class="section contents">
-			<h2 class="info">{{ page.date | date: "%A, %B %d, %Y" }}</h2>
-			<h1 class="title">{{ page.title }}</h1>
+			<h1 class="notop">{{ page.title }}</h1>
+			<h2 class="info">{{ page.date | date: "%A, %B %d, %Y" }}, by {{ page.author }} in {{ page.category }}</h2>
 			{{ content }}
 			{% include share-tile.html %}
 		</div>
 	</div>
-	<div class="section shell" style="background-image:url('/assets/hero_desk_1400.jpg'); background-position: bottom center; background-size: cover;">
-	    <div class="section shell blue">
-	      <div class="section contents">
-		        <h1 style="max-width: 650px; text-align: center; position: relative; margin: 0 auto; margin-top: 50px;">Our tight-knit team is dedicated to using technology to make the world a better place. If you share our vision and are up to the challenge, we're always on the lookout for our next great addition.</h1>
-		        <div class="section shell" style="text-align:center;">
-		          	<a href="mailto:careers@joltsensor.com?subject=Job%20Inquiry"><button style="display: inline block; margin: 40px auto;">Join our team</button></a>
-		        </div>
-	      </div>
-	    </div>
-	  </div>

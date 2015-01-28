@@ -1,5 +1,5 @@
 name: Jolt
 highlighter: pygments
-permalink: none
+permalink: /blog/:categories/:title.html
 description: A wearable head impact sensor for youth athletes
 url: http://www.joltsensor.com
