@@ -14,7 +14,7 @@ title: Jobs at Jolt - Better concussion detection through real-time head impact 
         We're a small team of engineers and athletes who like to work hard and play hard. Our highly collaborative group tackles big problems at a rapid pace, but always keeps things relaxed and fun. Sound like your kind of place? Check out the current job openings below. If you don't see the perfect spot for you, don't hesitate to shoot us your resume and a quick note at <a href="mailto:careers@joltsensor.com">careers@joltsensor.com</a>, and we'll keep you in mind for future openings (or, if you're that awesome, maybe we'll even create a special position just for you).
       </p>
       <h2>Current Openings</h2>
-      {% if site.data.jobs == empty %}
+      <!--{% if site.data.jobs == empty %}-->
         <div class="icon shell">
             <div class="icon holder">
               <img src="/assets/icons/general/nosymbol.png"/>
@@ -23,7 +23,7 @@ title: Jobs at Jolt - Better concussion detection through real-time head impact 
               We don't have any open positions right now
             </div>
         </div>
-      {% else %}
+      <!--{% else %}
         {% for job in site.data.jobs %}
           <div class="icon shell">
             <div class="icon holder">
@@ -32,6 +32,6 @@ title: Jobs at Jolt - Better concussion detection through real-time head impact 
             <li><a href={{ job.link }}>{{ job.position }}</a> in {{ job.city }}</li>
           </div>
         {% endfor %}
-      {% endif %}
+      {% endif %}-->
     </div>
   </div> <!-- End of section -->
