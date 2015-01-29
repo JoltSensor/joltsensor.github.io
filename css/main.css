@@ -52,7 +52,7 @@ ul li, ol li {
 }
 
 p img {
-  margin: 20px 25px;
+  margin: 16px 0px;
 }
 
 blockquote {
@@ -263,6 +263,10 @@ nav.right a.active {
 
 .signup.section.shell .section.contents {
   padding: 50px 5%;
+}
+
+.section.contents p img {
+  width: 100%;
 }
 
 .icon.shell {
