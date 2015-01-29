@@ -14,7 +14,7 @@ title: Jolt Press - Better concussion detection through real-time head impact tr
 		{% for article in site.data.articles limit:8 %}
 			<div class="icon shell">
 		        <div class="icon holder">
-		        	<img src={{ article.icon }}/>
+		        	<img src="{{ article.icon }}" />
 		        </div>
 		        <li><a href={{ article.link }}>{{ article.source }}</a> on {{ article.date | date: "%A, %B %d, %Y" }}</li>
   			</div>
