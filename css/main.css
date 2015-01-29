@@ -513,8 +513,4 @@ footer nav.right a:hover {
     visibility: hidden;
   }
 
-  header nav.right li.hidden {
-    margin: 0 0 0 -16px;
-  }
-
 }
