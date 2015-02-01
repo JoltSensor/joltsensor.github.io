@@ -9,11 +9,11 @@ It's been a while since our last update, as we've been working full steam ahead 
 
 Before we share the designs for those shirts, we'd also like to share a slight rebranding effort that we just completed. We're still Jolt, but we've made some updates to our logo and branding to make it cleaner, bolder, and more memorable. In the graphic below, you can see the changes are subtle, but noticeable. The circular logo has been dilated down to maintain better clarity at small sizes, and the positive and negative spaces in it have been inverted. Coupled with an updated typeface, this is the new face of Jolt that will appear on your shirts and will be propagated to our website, social media pages, etc. in the coming weeks.
 
-*Process pictures
+![](/assets/blog/images/redesign_process.png)
 
 So, without further ado, here are the shirts that we'll soon be shipping out to everyone!
 
-*T-shirt pictures
+![](/assets/blog/images/shirt_designs.png)
 
 Through the coming weeks, we'll continue to share updates as we finalize manufacturing considerations (and will hopefully have some cool pictures of the manufacturing facilities, tooling, etc. to share). For those of you who haven't completed your backer surveys yet, please do so as soon as possible so we can start sending your rewards. And if you have any friends or family who are interested in getting a Jolt Sensor but missed the Kickstarter, we now have open pre-orders on our website that will be manufactured in the same batch as the Kickstarter orders.
 
