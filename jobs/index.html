@@ -29,7 +29,7 @@ title: Jobs at Jolt - Better concussion detection through real-time head impact 
             <div class="icon holder">
               <img src={% if job.type == "Mobile Developer" %}"/assets/icons/general/phone.png"{% elsif job.type == "Web Developer" %}"/assets/icons/general/monitor.png"{% elsif job.type == "Business" %}"/assets/icons/general/briefcase.png"{% elsif job.type == "Communication" %}"/assets/icons/general/megaphone.png"{% elsif job.type == "Mechanical Engineer" %}"/assets/icons/general/gear.png"{% elsif job.type == "Electrical Engineer" %}"/assets/icons/general/chip.png"{% elsif job.type == "Designer" %}"/assets/icons/general/palette.png"{% endif %}/>
             </div>
-            <li><a href={{ job.link }}>{{ job.position }}</a> in {{ job.city }}</li>
+            <li><a href={{ job.link }}><span style="font-weight: 400;">{{ job.position }}</span></a> in {{ job.location }}</br></br><span style="font-weight: 400;">Description</span></br>{{ job.description }}</br></br><span style="font-weight: 400;">Qualifications</span></br>{{ job.qualifications }}</li>
           </div>
         {% endfor %}
       {% endif %}

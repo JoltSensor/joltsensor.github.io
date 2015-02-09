@@ -23,11 +23,11 @@ footer #mc_embed_signup form {
   width: 400px;
   height: 22px;
   border: 0 none;
-  border-bottom: 3px solid rgb(179,179,179);
+  border-bottom: 2px solid rgb(179,179,179);
   font-family: "Roboto", sans-serif;
   color: rgb(102,102,102); 
   font-size: 19px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 22px;
   text-align: center;
   text-decoration: none;
@@ -83,7 +83,6 @@ footer #mc_embed_signup form {
     width: 100%;
     font-size: 16px;
     line-height: 26px;
-    border-bottom-width: 2px;
   }
 
   #mc_embed_signup .button {
