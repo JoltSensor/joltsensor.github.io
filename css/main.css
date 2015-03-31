@@ -15,7 +15,7 @@ body {
   background: rgb(242,242,242);
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   text-align: left;
   color: rgb(102,102,102);
 }
@@ -93,6 +93,16 @@ button {
   cursor: pointer;
   color: rgb(255,255,255);
   border: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+}
+
+button:hover {
+  background-color: rgb(23,92,194);
+}
+
+button:active {
+  background-color: rgb(21,83,174);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.26);
 }
 
 button a:hover {
@@ -137,6 +147,7 @@ hr {
   z-index: 10;
   top: 0;
   background-color: rgb(26,102,216);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
 }
 
 #header {
@@ -200,6 +211,29 @@ nav.right a {
 nav.right li {
   margin: 0 0 0 16px;
   font-size: 14px;
+}
+
+nav.right li.shop {
+  border-radius: 3px;
+  background-color: rgb(18,72,152);
+  padding: 0 12px;
+  opacity: 1.0;
+}
+
+nav.right li.shop:hover {
+  background-color: rgb(16,64,136);
+}
+
+nav.right li.shop:active {
+  background-color: rgb(14,57,122);
+}
+
+nav.right li.shop a {
+  opacity: 1.0;
+}
+
+nav.right li.shop a {
+  font-weight: 400;
 }
 
 nav.right a:hover {
@@ -346,6 +380,78 @@ pre code {
   font-weight: 300;
 }
 
+/* SHOP PRICING PANELS
+============================================================*/
+
+.price-tier {
+  width: 25%;
+  float: left;
+}
+
+.price-tier .label {
+  height: 40px;
+  margin: 0 5px;
+  padding: 10px;
+  background-color: rgb(21,83,174);
+  color: rgb(255,255,255);
+  line-height: 40px;
+  text-align: center;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.price-tier .price {
+  height: 40px;
+  margin: 0 5px;
+  padding: 20px 20px 0 20px;
+  background-color: rgb(230,230,230);
+  color: rgb(26,102,216);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: center;
+}
+
+.price-tier .note {
+  height: auto;
+  overflow: auto;
+  margin: 0 5px;
+  padding: 0 20px 20px 20px;
+  background-color: rgb(230,230,230);
+  color: rgb(102,102,102);
+  line-height: 24px;
+  text-align: center;
+}
+
+.price-tier .details {
+  height: auto;
+  overflow: auto;
+  margin: 0 5px;
+  padding: 0 20px 20px 20px;
+  line-height: 24px;
+  background-color: rgb(230,230,230);
+  text-align: center;
+}
+
+.price-tier .order {
+  height: auto;
+  overflow: auto;
+  margin: 0 5px;
+  padding: 0 20px 20px 20px;
+  background-color: rgb(230,230,230);
+  line-height: 40px;
+  text-align: center;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.order button {
+  border-radius: 3px;
+  width: 100%;
+  margin: 0;
+  padding: 14px 0;
+}
+
 /* FOOTER
 ============================================================*/
 
@@ -408,6 +514,30 @@ footer nav.right a {
 
 footer nav.right a:hover {
   font-weight: 500;
+}
+
+/* MEDIA QUERY - 1006PX
+============================================================*/
+
+@media (max-width:1006px){
+
+  .price-tier {
+    width: 50%;
+    margin: 5px 0;
+  }
+
+}
+
+/* MEDIA QUERY - 643PX
+============================================================*/
+
+@media (max-width:643px){
+
+  .price-tier {
+    width: 100%;
+    margin: 5px 0;
+  }
+
 }
 
 /* MEDIA QUERY - 625PX
@@ -479,7 +609,7 @@ footer nav.right a:hover {
   }
 
   .section.contents {
-    padding: 10% 5%;
+    padding: 15px 5%;
   }
 
   footer .container {
@@ -498,6 +628,10 @@ footer nav.right a:hover {
     margin: 0 auto;
   }
 
+  footer nav.right {
+    max-width: 220px;
+  }
+
 }
 
 /* MEDIA QUERY - 490PX
@@ -507,6 +641,10 @@ footer nav.right a:hover {
 
   nav.right li {
     margin-left: 5px;
+  }
+
+  footer nav.right li {
+    margin: 0 3px;
   }
 
   footer li {

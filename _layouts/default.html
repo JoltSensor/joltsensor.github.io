@@ -31,12 +31,11 @@
           </a>
         </nav>
         <nav class="right">
-          <li class="hidden"><a {% if page.title == "About Jolt - Better concussion detection through real-time head impact tracking" %} class="active" {% endif %} href="/about">About</a></li>
+          <li><a {% if page.title == "About Jolt - Better concussion detection through real-time head impact tracking" %} class="active" {% endif %} href="/about">About</a></li>
           <li><a {% if page.title == "Jolt Products - Better concussion detection through real-time head impact tracking" %} class="active" {% endif %} href="/products">Products</a></li>
           <li><a {% if page.title == "Jolt FAQ - Better concussion detection through real-time head impact tracking" %} class="active" {% endif %} href="/faq">FAQ</a></li>
-          <li><a {% if page.title == "Jolt Blog - Better concussion detection through real-time head impact tracking" %} class="active" {% endif %} href="/blog">Blog</a></li>
-          <li data-celery="joltsensor"><a style="cursor: pointer;">Pre-Order</a></li>
-          <script type="text/javascript" src="https://www.trycelery.com/js/celery.js"></script>
+          <li class="hidden"><a {% if page.title == "Jolt Blog - Better concussion detection through real-time head impact tracking" %} class="active" {% endif %} href="/blog">Blog</a></li>
+          <li class="shop"><a class="shop" href="/shop">Shop Now</a></li>
         </nav>
       </div>
     </div> <!-- End of header -->
@@ -51,7 +50,7 @@
           <p>Join our mailing list for the latest updates &amp; promotions:</p>
           <div id="mc_embed_signup">
             <form action="http://joltsensor.us3.list-manage.com/subscribe/post?u=30b31dec2dac04ee2d025ff98&amp;id=fb4cff7c0c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email address" required>
+              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email address" required autocomplete="off">
               <div style="position: absolute; left: -5000px;">
                 <input type="text" name="b_30b31dec2dac04ee2d025ff98_fb4cff7c0c" value="">
               </div>
@@ -73,6 +72,7 @@
             <li><a href="/press">Press</a></li>
             <li><a href="/jobs">Jobs</a></li>
             <li><a href="/contact">Contact</a></li>
+            <li><a href="/order">Shop</a></li>
           </nav>
         </div>
       </footer><!-- End of footer -->

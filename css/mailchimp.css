@@ -36,6 +36,11 @@ footer #mc_embed_signup form {
   background: none;
 }
 
+#mc_embed_signup input:focus {
+  border-bottom: 2px solid rgb(26,102,216);
+  color: rgb(26,102,216);
+}
+
 ::-webkit-input-placeholder { /* WebKit browsers */
   color: rgb(153,153,153);
 }
@@ -72,6 +77,14 @@ footer #mc_embed_signup form {
   cursor: pointer;
   color: rgb(26,102,216);
   border: none;
+}
+
+#mc_embed_signup .button:hover {
+  color: rgb(23,92,194);
+}
+
+#mc_embed_signup .button:active {
+  color: rgb(21,83,174);
 }
 
 /* MEDIA QUERY - 625PX

@@ -4,21 +4,31 @@ title: Jolt Press - Better concussion detection through real-time head impact tr
 ---
 
 <div id="wrapper">
-  <div class="section shell">
-    <div class="section contents">
-		<h1 class="notop">Press Materials</h1>
-		<p>
-			Jolt is on a mission to help athletes train smarter and safer through innovative technology solutions. We look forward to sharing more of our story with you. You can start out with our <a href="/press/presspacket">press packet</a> for logos, headshots, photography, and other useful materials. If you'd like to learn more, just drop us a line at <a href="mailto:press@joltsensor.com">press@joltsensor.com</a>. Thanks for spreading the word about Jolt!
-		</p>
-		<a href="/press/presspacket"><button>View Press Packet</button></a>
-		<h2>Recent Coverage</h2>
-		{% for article in site.data.articles limit:9 %}
-			<div class="icon shell">
-		        <div class="icon holder">
-		        	<img src="{{ article.icon }}" />
-		        </div>
-		        <li><a href={{ article.link }}>{{ article.source }}</a> on {{ article.date | date: "%A, %B %d, %Y" }}</li>
-  			</div>
-  		{% endfor %}
-	</div>
-  </div> <!-- End of section -->
+  	<div class="section shell">
+	    <div class="section contents">
+			<h1 class="notop">Press Materials</h1>
+			<p>
+				Jolt is on a mission to help athletes train smarter and safer through innovative technology solutions. We look forward to sharing more of our story with you. You can start out with our <a href="/press/presspacket">press packet</a> for logos, headshots, photography, and other useful materials. If you'd like to learn more, just drop us a line at <a href="mailto:press@joltsensor.com">press@joltsensor.com</a>. Thanks for spreading the word about Jolt!
+			</p>
+			<p>You can also subscribe to our press mailing list to be the first to receive press releases, product announcements, and other important Jolt-related news:</p>
+        	<div id="mc_embed_signup" style="margin: 24px 0 0 0;">
+            	<form action="//joltsensor.us3.list-manage.com/subscribe/post?u=30b31dec2dac04ee2d025ff98&amp;id=2b0e447f18" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              		<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email address" required style="float:left; text-align:left" autocomplete="off">
+              		<div style="position: absolute; left: -5000px;">
+                		<input type="text" name="b_30b31dec2dac04ee2d025ff98_2b0e447f18" value="">
+              		</div>
+              		<div class="clear"><input type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe" class="button" style="float:left; text-align:left; margin: 0 12px 28px 12px;"></div>
+            	</form>
+          	</div><!-- End of sign-up form -->
+          	<a href="/press/presspacket"><button>View Press Packet</button></a>
+			<h2>Recent Coverage</h2>
+			{% for article in site.data.articles limit:9 %}
+				<div class="icon shell">
+			        <div class="icon holder">
+			        	<img src="{{ article.icon }}" />
+			        </div>
+			        <li><a href={{ article.link }}>{{ article.source }}</a> on {{ article.date | date: "%A, %B %d, %Y" }}</li>
+	  			</div>
+	  		{% endfor %}
+		</div>
+	  </div> <!-- End of section -->

@@ -14,19 +14,19 @@ title: Jobs at Jolt - Better concussion detection through real-time head impact 
         We're a small team of engineers and athletes who like to work hard and play hard. Our highly collaborative group tackles big problems at a rapid pace, but always keeps things relaxed and fun. Sound like your kind of place? Check out the current job openings below. If you don't see the perfect spot for you, don't hesitate to shoot us your resume and a quick note at <a href="mailto:careers@joltsensor.com">careers@joltsensor.com</a>, and we'll keep you in mind for future openings (or, if you're that awesome, maybe we'll even create a special position just for you).
       </p>
       <h2>Current Openings</h2>
-      <div class="icon shell">
+      <!--<div class="icon shell">
           <div class="icon holder">
             <img src="/assets/icons/general/nosymbol.png"/>
           </div>
           <li>We don't have any open positions right now</li>
-      </div>
-      <!--{% for job in site.data.jobs %}
+      </div>-->
+      {% for job in site.data.jobs %}
         <div class="icon shell">
           <div class="icon holder">
             <img src={% if job.type == "Mobile Developer" %}"/assets/icons/general/phone.png"{% elsif job.type == "Web Developer" %}"/assets/icons/general/monitor.png"{% elsif job.type == "Business" %}"/assets/icons/general/briefcase.png"{% elsif job.type == "Communication" %}"/assets/icons/general/megaphone.png"{% elsif job.type == "Mechanical Engineer" %}"/assets/icons/general/gear.png"{% elsif job.type == "Electrical Engineer" %}"/assets/icons/general/chip.png"{% elsif job.type == "Designer" %}"/assets/icons/general/palette.png"{% endif %}/>
           </div>
-          <li><a href={{ job.link }}><span style="font-weight: 400;">{{ job.position }}</span></a> in {{ job.location }} (<a href={{ job.link }}>Apply</a>)</br></br><span style="font-weight: 400;">Description</span></br>{{ job.description }}</br></br><span style="font-weight: 400;">Qualifications</span></br>{{ job.qualifications }}</li>
+          <li><a href="mailto:jobs@joltsensor.com?subject={{ job.position }}"><span style="font-weight: 400;">{{ job.position }}</span></a></br>{{ job.hours }} in {{ job.location }}</br></br><span style="font-weight: 400;">Description</span></br>{{ job.description }}</br></br><span style="font-weight: 400;">Qualifications</span></br>{{ job.qualifications }}</li>
         </div>
-      {% endfor %}-->
+      {% endfor %}
     </div>
   </div> <!-- End of section -->
