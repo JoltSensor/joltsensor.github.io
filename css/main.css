@@ -398,6 +398,7 @@ pre code {
   text-align: center;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
+  font-weight: 500;
 }
 
 .price-tier .price {
