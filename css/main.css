@@ -272,6 +272,14 @@ nav.right a.active {
   left: 0;
 }
 
+.hero.screen {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(63,124,215,0.85);
+  z-index: 1;
+  position: absolute;
+}
+
 /* CONTENT SECTION
 ============================================================*/
 
