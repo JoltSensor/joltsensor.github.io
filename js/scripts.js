@@ -17,12 +17,12 @@ $(window).scroll(function () {
     if(difference > 60){
 
         $('#header_wrapper').css({'background-color' : "rgba(26,102,216,0)"});
-        $('#header_Wrapper').css({'box-shadow' : '0 2px 5px rgba(0,0,0,0)'});
+        $('#header_wrapper').css({'box-shadow' : '0 2px 5px rgba(0,0,0,0)'});
 
     }else {
 
         $('#header_wrapper').css({'background-color' : "rgba(26,102,216,1)"});
-        $('#header_Wrapper').css({'box-shadow' : '0 2px 5px rgba(0,0,0,0.26)'});
+        $('#header_wrapper').css({'box-shadow' : '0 2px 5px rgba(0,0,0,0.26)'});
 
     }
 

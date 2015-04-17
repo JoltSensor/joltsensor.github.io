@@ -324,6 +324,10 @@ nav.right a.active {
   overflow:auto;
 }
 
+.section.shell.dark {
+  background-color: rgb(230,230,230);
+}
+
 .signup.section.shell {
   background-color: rgb(230,230,230);
   text-align: center;
@@ -338,12 +342,70 @@ nav.right a.active {
   padding: 48px 5%;
 }
 
+.section.center {
+  text-align: center;
+}
+
 .signup.section.shell .section.contents {
   padding: 50px 5%;
 }
 
 .section.contents p img {
   width: 100%;
+}
+
+.section .heading {
+  font-size: 36px;
+  color: rgb(26,102,216);
+  display: block;
+  font-weight: 400;
+}
+
+.section .subheading {
+  font-size: 18px;
+  display: block;
+  font-weight: 300;
+}
+
+.card_wrapper {
+  display: block;
+  float: left;
+}
+
+.card_wrapper.col-3 {
+  width: 33.33%
+}
+
+.card_wrapper.col-6 {
+  width: 16.66%
+}
+
+.card {
+  margin: 20px;
+}
+
+.card.center {
+  text-align: center;
+}
+
+.card img {
+  width: 60px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding:10px;
+  border: 2px solid rgb(230,230,230);
+  border-radius: 40px;
+  display: block;
+}
+
+
+.card .heading {
+  font-size: 36px;
+  color: rgb(26,102,216);
+}
+
+.card .subheading {
+  font-size: 18px;
 }
 
 .icon.shell {
