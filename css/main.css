@@ -20,6 +20,9 @@ body {
   color: rgb(102,102,102);
 }
 
+/* HEADERS
+============================================================*/
+
 h1, h2 {
   font-weight: 400;
   color: rgb(26,102,216);
@@ -46,6 +49,9 @@ h3.dark {
   color: rgb(102,102,102);
 }
 
+/* OTHER TEXT/CONTENT
+============================================================*/
+
 p, li {
   font-size:19px;
   font-weight:300;
@@ -64,6 +70,7 @@ ul li, ol li {
 
 p img {
   margin: 16px 0px;
+  width: 100%;
 }
 
 blockquote {
@@ -91,6 +98,9 @@ a {
   color: rgb(26, 102, 216);
   text-decoration: none;
 }
+
+/* BUTTONS
+============================================================*/
 
 button {
   margin: 16px 16px 16px 0;
@@ -120,16 +130,7 @@ button a:hover {
   border-bottom: none;
 }
 
-hr {
-  width: 100px;
-  height: 0;
-  display: block;
-  border: 0;
-  border-top: 1px solid rgb(229,229,229);
-  margin: 30px 0;
-}
-
-/* SPECIAL ALIGNMENT
+/* ALIGNMENT CLASSES
 ============================================================*/
 
 .nobottom {
@@ -152,27 +153,8 @@ hr {
   text-align: right;
 }
 
-/* COLUMNS
-============================================================*/
-
-.col-2 {
-  width: 25%;
-}
-
-.col-3 {
-  width: 33.33%
-}
-
-.col-4 {
-  width: 25%;
-}
-
-.col-6 {
-  width: 16.66%;
-}
-
-.col-8 {
-  width: 12.5%;
+.bottom {
+  margin-bottom: -50px;
 }
 
 /* WRAPPER
@@ -218,8 +200,6 @@ nav a {
 
 nav li, footer li {
   display: inline-block;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
   font-size: 14px;
   vertical-align: middle;
   line-height: 30px;
@@ -231,6 +211,9 @@ nav img {
   vertical-align: middle;
   margin-top: 5px;
 }
+
+/* NAV LEFT
+============================================================*/
 
 nav.left {
   float: left;
@@ -245,6 +228,9 @@ nav.left a:hover {
   text-decoration: none;
 }
 
+/* NAV RIGHT
+============================================================*/
+
 nav.right {
   float: right;
 }
@@ -257,6 +243,21 @@ nav.right li {
   margin: 0 0 0 16px;
   font-size: 14px;
 }
+
+nav.right a:hover {
+  font-weight: 400;
+  opacity: 1.0;
+  text-decoration: none;
+}
+
+nav.right a.active {
+  font-weight: 400;
+  opacity: 1.0;
+  text-decoration: none;
+}
+
+/* NAV SHOP BUTTON
+============================================================*/
 
 nav.right li.shop {
   border-radius: 3px;
@@ -279,18 +280,6 @@ nav.right li.shop a {
 
 nav.right li.shop a {
   font-weight: 400;
-}
-
-nav.right a:hover {
-  font-weight: 500;
-  opacity: 1.0;
-  text-decoration: none;
-}
-
-nav.right a.active {
-  font-weight: 500;
-  opacity: 1.0;
-  text-decoration: none;
 }
 
 /* HERO
@@ -320,18 +309,7 @@ nav.right a.active {
   height: auto;
   overflow: auto;
   margin: 0 auto;
-  padding: 230px 5%;
-  color: rgb(255,255,255);
-}
-
-.content {
-  width: 90%;
-  max-width: 1000px;
-  height: auto;
-  overflow: auto;
-  margin: 0 auto;
   padding: 0 5%;
-  color: rgb(255,255,255);
 }
 
 .heading, .subheading {
@@ -348,7 +326,7 @@ nav.right a.active {
   font-weight: 300;
 }
 
-/* CONTENT SECTION
+/* CONTENT SECTIONS
 ============================================================*/
 
 .section {
@@ -365,27 +343,22 @@ nav.right a.active {
   background-color: rgb(26,102,216);
 }
 
-.section .contents {
-  width: auto;
-  height: auto;
-  overflow: auto;
-  max-width: 1000px;
-  margin: 0 auto;
+.section .content {
   padding: 48px 5%;
 }
 
-.contents .bottom {
-  margin-bottom: -50px;
-  width: 100%;
-}
+/* COLUMNS
+============================================================*/
 
-.contents p img {
-  width: 100%;
-}
-
-.card_wrapper {
+.column {
+  box-sizing: border-box;
+  padding: 20px;
   display: block;
   float: left;
+}
+
+.col-2 {
+  width: 25%;
 }
 
 .col-3 {
@@ -397,72 +370,31 @@ nav.right a.active {
 }
 
 .col-6 {
-  width: 16.66%
+  width: 16.66%;
 }
 
-.card {
-  margin: 20px;
+.col-8 {
+  width: 12.5%;
 }
+
+/* CROPPED IMAGES/ICONS
+============================================================*/
 
 img.circle {
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
   margin-bottom: 10px;
-  padding:10px;
-  border: 2px solid rgb(230,230,230);
   border-radius: 50%;
   display: block;
 }
 
-img.person {
-  width: 50%;
-  padding: 0;
+img.border {
   border: 2px solid rgb(230,230,230);
-  border-radius: 50%;
 }
 
-img.partner {
-  width: 100%;
-  padding: 0;
-  border: none;
-  border-radius: 0;
-}
-
-.name {
-  font-size: 20px;
-  color: rgb(26,102,216);
-}
-
-.screens {
-  width: 50%;
-  margin: 20px;
-}
-
-/* CODE FORMATTING
-============================================================*/
-
-code, pre {
-  font-family: 'Source Code Pro';
-  font-size: 18px;
-  border: 1px solid rgb(220,220,220);
-  border-radius: 3px;
-  background: rgb(242,242,242);
-  margin: 1px;
-  padding: 1px;
-}
-
-pre {
-  padding: 10px;
-  overflow: auto;
-}
-
-pre code {
-  border: none;
-  border-radius: 0;
-  background: none;
-  margin: 0;
-  padding: 0;
+img.padded {
+  padding:10px;
 }
 
 /* BLOG STUFF
@@ -586,20 +518,6 @@ footer li {
   color: rgb(150,150,150);
 }
 
-footer img.icon {
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-}
-
-footer h2{
-  margin-bottom: 0;
-  font-size: 18px;
-  line-height: 20px;
-  color: rgb(150,150,150);
-  font-weight: 200;
-}
-
 footer li a {
   color: rgb(26, 102, 216);
   text-decoration: none;
@@ -614,7 +532,33 @@ footer nav.right a {
 }
 
 footer nav.right a:hover {
-  font-weight: 500;
+  font-weight: 400;
+}
+
+/* CODE FORMATTING
+============================================================*/
+
+code, pre {
+  font-family: 'Source Code Pro';
+  font-size: 18px;
+  border: 1px solid rgb(220,220,220);
+  border-radius: 3px;
+  background: rgb(242,242,242);
+  margin: 1px;
+  padding: 1px;
+}
+
+pre {
+  padding: 10px;
+  overflow: auto;
+}
+
+pre code {
+  border: none;
+  border-radius: 0;
+  background: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* MEDIA QUERY - 1006PX
