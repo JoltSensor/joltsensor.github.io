@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="64px"
+   height="64px"
+   id="svg11430"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="kickstarter.svg">
+  <defs
+     id="defs11432" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="4.2176761"
+     inkscape:cx="12.215936"
+     inkscape:cy="19.057678"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:document-units="px"
+     inkscape:grid-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1031"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata11435">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <path
+       style="fill:#1a66d8;fill-opacity:1;stroke:none"
+       d="m 22.565969,14 c -1.808776,0 -2.848652,0.404926 -3.994578,1.551601 -0.587625,0.588076 -0.771,0.838351 -1.08915,1.487326 -0.210601,0.429525 -0.466801,1.076851 -0.567751,1.438576 l -0.1824,0.6576 -0.0255,12.371633 c -0.0165,8.39243 0,12.587107 0.0615,13.039508 0.132,1.0089 0.294975,1.556776 0.714151,2.414701 0.318225,0.65145 0.499275,0.898276 1.08915,1.487401 0.788176,0.787125 1.355326,1.115401 2.391602,1.384576 0.78585,0.20415 2.425126,0.22515 3.205952,0.04125 0.976876,-0.230175 1.688326,-0.639601 2.466077,-1.423126 0.915375,-0.922126 1.303951,-1.644376 1.623526,-3.010652 0.11025,-0.471225 0.14235,-1.263901 0.17985,-4.382477 l 0.0465,-3.809628 4.559778,5.687404 c 2.507551,3.128026 4.708577,5.817678 4.891052,5.975178 0.807826,0.697276 1.744127,1.016551 3.136577,1.071226 1.989077,0.07807 3.137477,-0.356925 4.474953,-1.698001 0.646275,-0.648076 0.844876,-0.912151 1.125151,-1.487401 0.487725,-1.001026 0.624375,-1.590976 0.62685,-2.712677 0.0075,-1.763401 -0.217425,-2.193226 -2.836052,-5.507628 -1.089525,-1.378951 -2.774176,-3.512252 -3.742802,-4.742103 l -1.759651,-2.237476 3.018377,-4.379928 c 1.660126,-2.409676 3.139502,-4.622927 3.288152,-4.916778 0.396675,-0.7845 0.5505,-1.465876 0.55485,-2.466076 0.0075,-1.063501 -0.10665,-1.547401 -0.585675,-2.548352 -0.32235,-0.6735 -0.477,-0.881775 -1.122601,-1.520776 -1.252051,-1.239075 -2.520901,-1.767151 -4.236077,-1.764751 -1.082851,0 -1.729576,0.149325 -2.586827,0.593401 -1.249126,0.647025 -1.630801,1.113525 -5.435703,6.643054 l -3.370352,4.896228 -0.04875,-3.909828 c -0.0345,-2.780626 -0.0783,-4.004702 -0.151575,-4.238552 -0.25365,-0.809326 -0.689926,-1.475401 -1.484776,-2.270927 -0.655951,-0.6564 -0.909151,-0.8469 -1.484851,-1.12515 -0.940801,-0.454651 -1.557977,-0.588226 -2.748677,-0.588226 z"
+       id="rect16558"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/bdharva/Dropbox/Jolt/software/jolt.github.io/assets/icons/partners/kickstarter.png"
+       inkscape:export-xdpi="89.971069"
+       inkscape:export-ydpi="89.971069" />
+  </g>
+</svg>

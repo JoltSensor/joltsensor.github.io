@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="64px"
+   height="64px"
+   id="svg12241"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="kansascity.svg">
+  <defs
+     id="defs12243" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="8.3611742"
+     inkscape:cx="22.545455"
+     inkscape:cy="27.090909"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:document-units="px"
+     inkscape:grid-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1031"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata12246">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <path
+       inkscape:connector-curvature="0"
+       d="M 36.767928,15.916386 35.869247,14.815356 35.461567,14 l -22.952218,0.856123 -0.815367,0.04077 0.448447,0.896891 -0.08154,0.815352 0.896887,1.386105 1.100727,1.467639 1.100731,0.978425 0.770776,0.08154 0.53379,0.326145 0,1.05996 -0.65228,0.570748 -0.163076,0.815353 0.733822,1.223036 0.896894,1.059959 0.896887,0.652283 0.48921,4.158308 0.112035,12.864712 0.08153,1.671472 0.163069,1.919963 8.000451,-0.309141 8.276147,-0.244607 7.419727,-0.285671 4.156521,-0.08213 0.77369,1.221841 -0.244008,1.179579 -1.101021,0.857004 -0.204136,0.655265 L 48.017435,50 l 1.389089,-0.244611 0.612412,-1.959236 0.232321,-2.088752 0.748236,-0.911267 0.925843,-0.530281 0.01833,-1.087831 0.362351,-0.690621 -0.604226,-0.907205 -0.47466,0.351024 -0.710644,-0.794317 -0.45829,-1.69724 0.28567,-0.898085 -0.69335,-1.222433 -0.652875,-1.631903 -1.711651,-0.285075 -2.485337,-1.996725 -0.613011,-1.46704 0.285079,-1.141498 0.734413,-2.160394 0.163668,-1.021279 -0.695137,-0.367804 -2.444873,-0.284479 -0.366613,-0.610621 -0.03987,-1.508706 -1.95685,-1.223628 -2.48773,-2.77161 -0.815352,-2.609137 -0.08213,-1.506909 0.28567,-0.815951 z"
+       id="MO"
+       class="state mo"
+       style="fill:#1a66d8;fill-opacity:1;stroke:none" />
+  </g>
+</svg>
