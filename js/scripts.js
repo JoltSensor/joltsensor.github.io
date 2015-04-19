@@ -32,7 +32,7 @@ $(window).scroll(function () {
 
     // Fade out words on hero with parallax
 
-    $('.content').css({'opacity': 1-(1.5*scrolled/height)});
+    $('#hero .content').css({'opacity': 1-(1.5*scrolled/height)});
 
 });
 
@@ -53,6 +53,6 @@ function setup() {
     var text_height = $('.content').height();
     var text_margin = (height - text_height) / 2;
 
-    $('.content').css({'margin-top': text_margin+"px"});
-    $('.content').css({'margin-bottom': text_margin+"px"});
+    $('#hero .content').css({'margin-top': text_margin+"px"});
+    $('#hero .content').css({'margin-bottom': text_margin+"px"});
 }
