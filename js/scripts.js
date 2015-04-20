@@ -32,6 +32,10 @@ $(window).scroll(function () {
 
     $('#hero').css({'top' : (-scrolled/2)+"px"});
 
+    // Stop any other animations affecting 
+    
+    $('#hero .content').stop();
+
     // Fade out hero content with scroll
 
     $('#hero .content').css({'opacity': 1-(1.5*scrolled/height)});
@@ -54,7 +58,9 @@ function setup() {
     $('#hero .content').css({'margin-top': text_margin+"px"});
     $('#hero .content').css({'margin-bottom': text_margin+"px"});
 
-    $('#hero .content').animate({opacity : 1.0}, 2000);
+    var scrolled = $(window).scrollTop();
+
+    $('#hero .content').animate({opacity : 1-(1.5*scrolled/height)}, 2000);
 
     $('.thumbnail').each(function( index ){
         var height = $('.thumbnail').children('.screen').height();
