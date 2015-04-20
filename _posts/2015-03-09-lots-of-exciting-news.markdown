@@ -3,6 +3,7 @@ title: "Lots of Exciting News"
 layout: post
 category: Updates
 author: Ben Harvatine
+hero: /assets/heros/blog/sprint-day-1.jpg
 ---
 
 ## Sprint Mobile Health Accelerator, powered by Techstars

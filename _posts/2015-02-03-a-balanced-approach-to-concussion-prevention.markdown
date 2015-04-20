@@ -3,6 +3,7 @@ title: "A Balanced Approach to Concussion Prevention"
 layout: post
 category: Thoughts
 author: Ben Harvatine
+hero: /assets/heros/blog/pocket-collapse.jpg
 ---
 
 With the Patriots’ exciting Super Bowl victory on the books, football season is coming to a close. But the impact that concussions have on countless lives doesn’t end with the season. Sports-related head impacts and concussions remain a big motivation for technological exploration, from [sensor products like ours](/products) to the development of better safety equipment for players. With each new season, helmet manufacturers show off their newest technology for the media to breathlessly report as the newest “concussion blocking” helmet on the market. While this kind of attention is great for continuing to raise awareness of concussions in sports, today’s news cycle of clickbait headlines and Twitter-deep takes misses much of the important nuance of the issue, leading to dangerous misconceptions around the science of head impacts.

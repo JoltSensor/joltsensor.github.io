@@ -1,8 +1,9 @@
 ---
-title: "Kickstarter T-shirts Are On The Way"
+title: "T-shirts Are On The Way"
 layout: post
 category: Updates
 author: Ben Harvatine
+hero: /assets/blog/images/plastics facility.jpg
 ---
 
 While you all are enjoying the holiday season with friends and families, we hope we can bring you some more holiday cheer!

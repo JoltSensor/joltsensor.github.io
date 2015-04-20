@@ -3,21 +3,31 @@ layout: default
 title: Jolt Blog - Better concussion detection through real-time head impact tracking
 ---
 
+<div id="hero" style="background-image: url('/assets/heros/hero_desk_1400.jpg');">
+	<div class="screen">
+    	<div class="content center">
+    		<span class="heading">The Jolt Blog</span>
+    		<span class="subheading">Reflections on process, insights, and inspiration.</span>
+    	</div>
+  	</div>
+</div>
 <div id="wrapper">
-  <div class="section shell">
-    <div class="section contents">
-		<h1 class="notop">The Jolt Blog</h1>
-		<p>
-			As we work to build amazing products and experiences for our loyal customers, we like to take time to reflect on our process and share insights, updates, and inspiration drawn from our work. If you like what you read, join our mailing list (using the form at the bottom of this page) to be alerted to new posts or <a href="/feed.xml">subscribe to the RSS feed</a>.
-		</p>
-		<h2>Recent Posts</h2>
-		{% for post in site.posts limit:8 %}
-			<div class="icon shell">
-		        <div class="icon holder">
-		          	<img src={% if post.category == "Updates" %}"/assets/icons/general/update.png"{% elsif post.category == "Thoughts" %}"/assets/icons/general/lightbulb.png"{% endif %}/>
-		        </div>
-		        <li><a href="{{ post.url }}">{{ post.title | replace: "</br>", " " }}</a> posted in {{ post.category }} on {{ post.date | date: "%m/%d/%Y" }}</li>
-		    </div>
-	  	{% endfor %}
-	</div>
-  </div> <!-- End of section -->
+  	<div class="section">
+	    <div class="content center">
+			{% for post in site.posts limit:8 %}
+				<div class="column col-2">
+					<a href="{{ post.url }}">
+						<div class="thumbnail" style="background-image: url('{{ post.hero }}');">
+							<div class="screen">
+								<div class="content">
+									<h2 class="no-top" style="top: 0;">{{ post.title | replace: "</br>", " " }}</h2>
+									<h3 class="no-top no-bottom">Posted {{ post.date | date: "%B %-d" }}</h3>
+									<h3 class="no-top no-bottom">in {{ post.category }}</h3>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+		  	{% endfor %}
+		</div>
+  	</div> <!-- End of section -->

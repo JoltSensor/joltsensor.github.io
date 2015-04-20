@@ -55,4 +55,12 @@ function setup() {
     $('#hero .content').css({'margin-bottom': text_margin+"px"});
 
     $('#hero .content').animate({opacity : 1.0}, 2000);
+
+    $('.thumbnail').each(function( index ){
+        var height = $('.thumbnail').children('.screen').height();
+        var text_height = $(this).children('.screen').children('.content').height();
+        var text_margin = (height - text_height) / 2;
+        $(this).children('.screen').children('.content').css({'margin-top': text_margin+"px"});
+        $(this).children('.screen').children('.content').css({'margin-bottom': text_margin+"px"});
+    })
 }

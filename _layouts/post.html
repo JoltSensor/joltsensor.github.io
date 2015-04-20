@@ -1,11 +1,16 @@
 ---
 layout: default
 ---
+<div id="hero" style="background-image: url('{{ page.hero }}');">
+	<div class="screen">
+    	<div class="content center">
+    		<span class="heading">{{ page.title }}</span>
+    	</div>
+  	</div>
+</div>
 <div id="wrapper">
-  	<div class="section shell">
-    	<div class="section contents">
-			<h1 class="notop">{{ page.title }}</h1>
-			<h2 class="info">{{ page.date | date: "%A, %B %d, %Y" }}, by {{ page.author }} in {{ page.category }}</h2>
+  	<div class="section">
+    	<div class="content">
 			<div  class="article">
 				{{ content }}
 			</div>

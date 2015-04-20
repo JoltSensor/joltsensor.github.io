@@ -295,7 +295,7 @@ nav.right li.shop a {
   width: 100%;
   height: 600px;
   background-size: cover;
-  background-position: bottom center;
+  background-position: center;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -312,6 +312,10 @@ nav.right li.shop a {
   z-index: 1;
   position: absolute;
   color: rgb(255,255,255);
+}
+
+.screen h1, .screen h2, .screen h3, .screen h4, .screen a {
+	color: rgb(255,255,255);
 }
 
 .content {
@@ -352,6 +356,11 @@ nav.right li.shop a {
 
 .section.blue {
   background-color: rgb(26,102,216);
+  color: rgb(255,255,255);
+}
+
+.section.blue h1, .section.blue h2, .section.blue h3, .section.blue a {
+	color: rgb(255,255,255);
 }
 
 .section .content {
@@ -397,6 +406,22 @@ nav.right li.shop a {
 
 .col-8 {
   width: 12.5%;
+}
+
+.thumbnail {
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.thumbnail .content {
+	padding: 0;
+}
+
+.thumbnail .screen {
+	background-color: rgba(26,102,216,0.85);
 }
 
 /* CROPPED IMAGES/ICONS
