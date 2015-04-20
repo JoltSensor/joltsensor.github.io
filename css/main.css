@@ -53,9 +53,9 @@ h3.dark {
 ============================================================*/
 
 p, li {
-  font-size:19px;
+  font-size:17px;
   font-weight:300;
-  line-height:30px;
+  line-height:28px;
   margin: 16px 0px 16px 0px;
 }
 
@@ -133,11 +133,11 @@ button a:hover {
 /* ALIGNMENT CLASSES
 ============================================================*/
 
-.nobottom {
+.no-bottom {
   margin-bottom: 0;
 }
 
-.notop {
+.no-top {
   margin-top: 0;
 }
 
@@ -151,6 +151,10 @@ button a:hover {
 
 .right {
   text-align: right;
+}
+
+.justify {
+  text-align: justify;
 }
 
 .bottom {
@@ -190,6 +194,7 @@ button a:hover {
 nav {
   color: rgb(255,255,255);
   height: 30px;
+  font-weight: 400;
 }
 
 nav a {
@@ -301,6 +306,7 @@ nav.right li.shop a {
   background-color: rgba(26,102,216,0.90);
   z-index: 1;
   position: absolute;
+  color: rgb(255,255,255);
 }
 
 .content {
@@ -347,8 +353,15 @@ nav.right li.shop a {
   padding: 48px 5%;
 }
 
-/* COLUMNS
+/* ROWS & COLUMNS
 ============================================================*/
+
+.row {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  display: block;
+}
 
 .column {
   box-sizing: border-box;
@@ -357,8 +370,12 @@ nav.right li.shop a {
   float: left;
 }
 
+.col-1 {
+  width: 100%;
+}
+
 .col-2 {
-  width: 25%;
+  width: 50%;
 }
 
 .col-3 {
@@ -395,6 +412,24 @@ img.border {
 
 img.padded {
   padding:10px;
+}
+
+/* BLOG STUFF
+============================================================*/
+
+.inline-icon {
+  line-height: 30px;
+  vertical-align: middle;
+  font-weight: 400;
+  color: rgb(26,102,216);
+  display: inline-block;
+}
+
+.inline-icon img {
+  height: 30px;
+  margin-bottom: -8px;
+  padding: 0;
+  display: inline-block;
 }
 
 /* BLOG STUFF
@@ -498,6 +533,7 @@ footer {
   color: rgb(150,150,150);
   font-size: 13px;
   text-align: center;
+  font-weight: 400;
 }
 
 footer .container {
@@ -532,7 +568,7 @@ footer nav.right a {
 }
 
 footer nav.right a:hover {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 /* CODE FORMATTING
