@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="60"
-   height="60"
+   width="64"
+   height="64"
    id="svg7760"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="New document 116">
+   sodipodi:docname="football-blue.svg">
   <defs
      id="defs7762" />
   <sodipodi:namedview
@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="14.066667"
-     inkscape:cx="30"
-     inkscape:cy="30"
+     inkscape:zoom="13.203125"
+     inkscape:cx="22.494675"
+     inkscape:cy="32"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -43,7 +43,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -51,10 +51,10 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-992.36218)">
+     transform="translate(0,-988.36218)">
     <g
        style="fill:#1a66d8;fill-opacity:1"
-       transform="matrix(0.83376385,0,0,0.83376385,9.3283394,1001.6094)"
+       transform="matrix(0.77689392,0,0,0.77689392,12.738326,1001.0249)"
        id="g6579">
       <path
          style="fill:#1a66d8;fill-opacity:1"
