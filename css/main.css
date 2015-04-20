@@ -168,6 +168,7 @@ button a:hover {
   z-index: 9;
   position: relative;
   background-color: rgb(249,249,249);
+  top: 600px;
 }
 
 /* HEADER
@@ -298,6 +299,10 @@ nav.right li.shop a {
   position: fixed;
   z-index: 1;
   top: 0;
+}
+
+#hero .content {
+  opacity: 0;
 }
 
 .screen {

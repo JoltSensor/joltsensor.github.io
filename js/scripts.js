@@ -14,6 +14,8 @@ $(window).scroll(function () {
     var scrolled = $(window).scrollTop();
     var difference = height - scrolled;
 
+    // Add fill to navbar when it hits bottom of hero
+
     if(difference > 60){
 
         $('#header_wrapper').css({'background-color' : "rgba(26,102,216,0)"});
@@ -30,7 +32,7 @@ $(window).scroll(function () {
 
     $('#hero').css({'top' : (-scrolled/2)+"px"});
 
-    // Fade out words on hero with parallax
+    // Fade out hero content with scroll
 
     $('#hero .content').css({'opacity': 1-(1.5*scrolled/height)});
 
@@ -40,19 +42,17 @@ function setup() {
 
     var height = $('#hero').height();
 
-    // Push the wrapper past the bottom of the screen
+    // Push the wrapper past the bottom of the hero
 
     $('#wrapper').css({'top': height+"px"});
 
-    // Fill the screen with the hero div
-
-    $('#hero').css({'height': height+"px"});
-
-    // Center hero text block on hero
+    // Center hero content vertically
 
     var text_height = $('.content').height();
     var text_margin = (height - text_height) / 2;
 
     $('#hero .content').css({'margin-top': text_margin+"px"});
     $('#hero .content').css({'margin-bottom': text_margin+"px"});
+
+    $('#hero .content').animate({opacity : 1.0}, 2000);
 }
