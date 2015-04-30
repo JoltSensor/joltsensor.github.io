@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="64px"
+   height="64px"
+   id="svg4219"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="nosymbol.svg">
+  <defs
+     id="defs4221" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="13.203125"
+     inkscape:cx="22.494675"
+     inkscape:cy="32"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:document-units="px"
+     inkscape:grid-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1031"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4224">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <path
+       style="fill:#666666;fill-opacity:1"
+       d="m 30.191328,42.906391 c 0,-3.919355 -0.015,-7.12606 -0.0345,-7.12606 -0.018,0 -1.323002,1.288802 -2.898454,2.864254 l -2.864704,2.864254 -1.196252,-1.102951 c -0.658051,-0.606601 -1.205702,-1.110302 -1.217102,-1.119302 -0.015,-0.015 1.606652,-1.643852 3.595655,-3.633005 l 3.616505,-3.616655 -3.607055,-3.606905 c -1.983903,-1.983753 -3.607055,-3.620856 -3.607055,-3.637956 0,-0.0165 0.545401,-0.5334 1.212152,-1.147201 l 1.212152,-1.116002 2.860054,2.859754 c 1.573052,1.573052 2.875354,2.859904 2.893954,2.859904 0.018,0 0.039,-3.205954 0.045,-7.12426 l 0.015,-7.12426 2.291253,2.099553 c 7.822362,7.16761 9.505364,8.720412 9.505364,8.769612 0,0.03 -0.613201,0.624301 -1.362602,1.320152 -0.749551,0.695851 -2.472304,2.294254 -3.828306,3.552005 -2.371203,2.199604 -2.461953,2.289754 -2.374953,2.359354 0.1521,0.1215 7.470761,6.92611 7.539611,7.00966 0.057,0.069 0.0495,0.093 -0.0675,0.2058 -0.305101,0.293551 -11.624117,10.653766 -11.672417,10.683616 -0.0405,0.024 -0.0525,-1.688853 -0.0525,-7.093361 z m 6.079359,-3.272404 0.630151,-0.660901 -1.766703,-1.766403 -1.766853,-1.766252 0,3.584105 0,3.584255 1.134302,-1.157102 c 0.623851,-0.636301 1.417802,-1.454252 1.764303,-1.817702 z m 0.4872,-15.283372 c -0.42135,-0.451951 -3.322804,-3.431855 -3.354004,-3.444755 -0.0195,-0.015 -0.036,1.594352 -0.036,3.561455 l 0,3.576605 1.768503,-1.768053 1.768653,-1.768202 -0.147001,-0.15705 z"
+       id="path6005-2-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/bdharva/Dropbox/Jolt/software/jolt.github.io/assets/icons/general/bluetooth.png"
+       inkscape:export-xdpi="89.971069"
+       inkscape:export-ydpi="89.971069" />
+  </g>
+</svg>

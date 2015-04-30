@@ -6,9 +6,19 @@ $(document).ready(function(){
     
     setTimeout(function(){setup();}, 3000);
 
+    /*$('.thumbnail').hover(
+        function(){$('.thumbnail').not(this).stop().animate({opacity: 0.5});},
+        function(){$('.thumbnail').not(this).stop().animate({opacity: 1});
+    });*/
+
+
 });
 
-$(window).scroll(function () {
+$(window).resize(setup);
+
+// Need to call alignment function on window resize to account for blog cards
+
+$(window).scroll(function () { 
 
     var height = $('#hero').height();
     var scrolled = $(window).scrollTop();
@@ -19,12 +29,12 @@ $(window).scroll(function () {
     if(difference > 60){
 
         $('#header_wrapper').css({'background-color' : "rgba(26,102,216,0)"});
-        $('#header_wrapper').css({'box-shadow' : '0 2px 5px rgba(0,0,0,0)'});
+        $('#header_wrapper').css({'border' : 'none'});
 
     }else {
 
         $('#header_wrapper').css({'background-color' : "rgba(26,102,216,1)"});
-        $('#header_wrapper').css({'box-shadow' : '0 2px 5px rgba(0,0,0,0.26)'});
+        $('#header_wrapper').css({'border-bottom' : '1px solid rgb(18,72,152)'});
 
     }
 
@@ -69,4 +79,4 @@ function setup() {
         $(this).children('.screen').children('.content').css({'margin-top': text_margin+"px"});
         $(this).children('.screen').children('.content').css({'margin-bottom': text_margin+"px"});
     })
-}
+};

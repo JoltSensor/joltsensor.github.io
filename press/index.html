@@ -2,33 +2,40 @@
 layout: default
 title: Jolt Press - Better concussion detection through real-time head impact tracking
 ---
-
+<div id="hero" style="background-image: url('/assets/heros/founders3.jpg'); background-position: center;">
+  <div class="screen">
+    <div class="content center">
+      <span class="heading">Press Materials</span>
+      <span class="subheading">Share Jolt with the world! All the cool kids are doing it...</span>
+    </div>
+  </div>
+</div>
 <div id="wrapper">
-  	<div class="section shell">
-	    <div class="section contents">
-			<h1 class="notop">Press Materials</h1>
-			<p>
-				Jolt is on a mission to help athletes train smarter and safer through innovative technology solutions. We look forward to sharing more of our story with you. You can start out with our <a href="/press/presspacket">press packet</a> for logos, headshots, photography, and other useful materials. If you'd like to learn more, just drop us a line at <a href="mailto:press@joltsensor.com">press@joltsensor.com</a>. Thanks for spreading the word about Jolt!
-			</p>
-			<p>You can also subscribe to our press mailing list to be the first to receive press releases, product announcements, and other important Jolt-related news:</p>
-        	<div id="mc_embed_signup" style="margin: 24px 0 0 0;">
-            	<form action="//joltsensor.us3.list-manage.com/subscribe/post?u=30b31dec2dac04ee2d025ff98&amp;id=2b0e447f18" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+  	<div class="section">
+	    <div class="content">
+			<p class="no-top no-bottom">Jolt is on a mission to help athletes train smarter and safer through innovative technology solutions. We look forward to sharing more of our story with you. Start out with our <a href="/press/presspacket">press packet</a> for logos, headshots, photography, etc. If you'd like to learn more, just drop us a line at <a href="mailto:press@joltsensor.com">press@joltsensor.com</a>. Thanks for spreading the word about Jolt!</p>
+			<a href="/press/presspacket"><button style:"margin: 0;">View Press Packet</button></a>
+		</div>
+	</div>
+	<div class="section dark">
+		<div class="content">
+		    <div id="mc_embed_signup">
+            	<form action="//joltsensor.us3.list-manage.com/subscribe/post?u=30b31dec2dac04ee2d025ff98&amp;id=2b0e447f18" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate style="background-color: rgb(230,230,230); padding: 0;">
+            		<p class="no-top">You can also subscribe to our press mailing list to be the first to receive press releases, product announcements, and other important Jolt-related news:</p>
               		<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email address" required style="float:left; text-align:left" autocomplete="off">
               		<div style="position: absolute; left: -5000px;">
                 		<input type="text" name="b_30b31dec2dac04ee2d025ff98_2b0e447f18" value="">
               		</div>
-              		<div class="clear"><input type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe" class="button" style="float:left; text-align:left; margin: 0 12px 28px 12px;"></div>
+              		<div class="clear"><input type="submit" value="Subscribe to Press List" name="subscribe" id="mc-embedded-subscribe" class="button" style="float:left; text-align:left; margin:0;"></div>
             	</form>
           	</div><!-- End of sign-up form -->
-          	<a href="/press/presspacket"><button>View Press Packet</button></a>
+	    </div>
+	</div>
+	<div class="section">
+		<div class="content center">
 			<h2>Recent Coverage</h2>
-			{% for article in site.data.articles limit:9 %}
-				<div class="icon shell">
-			        <div class="icon holder">
-			        	<img src="{{ article.icon }}" />
-			        </div>
-			        <li><a href={{ article.link }}>{{ article.source }}</a> on {{ article.date | date: "%A, %B %d, %Y" }}</li>
-	  			</div>
+			{% for article in site.data.articles limit:12 %}
+			<div class="col-2"><a href={{ article.link }}><img class="circle padding press" src="{{ article.icon }}" /></a></div>
 	  		{% endfor %}
 		</div>
-	  </div> <!-- End of section -->
+	</div> <!-- End of section -->

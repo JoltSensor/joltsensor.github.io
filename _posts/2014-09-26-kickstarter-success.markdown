@@ -2,7 +2,7 @@
 title: "Kickstarter Success!"
 layout: post
 category: Updates
-author: Ben Harvatine
+author: ben
 hero: /assets/heros/blog/kickstarter.png
 ---
 

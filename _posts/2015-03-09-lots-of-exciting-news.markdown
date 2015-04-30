@@ -2,7 +2,7 @@
 title: "Lots of Exciting News"
 layout: post
 category: Updates
-author: Ben Harvatine
+author: ben
 hero: /assets/heros/blog/sprint-day-1.jpg
 ---
 

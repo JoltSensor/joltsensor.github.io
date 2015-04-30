@@ -1,7 +1,8 @@
 {% assign author = site.data.authors[page.author] %}
 {% if author %}
-	<div class="author tile">
-		<li><img class="headshot" src="{{ author.picture }}"/></li>
-		<li>Posted by <a href=/people/{{ author.permalink | downcase }}>{{ author.name }}</a> in <a href=/blog/{{ page.category | downcase }}>{{ page.category }}</a></li>
+	<div class="col-12">
+		<img class="circle headshot" src="{{ author.picture }}"/>
+		<h2 style="margin-top: 16px; margin-bottom: 36px;"><a href=/people/{{ author.permalink | downcase }}>{{ author.name }}</a></h2>
+		<p>{{ author.short_bio }}</p>
 	</div>
 {% endif %}

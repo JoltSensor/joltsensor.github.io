@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="64px"
+   height="64px"
+   id="svg4219"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="laptop.svg">
+  <defs
+     id="defs4221" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="13.203125"
+     inkscape:cx="22.494675"
+     inkscape:cy="32"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:document-units="px"
+     inkscape:grid-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1031"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4224">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <path
+       inkscape:connector-curvature="0"
+       id="rect4550-4-6-9-7-2"
+       d="m 24.500001,14 c -1.662,0 -3,1.337925 -3,3 l 0,30 c 0,1.662 1.338,3 3,3 l 14.999998,0 c 1.661925,0 3,-1.338 3,-3 l 0,-30 c -7.5e-5,-1.662075 -1.338075,-3 -3,-3 l -14.999998,0 z m 0,3 14.999998,0 0,24 -14.999998,0 0,-24 z M 32,44 c 0.828299,0 1.49985,0.67155 1.5,1.5 0,0.828375 -0.671701,1.5 -1.5,1.5 -0.828525,0 -1.5,-0.671625 -1.5,-1.5 0,-0.82845 0.671475,-1.5 1.5,-1.5 z"
+       style="fill:#666666;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/Users/bdharva/Dropbox/Jolt/software/jolt.github.io/assets/icons/general/phone.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+</svg>

@@ -2,7 +2,7 @@
 title: "A Balanced Approach to Concussion Prevention"
 layout: post
 category: Thoughts
-author: Ben Harvatine
+author: ben
 hero: /assets/heros/blog/pocket-collapse.jpg
 ---
 

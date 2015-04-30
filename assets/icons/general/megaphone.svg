@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="64px"
+   height="64px"
+   id="svg4219"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="chip.svg">
+  <defs
+     id="defs4221" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="13.203125"
+     inkscape:cx="22.494675"
+     inkscape:cy="32"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:document-units="px"
+     inkscape:grid-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1031"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4224">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <path
+       style="fill:#666666;fill-opacity:1"
+       d="m 28.171623,49.3316 c -0.6276,-0.653325 -1.1565,-1.714125 -2.680349,-5.3757 -0.5532,-1.329375 -0.711375,-1.49775 -1.521075,-1.619175 -0.797775,-0.119625 -1.088325,-0.2598 -1.661024,-0.801225 l -0.43905,-0.4152 -1.2135,0.378375 C 19.56005,41.8406 19.37885,41.86085 18.7754,41.709125 17.275025,41.331875 15.804275,40.12385 15.172549,38.75 c -0.4524,-0.984075 -0.41715,-2.901675 0.07275,-3.952575 0.456301,-0.97875 0.929176,-1.3458 2.800201,-2.17335 5.184299,-2.2929 8.715373,-4.483875 11.269048,-6.992025 2.36385,-2.321775 3.339975,-4.121025 4.280625,-7.8903 0.26835,-1.0755 0.573975,-2.1201 0.679125,-2.321325 C 34.700523,14.604875 35.625348,14 36.445998,14 c 1.019475,0 3.189675,1.551525 4.75365,3.39855 4.518825,5.336475 7.947675,14.072625 7.94595,20.244975 0,2.962725 -0.88005,4.484025 -2.58945,4.480125 -0.66645,0 -1.52265,-0.35925 -2.936325,-1.226775 -3.3969,-2.084475 -6.031725,-2.81835 -9.61995,-2.6793 -2.002275,0.07755 -2.8602,0.368475 -3.2373,1.097775 -0.279675,0.540825 -0.235275,0.756975 0.5193,2.5284 1.3461,3.160125 1.427625,3.297825 2.29095,3.8709 1.138575,0.7557 1.34955,1.4361 0.6717,2.166075 -0.280875,0.3024 -0.997875,0.64965 -2.618175,1.267875 -1.2273,0.4683 -2.3622,0.8514 -2.52195,0.8514 -0.162825,0 -0.57285,-0.29385 -0.932625,-0.6684 z m 17.4834,-13.4349 c -0.039,-4.426575 -2.1855,-10.094925 -5.479875,-14.4699 -1.09455,-1.453575 -2.743125,-3.067425 -3.133425,-3.067425 -0.380475,0 -0.510975,0.635175 -0.4911,2.390625 0.0615,5.448 2.69415,11.802225 6.436725,15.536025 0.702075,0.700425 1.497975,1.3803 1.768725,1.5108 0.807675,0.38955 0.917025,0.1584 0.89895,-1.900125 z"
+       id="path16679"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/bdharva/Dropbox/Jolt/software/jolt.github.io/assets/icons/general/megaphone.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+</svg>

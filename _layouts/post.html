@@ -12,8 +12,19 @@ layout: default
   	<div class="section">
     	<div class="content">
 			<div  class="article">
+				{% assign author = site.data.authors[page.author] %}
+				{% if author %}
+				<h3 class="dark">Posted by <a href=/people/{{ author.permalink | downcase }}>{{ author.name }}</a> in <a href=/blog/{{ page.category | downcase }}>{{ page.category }}</a> on {{ page.date | date: "%B %-d, %Y" }}</h3>
+				{% endif %}
 				{{ content }}
+				{% include share-tile.html %}
 			</div>
-			{% include share-tile.html %}
+		</div>
+	</div>
+	<div class="section dark">
+    	<div class="content">
+			<div  class="article">
+				{% include author-bio.html %}
+			</div>
 		</div>
 	</div>

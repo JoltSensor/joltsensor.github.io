@@ -2,7 +2,7 @@
 title: "T-shirts Are On The Way"
 layout: post
 category: Updates
-author: Ben Harvatine
+author: ben
 hero: /assets/blog/images/plastics facility.jpg
 ---
 
