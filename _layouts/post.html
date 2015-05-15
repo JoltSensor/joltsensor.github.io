@@ -14,7 +14,7 @@ layout: default
 			<div  class="article">
 				{% assign author = site.data.authors[page.author] %}
 				{% if author %}
-				<h3 class="dark">Posted by <a href=/people/{{ author.permalink | downcase }}>{{ author.name }}</a> in <a href=/blog/{{ page.category | downcase }}>{{ page.category }}</a> on {{ page.date | date: "%B %-d, %Y" }}</h3>
+				<h4 class="dark">Posted by <a href=/people/{{ author.permalink | downcase }}>{{ author.name }}</a> in <a href=/blog/{{ page.category | downcase }}>{{ page.category }}</a> on {{ page.date | date: "%B %-d, %Y" }}</h4>
 				{% endif %}
 				{{ content }}
 				{% include share-tile.html %}

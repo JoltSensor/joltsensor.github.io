@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>{{ page.title }}</title>
+    <title>{{ page.title  | replace: "</br>", " " }}</title>
     <meta name="viewport" content="width=device-width">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta name="p:domain_verify" content="963fb8b6037d52bd2cc58e579956670e"/>
@@ -34,7 +34,7 @@
           <li class="hidden"><a {% if page.title == "About Jolt - Better concussion detection through real-time head impact tracking" %} class="active" {% endif %} href="/about">About Us</a></li>
           <li><a {% if page.title == "Jolt Products - Better concussion detection through real-time head impact tracking" %} class="active" {% endif %} href="/how-it-works">How It Works</a></li>
           <li><a {% if page.title == "Jolt Blog - Better concussion detection through real-time head impact tracking" %} class="active" {% endif %} href="/blog">Blog</a></li>
-          <li class="shop"><a class="shop" href="/shop">Shop Now</a></li>
+          <li><a href="/shop" class="active"><button class="shop">Shop Now</button></a></li>
         </nav>
       </div>
     </div> <!-- End of header -->
@@ -50,7 +50,7 @@
           <div class="col-12 center">
             <div id="mc_embed_signup">
               <form action="http://joltsensor.us3.list-manage.com/subscribe/post?u=30b31dec2dac04ee2d025ff98&amp;id=fb4cff7c0c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <p class="no-top">Subscribe for the latest updates, promotions, and development news:</p>
+                <p class="no-top">Be the first to get the latest updates, promotions, and development news:</p>
                 <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email address" required autocomplete="off">
                 <div style="position: absolute; left: -5000px;">
                   <input type="text" name="b_30b31dec2dac04ee2d025ff98_fb4cff7c0c" value="">
@@ -60,9 +60,9 @@
             </div><!-- End of sign-up form -->
           </div>
           <div class="col-12 center">
-          <a href="mailto:contact@joltsensor.com"><img class="circle no-bottom social" src="/assets/icons/general/email-white.svg"/></a>
             <a href="http://facebook.com/joltsensor"><img class="circle no-bottom social" src="/assets/icons/social/facebook-white.svg"/></a>
             <a href="http://twitter.com/joltsensor"><img class="circle no-bottom social" src="/assets/icons/social/twitter-white.svg"/></a>
+            <a href="http://instagram.com/joltsensor"><img class="circle no-bottom social" src="/assets/icons/social/instagram-white.svg"/></a>
             <a href="/feed.xml"><img class="circle no-bottom social" src="/assets/icons/social/rss-white.svg"/></a>
           </div>
           <div class="col-12 center">
@@ -70,7 +70,6 @@
             <li><a href="/how-it-works">How It Works</a></li>
             <li><a href="/blog">Blog</a></li>
             <li><a href="/shop">Shop</a></li>
-            <li><a href="/faq">FAQ</a></li>
             <li><a href="/press">Press</a></li>
             <li><a href="/jobs">Jobs</a></li>
             <li><a href="/contact">Contact</a></li></br>

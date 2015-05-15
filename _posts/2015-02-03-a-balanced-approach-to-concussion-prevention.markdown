@@ -1,5 +1,5 @@
 ---
-title: "A Balanced Approach to Concussion Prevention"
+title: "A Balanced Approach</br>to Concussion Prevention"
 layout: post
 category: Thoughts
 author: ben

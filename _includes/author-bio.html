@@ -2,7 +2,7 @@
 {% if author %}
 	<div class="col-12">
 		<img class="circle headshot" src="{{ author.picture }}"/>
-		<h2 style="margin-top: 16px; margin-bottom: 36px;"><a href=/people/{{ author.permalink | downcase }}>{{ author.name }}</a></h2>
+		<h3 style="margin-top: 16px; margin-bottom: 36px;"><a href=/people/{{ author.permalink | downcase }}>{{ author.name }}</a></h3>
 		<p>{{ author.short_bio }}</p>
 	</div>
 {% endif %}

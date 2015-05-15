@@ -14,7 +14,7 @@
    id="svg11430"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="New document 152">
+   sodipodi:docname="mit-blue.svg">
   <defs
      id="defs11432" />
   <sodipodi:namedview
@@ -25,14 +25,14 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.5"
-     inkscape:cx="8.6363636"
+     inkscape:cx="-14.727273"
      inkscape:cy="32"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:document-units="px"
      inkscape:grid-bbox="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1031"
+     inkscape:window-width="1440"
+     inkscape:window-height="851"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1" />
@@ -44,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -54,7 +54,7 @@
      inkscape:groupmode="layer">
     <g
        id="g16402"
-       transform="matrix(0.14953271,0,0,0.14953271,476.49464,-646.93225)">
+       transform="matrix(0.11214953,0,0,0.11214953,365.37097,-477.19917)">
       <path
          style="fill:#1a66d8"
          d="m -3133.0579,4540.3594 0,-83 17.5,0 17.5,0 0,83 0,83 -17.5,0 -17.5,0 0,-83 z m 114,0 0,-83 17.5,0 17.5,0 0,83 0,83 -17.5,0 -17.5,0 0,-83 z m 57,26.5 0,-56.5 17.5,0 17.5,0 0,56.5 0,56.5 -17.5,0 -17.5,0 0,-56.5 z m 58,0 0,-56.5 17.5,0 17.5,0 0,56.5 0,56.5 -17.5,0 -17.5,0 0,-56.5 z m -172,-53 0,-56.5 17.5,0 17.5,0 0,56.5 0,56.5 -17.5,0 -17.5,0 0,-56.5 z m 114,-40 0,-16.5 17.5,0 17.5,0 0,16.5 0,16.5 -17.5,0 -17.5,0 0,-16.5 z m 58,0 0,-16.5 46,0 46,0 0,16.5 0,16.5 -46,0 -46,0 0,-16.5 z"

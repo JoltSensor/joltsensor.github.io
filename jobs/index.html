@@ -2,31 +2,36 @@
 layout: default
 title: Jobs at Jolt - Better concussion detection through real-time head impact tracking
 ---
-
+<div id="hero" style="background-image: url('/assets/heros/hero_desk_1400.jpg');">
+  <div class="screen">
+    <div class="content center">
+      <span class="heading">Working at Jolt</span>
+    </div>
+  </div>
+</div>
 <div id="wrapper">
-  <div class="hero" style="background-image: url('/assets//heros/hero_desk_1400.jpg');">
-    <div class="content"></div>
-  </div> <!-- End of hero shell -->
-  <div class="section shell">
-    <div class="section contents">
-      <h1 class="notop">Working at Jolt</h1>
+  <div class="section">
+    <div class="content">
       <p>
-        We're a small team of engineers and athletes who like to work hard and play hard. Our highly collaborative group tackles big problems at a rapid pace, but always keeps things relaxed and fun. Sound like your kind of place? Check out the current job openings below. If you don't see the perfect spot for you, don't hesitate to shoot us your resume and a quick note at <a href="mailto:jobs@joltsensor.com">jobs@joltsensor.com</a>, and we'll keep you in mind for future openings (or, if you're that awesome, maybe we'll even create a special position just for you).
+        We're a small team of engineers and athletes who like to work hard and play hard. Our highly collaborative group tackles big problems at a rapid pace, but always keeps things relaxed and fun. Sound like your kind of place? Check out the current job openings below. If you don't see the perfect spot for you, don't hesitate to shoot us your resume and a quick note at <a href="mailto:jobs@joltsensor.com">jobs@joltsensor.com</a>, and we'll keep you in mind for future openings (or, if you're that awesome, maybe we'll even create a special position just for you). We're always on the lookout for the next great addition to our team!
       </p>
+    </div>
+  </div>
+  <div class="section dark">
+    <div class="content center">
       <h2>Current Openings</h2>
-      <!--<div class="icon shell">
-          <div class="icon holder">
-            <img src="/assets/icons/general/nosymbol.png"/>
-          </div>
-          <li>We don't have any open positions right now</li>
-      </div>-->
-      {% for job in site.data.jobs %}
-        <div class="icon shell">
-          <div class="icon holder">
-            <img src={% if job.type == "Mobile Developer" %}"/assets/icons/general/phone.png"{% elsif job.type == "Web Developer" %}"/assets/icons/general/monitor.png"{% elsif job.type == "Business" %}"/assets/icons/general/briefcase.png"{% elsif job.type == "Communication" %}"/assets/icons/general/megaphone.png"{% elsif job.type == "Mechanical Engineer" %}"/assets/icons/general/gear.png"{% elsif job.type == "Electrical Engineer" %}"/assets/icons/general/chip.png"{% elsif job.type == "Designer" %}"/assets/icons/general/palette.png"{% endif %}/>
-          </div>
-          <li><a href="mailto:jobs@joltsensor.com?subject={{ job.position }}"><span style="font-weight: 400;">{{ job.position }}</span></a></br>{{ job.hours }} in {{ job.location }}</br></br><span style="font-weight: 400;">Description</span></br>{{ job.description }}</br></br><span style="font-weight: 400;">Qualifications</span></br>{{ job.qualifications }}</li>
+      <div class="col-12 center">
+          <img class="circle padded border spec" src="/assets/icons/general/nosymbol.svg"/>
+          <p>We don't have any open positions right now</p>
+      </div>
+      <!--{% for job in site.data.jobs %}
+        <div class="col-12 center">
+          <img class="circle padded border spec" src={% if job.type == "Mobile Developer" %}"/assets/icons/general/phone.png"{% elsif job.type == "Web Developer" %}"/assets/icons/general/monitor.png"{% elsif job.type == "Business" %}"/assets/icons/general/briefcase.png"{% elsif job.type == "Communication" %}"/assets/icons/general/megaphone.png"{% elsif job.type == "Mechanical Engineer" %}"/assets/icons/general/gear.png"{% elsif job.type == "Electrical Engineer" %}"/assets/icons/general/chip.png"{% elsif job.type == "Designer" %}"/assets/icons/general/palette.png"{% endif %}/>
+          <a href="mailto:jobs@joltsensor.com?subject={{ job.position }}"><h3>{{ job.position }}</h3></a>
+          <p>{{ job.hours }} in {{ job.location }}</p>
+          <p>{{ job.description }}</p>
+          <p>{{ job.qualifications }}</p>
         </div>
-      {% endfor %}
+      {% endfor %}-->
     </div>
   </div> <!-- End of section -->

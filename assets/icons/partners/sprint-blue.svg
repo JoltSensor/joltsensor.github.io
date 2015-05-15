@@ -14,7 +14,7 @@
    id="svg11430"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="techstars.svg">
+   sodipodi:docname="sprint-blue.svg">
   <defs
      id="defs11432" />
   <sodipodi:namedview
@@ -24,15 +24,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="13.1875"
-     inkscape:cx="32"
+     inkscape:zoom="10.375"
+     inkscape:cx="19.614458"
      inkscape:cy="32"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:document-units="px"
      inkscape:grid-bbox="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1031"
+     inkscape:window-width="1440"
+     inkscape:window-height="851"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1" />
@@ -44,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -54,7 +54,7 @@
      inkscape:groupmode="layer">
     <g
        id="g3880"
-       transform="matrix(0.05184638,0,0,0.05184638,-11.911147,15.380733)"
+       transform="matrix(0.03456425,0,0,0.03456425,2.7259015,20.92049)"
        inkscape:export-filename="/Users/bdharva/Dropbox/Jolt/Software/jolt.github.io/assets/icons/partners/sprint.png"
        inkscape:export-xdpi="89.971069"
        inkscape:export-ydpi="89.971069"

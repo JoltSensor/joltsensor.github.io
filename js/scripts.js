@@ -2,14 +2,20 @@ $(document).ready(function(){
     
     setup();
 
+    if($('#hero').length){
+        $('#header_wrapper').css({'background-color' : "rgba(26,102,216,0)"});
+    }else{
+        $('#wrapper').css({'top' : 60+"px"});
+    }
+
     // Fixes issues with rendering in some mobile browsers
     
     setTimeout(function(){setup();}, 3000);
 
-    /*$('.thumbnail').hover(
+    $('.thumbnail').hover(
         function(){$('.thumbnail').not(this).stop().animate({opacity: 0.5});},
         function(){$('.thumbnail').not(this).stop().animate({opacity: 1});
-    });*/
+    });
 
 
 });
@@ -29,12 +35,10 @@ $(window).scroll(function () {
     if(difference > 60){
 
         $('#header_wrapper').css({'background-color' : "rgba(26,102,216,0)"});
-        $('#header_wrapper').css({'border' : 'none'});
 
     }else {
 
         $('#header_wrapper').css({'background-color' : "rgba(26,102,216,1)"});
-        $('#header_wrapper').css({'border-bottom' : '1px solid rgb(18,72,152)'});
 
     }
 
@@ -42,7 +46,7 @@ $(window).scroll(function () {
 
     $('#hero').css({'top' : (-scrolled/2)+"px"});
 
-    // Stop any other animations affecting 
+    // Stop any other animations affecting hero content
     
     $('#hero .content').stop();
 
@@ -71,6 +75,7 @@ function setup() {
     var scrolled = $(window).scrollTop();
 
     $('#hero .content').animate({opacity : 1-(1.5*scrolled/height)}, 2000);
+    $('.thumbnail .content').animate({opacity : 1}, 2000);
 
     $('.thumbnail').each(function( index ){
         var height = $('.thumbnail').children('.screen').height();
