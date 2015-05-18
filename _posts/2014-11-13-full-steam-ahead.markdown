@@ -4,6 +4,7 @@ layout: post
 category: Updates
 author: ben
 hero: /assets/heros/blog/sprint-day-1.jpg
+summary: "We couldn't have done it without your help. Now the hard work begins, and we couldn't be more excited."
 ---
 
 It's been a while since our last update, as we've been working full steam ahead to set up our manufacturing lines and start delivering other rewards tiers. In consulting with injection molding facilities and working with all sorts of packaging samples, we've been making some small design updates that will result in an even higher quality product, while managing our costs and ensuring scalability of operations. And, we're excited that a majority of these operations will be completed near our headquarters in St. Louis and the surrounding suburbs, giving us hands-on contact and high visibility into day-to-day operations, while supporting local jobs and American manufacturing. We've also finalized our t-shirt designs, and, as soon as the last few surveys are completed (check your email inbox and spam folders if you missed the backer survey/haven't completed it yet), we can finalize the order with our printer, and the shirts will arrive at your homes about two weeks after that.

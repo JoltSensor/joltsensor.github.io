@@ -3,11 +3,11 @@ layout: default
 title: Jolt Sensor - Better concussion detection through real-time head impact tracking
 ---
 
-<div id="hero" style="background-image: url('/assets/heros/hero_football_1400.jpg');">
-  <div class="screen">
-    <div class="content center">
-      <h1>Knowledge is power</h1>
-      <h3>Live head impact data and real-time alerts in the palm of your hand</h3>
+<div id="hero" style="background-image: url('/assets/heros/bg_football_overlay.png');">
+  <div class="screen blank">
+    <div class="content left">
+      <h1 class="heavy" style="max-width: 460px;">PLAY SMARTER</h1>
+      <h3 style="max-width: 460px;">Get live head impact data and real-time alerts in the palm of your hand with the Jolt Sensor</h3>
       <button class="cta">Learn More</button>
     </div>
   </div>
@@ -16,38 +16,55 @@ title: Jolt Sensor - Better concussion detection through real-time head impact t
   <div class="section dark">
     <div class="content">
       <div class="col-4 center">
-        <h2>3.5 million</h2>
+        <h2 class="heavy">3.5 million</h2>
         <h4 class="dark">Annual diagnosed sports-related concussions in the United States</h4>
       </div>
       <div class="col-4 center">
-        <h2>80%</h2>
+        <h2 class="heavy">80%</h2>
         <h4 class="dark">of football concussions are missed according to a Harvard study</h4>
       </div>
       <div class="col-4 center">
-        <h2>1</h2>
+        <h2 class="heavy">1</h2>
         <h4 class="dark">The Jolt Sensor is the only sensor you need. Any athlete. Any sport.</h4>
       </div>
     </div>
   </div>
   <div class="section">
-    <div class="content center">
-      <div class="col-12">
-        <h2>The World's Most Versatile Head Impact Sensor</h2>
-        <h4 class="dark no-top">Innovative clip design is compatible with everything from helmets to headbands.</h4>
-        <img style="max-width: 300px;" src="assets/Light Gray Render.png"/>
+    <div class="content">
+      <div class="col-6 right" style="float: right;">
+        <img src="assets/renders.png"/>
+      </div>
+      <div class="col-6 left" style="float: right;">
+        <h2 class="heavy">A Head Impact Sensor Designed For Every Sport</h2>
+        <p>Mount the sensor to whatever you wear on your head. Its versatile patent-pending design means one sensor for all of your activities. Whether you wear a sweatband, helmet, hairband, baseball cap, or wrestling headgear, the sensor can quickly and easily detach and re-mount for seamless transitions between sports.</p>
+      </div>
+    </div>
+  </div>
+  <div class="section dark">
+    <div class="content">
+      <div class="col-6 center">
+        <img style="max-width: 200px;" src="/assets/screen1.png"/>
+      </div>
+      <div class="col-6">
+        <h2 class="heavy">Live Data and Alerts in the Palm of Your Hand</h2>
+        <p>When the sensor registers an impact, it shares it with the connected mobile app in real-time. When a significant impact is detected, the sensor vibrates to alert the player, while the mobile app alerts those following from the sidelines that the athlete should be removed from play for a brief evaluation.</p>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="content">
+      <div class="col-6 center" style="float: right;">
+        <img style="max-width: 200px;" src="/assets/screen2.png"/>
+      </div>
+      <div class="col-6" style="float: right;">
+        <h2 class="heavy">Guided Recovery</h2>
+        <p>Symptoms identified in the evaluation, the results of the team's standard evaluation protocol, and the return to play decision can all be entered directly into the app, alongside the collected impact data. All of this data is securely stored in the cloud, allowing you access to a lifetime of data for your athlete. And the app will automatically follow up with you after a few days to see if a doctor has been visited, if a concussion has been diagnosed, and if symptoms are persisting. As long as symptoms persist, the app will check in with you daily to see how they are progressing.</p>
       </div>
     </div>
   </div>
   <div class="section dark">
     <div class="content center">
-      <h2>Powerful Insights in the Palm of Your Hand</h2>
-      <h4 class="dark no-top">Get live impact data and real-time alerts from the sideline with the free Jolt Sensor app.</h4>
-      <img style="max-width: 300px;" src="/assets/screens.png"/>
-    </div>
-  </div>
-  <div class="section">
-    <div class="content center">
-      <h2>Any Athlete, Any Sport</h2>
+      <h2 class="heavy">Any Athlete, Any Sport</h2>
       <h4 class="dark">Concussions can happen to any athlete in any sport. That's why the Jolt Sensor works for ALL of them.</h4>
       <div class="col-2 center">
         <img class="circle padded border spec" src="/assets/icons/sports/football-blue.svg"/>Football
@@ -67,14 +84,6 @@ title: Jolt Sensor - Better concussion detection through real-time head impact t
       <div class="col-2 center">
         <img class="circle padded border spec" src="/assets/icons/sports/baseball-blue.svg"/>Baseball
       </div>
-      <a href="/how-it-works"><button>How It Works</button></a>
-      <button>See All Sports</button>
+      <a href="/shop"><button>Learn More</button></a>
     </div>
-  </div> <!-- End of section -->
-  <div class="section dark">
-    <div class="content center">
-      {% for feature in site.data.features %}
-      <div class="col-2"><a href={{ feature.link }} target="_blank"><img class="circle padding press" src="{{ feature.icon }}" /></a></div>
-        {% endfor %}
-    </div>
-  </div> <!-- End of section -->
+  </div>

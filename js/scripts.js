@@ -3,26 +3,22 @@ $(document).ready(function(){
     setup();
 
     if($('#hero').length){
+        
         $('#header_wrapper').css({'background-color' : "rgba(26,102,216,0)"});
+    
     }else{
+        
         $('#wrapper').css({'top' : 60+"px"});
+    
     }
 
     // Fixes issues with rendering in some mobile browsers
     
     setTimeout(function(){setup();}, 3000);
 
-    $('.thumbnail').hover(
-        function(){$('.thumbnail').not(this).stop().animate({opacity: 0.5});},
-        function(){$('.thumbnail').not(this).stop().animate({opacity: 1});
-    });
-
-
 });
 
 $(window).resize(setup);
-
-// Need to call alignment function on window resize to account for blog cards
 
 $(window).scroll(function () { 
 
@@ -46,13 +42,9 @@ $(window).scroll(function () {
 
     $('#hero').css({'top' : (-scrolled/2)+"px"});
 
-    // Stop any other animations affecting hero content
+    // Stop any other animations affecting hero content & fade out with scroll
     
-    $('#hero .content').stop();
-
-    // Fade out hero content with scroll
-
-    $('#hero .content').css({'opacity': 1-(1.5*scrolled/height)});
+    $('#hero .content').stop().css({'opacity': 1-(1.5*scrolled/height)});
 
 });
 
@@ -72,16 +64,22 @@ function setup() {
     $('#hero .content').css({'margin-top': text_margin+"px"});
     $('#hero .content').css({'margin-bottom': text_margin+"px"});
 
+    // Fade hero content proper amount if naviagating back to or refreshing a partially scrolled page
+
     var scrolled = $(window).scrollTop();
 
     $('#hero .content').animate({opacity : 1-(1.5*scrolled/height)}, 2000);
     $('.thumbnail .content').animate({opacity : 1}, 2000);
 
+    // Content alignment for each blog thumbnail element
+
     $('.thumbnail').each(function( index ){
+
         var height = $('.thumbnail').children('.screen').height();
         var text_height = $(this).children('.screen').children('.content').height();
         var text_margin = (height - text_height) / 2;
         $(this).children('.screen').children('.content').css({'margin-top': text_margin+"px"});
         $(this).children('.screen').children('.content').css({'margin-bottom': text_margin+"px"});
+
     })
 };

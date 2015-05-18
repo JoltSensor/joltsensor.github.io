@@ -3,31 +3,23 @@ layout: default
 title: Jolt Blog - Better concussion detection through real-time head impact tracking
 ---
 
-<div id="hero" style="background-image: url('/assets/heros/hero_desk_1400.jpg');">
-	<div class="screen">
-    	<div class="content center">
-    		<h1>The Jolt Blog</h1>
-    		<h4>Reflections on process, insights, and inspiration</h4>
-    	</div>
-  	</div>
-</div>
 <div id="wrapper">
   	<div class="section">
-	    <div class="content center">
+	    <div class="content">
 			{% for post in site.posts limit:8 %}
+				{% assign i = forloop.index | modulo: 2 %}
+				{% if i == 1 %}
+				<div class="row">
+				{% endif %}
 				<div class="col-6">
-					<a href="{{ post.url }}">
-						<div class="thumbnail" style="background-image: url('{{ post.hero }}');">
-							<div class="screen">
-								<div class="content">
-									<h3 class="no-top" style="top: 0;">{{ post.title | replace: "</br>", " " }}</h3>
-									<p class="no-top no-bottom">Posted {{ post.date | date: "%B %-d" }}</p>
-									<p class="no-top no-bottom">in {{ post.category }}</p>
-								</div>
-							</div>
-						</div>
-					</a>
+					<!--<div class="thumbnail" style="background-image: url('{{ post.hero }}');"></div>-->
+					<a href="{{ post.url }}"><h3 class="no-top">{{ post.title | replace: "</br>", " " }}</h3></a>
+					<p class="no-top no-bottom">{{ post.category }} | {{ post.date | date: "%B %-d" }}</p>
+					<p class="no-bottom">{{ post.summary }}</p>
 				</div>
+				{% if i == 0 %}
+				</div>
+				{% endif %}
 		  	{% endfor %}
 		</div>
   	</div> <!-- End of section -->

@@ -4,6 +4,7 @@ layout: post
 category: Updates
 author: ben
 hero: /assets/heros/blog/sprint-day-1.jpg
+summary: "We couldn't have done it without your help. Now the hard work begins, and we couldn't be more excited."
 ---
 
 ### Sprint Mobile Health Accelerator, powered by Techstars

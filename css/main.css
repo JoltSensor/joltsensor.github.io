@@ -34,6 +34,10 @@ h1 {
   margin: 24px 0 16px 0;
 }
 
+h1.heavy, h2.heavy, h3.heavy, h4.heavy {
+  font-weight: 900;
+}
+
 h2 {
   font-size: 36px;
   margin: 24px 0 16px 0;
@@ -109,6 +113,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 /* BUTTONS
 ============================================================*/
 
@@ -118,12 +126,12 @@ button {
   background: none;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   border-radius: 100px;
   outline: none;
   cursor: pointer;
   color: rgb(26,102,216);
-  border: 1px solid rgb(26,102,216);
+  border: 2px solid rgb(26,102,216);
 }
 
 button:hover {
@@ -137,7 +145,7 @@ button:active {
 }
 
 button.cta {
-  min-width: 200px;
+  font-size: 18px;
   font-weight: 400;
   color: rgb(255,255,255);
   border: 2px solid rgb(255,255,255);
@@ -294,7 +302,7 @@ button.shop:active {
 
 #hero {
   width: 100%;
-  height: 500px;
+  height: 600px;
   background-size: cover;
   background-position: center;
   position: fixed;
@@ -309,19 +317,19 @@ button.shop:active {
 .screen {
   width: 100%;
   height: 100%;
-  background-color: rgba(26,102,216,0.85);
+  background-color: rgba(26,102,216,0.65);
   z-index: 1;
   position: absolute;
   color: rgb(255,255,255);
 }
 
-.screen.lighter {
-  background-color: rgba(26,102,216,0.70);
+.screen.blank {
+  background-color: rgba(0,0,0,0);
 }
 
 .screen h1, .screen h2, .screen h3, .screen h4, .screen a {
 	color: rgb(255,255,255);
-  margin: 0 auto;
+  margin: 0;
 }
 
 .content {
@@ -365,21 +373,16 @@ button.shop:active {
 ============================================================*/
 
 .row {
-  width: 100%;
   height: auto;
   overflow: auto;
   display: block;
 }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+.col-2, .col-3, .col-4, .col-6, .col-8, .col-9, .col-12 {
   box-sizing: border-box;
   padding: 20px;
   display: block;
   float: left;
-}
-
-.col-1 {
-  width: 8.33%;
 }
 
 .col-2 {
@@ -387,39 +390,23 @@ button.shop:active {
 }
 
 .col-3 {
-  width: 25%
+  width: 25%;
 }
 
 .col-4 {
   width: 33.33%;
 }
 
-.col-5 {
-	width: 41.66%;
-}
-
 .col-6 {
   width: 50%;
 }
 
-.col-7 {
-  width: 58.33%;
-}
-
 .col-8 {
-	width: 66.66%
+	width: 66.66%;
 }
 
 .col-9 {
 	width: 75%;
-}
-
-.col-10 {
-	width: 83.33%;
-}
-
-.col-11 {
-	width: 91.66%;
 }
 
 .col-12 {
@@ -427,81 +414,6 @@ button.shop:active {
   padding: 10px 0;
   margin: 10px auto;
 }
-
-.offset-1 {
-	margin-left: 8.33%;
-}
-
-.offset-2 {
-	margin-left: 16.66%;
-}
-
-.offset-3 {
-	margin-left: 25%;
-}
-
-.offset-4 {
-	margin-left: 33.33%;
-}
-
-.offset-5 {
-	margin-left: 41.66%;
-}
-
-.offset-6 {
-	margin-left: 50%;
-}
-
-.offset-7 {
-	margin-left: 58.33%;
-}
-
-.offset-8 {
-	margin-left: 66.66%;
-}
-
-.offset-9 {
-	margin-left: 75%;
-}
-
-.offset-10 {
-	margin-left: 83.33%;
-}
-
-.offset-11 {
-	margin-left: 91.66%;
-}
-
-.thumbnail {
-	width: 100%;
-	height: 300px;
-	background-size: cover;
-	background-position: center;
-	position: relative;
-}
-
-.thumbnail .content {
-	padding: 0;
-  opacity: 0;
-}
-
-.thumbnail .screen {
-	background-color: rgba(130,130,130,0.75);
-}
-
-.thumbnail h2 {
-  width: 80%;
-  margin: 16px auto;
-}
-
-/*.thumbnail .screen:hover {
-    background-color: rgba(26,102,216,0.65);
-    -webkit-transition: background-color 300ms linear;
-    -moz-transition: background-color 300ms linear;
-    -o-transition: background-color 300ms linear;
-    -ms-transition: background-color 300ms linear;
-    transition: background-color 300ms linear;
-}*/
 
 /* CROPPED IMAGES/ICONS
 ============================================================*/
@@ -594,14 +506,6 @@ img.rss:hover {
 /* BLOG STUFF
 ============================================================*/
 
-.info {
-  color: rgb(179,179,179);
-  font-size: 19px;
-  margin: 16px 0 24px 0;
-  font-weight: 300;
-  font-size: 16px;
-}
-
 .article {
 	max-width: 700px;
 	margin: 0 auto;
@@ -644,21 +548,6 @@ img.rss:hover {
 .footer img.social {
   border: 1px solid rgb(255,255,255);
   width: 50px;
-}
-
-.greybox {
-	background-color: rgb(220,220,220);
-	padding: 32px;
-	height: auto;
-	overflow: auto;
-}
-
-.footer .greybox .col-4 {
-	padding: 10px;
-}
-
-.footer .col-1 a:hover {
-	text-decoration: underline;
 }
 
 /* CODE FORMATTING
@@ -719,10 +608,7 @@ pre code {
 
 @media (max-width:1006px){
 
-  .price-tier {
-    width: 50%;
-    margin: 5px 0;
-  }
+  
 
 }
 
@@ -742,15 +628,22 @@ pre code {
 
 @media (max-width:750px){
 
+  .col-3 {
+    width: 50%;
+  }
+
   .col-4 {
     width: 100%;
     padding-left: 0;
     padding-right: 0;
+    text-align: center;
   }
+
   .col-6 {
     width: 100%;
     padding-left: 0;
     padding-right: 0;
+    text-align: center;
   }
 
 }
@@ -761,13 +654,21 @@ pre code {
 @media (max-width:625px){
 
   h1 {  
-    font-size: 26px;
+    font-size: 36px;
     margin-bottom: 20px;
   }
 
   h2 {
-    font-size: 21px;
+    font-size: 24px;
     margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
   }
 
   p, li {
@@ -778,14 +679,6 @@ pre code {
 
   p img {
     margin: 0;
-  }
-
-  .title, .date, .info {
-    margin: 0;
-  }
-
-  .info {
-    font-size: 16px;
   }
 
   ul, li {
@@ -799,20 +692,6 @@ pre code {
   blockquote {
     padding: 0 0 0 30px;
     line-height: 25px;
-  }
-
-  .icon.holder {
-    border-radius: 0;
-    padding: 0;
-    background: none;
-    display: block;
-  }
-
-  .icon li {
-    font-size: 16px;
-    line-height: 26px;
-    padding: 1px;
-    margin: 0 0 0 34px;
   }
 
   button {
@@ -833,20 +712,6 @@ pre code {
     padding: 15px 15%;
   }
 
-  footer nav {
-    height: auto;
-    overflow: auto;
-  }
-
-  footer nav.left, footer nav.right {
-    float: none;
-    margin: 0 auto;
-  }
-
-  footer nav.right {
-    max-width: 220px;
-  }
-
 }
 
 /* MEDIA QUERY - 490PX
@@ -854,12 +719,13 @@ pre code {
 
 @media (max-width:490px){
 
-  nav.right li {
-    margin-left: 5px;
+  .col-2 {
+    width: 50%;
   }
 
-  footer nav.right li {
-    margin: 0 3px;
+  .col-3 {
+    width: 100%;
+    text-align: center;
   }
 
   footer li {

@@ -2,15 +2,14 @@
 layout: default
 title: Jolt Press - Better concussion detection through real-time head impact tracking
 ---
-<div id="hero" style="background-image: url('/assets/heros/founders3.jpg'); background-position: center;">
-  <div class="screen">
-    <div class="content center">
-      <span class="heading">Press Materials</span>
-      <span class="subheading">Share Jolt with the world! All the cool kids are doing it...</span>
-    </div>
-  </div>
-</div>
 <div id="wrapper">
+	<div class="section dark">
+		<div class="content center">
+			{% for article in site.data.articles limit:12 %}
+			<div class="col-2"><a href={{ article.link }} target="_blank"><img class="circle padding press" src="{{ article.icon }}" /></a></div>
+	  		{% endfor %}
+		</div>
+	</div>
   	<div class="section">
 	    <div class="content">
 			<p class="no-top no-bottom">Jolt is on a mission to help athletes train smarter and safer through innovative technology solutions. We look forward to sharing more of our story with you. Start out with our <a href="/press/presspacket">press packet</a> for logos, headshots, photography, etc. If you'd like to learn more, just drop us a line at <a href="mailto:press@joltsensor.com">press@joltsensor.com</a>. You can also subscribe to our press list to be the first to receive press releases, product announcements, and other important news. Thanks for spreading the word about Jolt!</p>
@@ -31,11 +30,3 @@ title: Jolt Press - Better concussion detection through real-time head impact tr
           	</div><!-- End of sign-up form -->
 	    </div>
 	</div>
-	<div class="section">
-		<div class="content center">
-			<h2>Recent Coverage</h2>
-			{% for article in site.data.articles limit:12 %}
-			<div class="col-2"><a href={{ article.link }} target="_blank"><img class="circle padding press" src="{{ article.icon }}" /></a></div>
-	  		{% endfor %}
-		</div>
-	</div> <!-- End of section -->

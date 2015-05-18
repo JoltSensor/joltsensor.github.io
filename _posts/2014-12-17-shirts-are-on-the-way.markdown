@@ -4,6 +4,7 @@ layout: post
 category: Updates
 author: ben
 hero: /assets/blog/images/plastics facility.jpg
+summary: "We couldn't have done it without your help. Now the hard work begins, and we couldn't be more excited."
 ---
 
 While you all are enjoying the holiday season with friends and families, we hope we can bring you some more holiday cheer!

@@ -4,6 +4,7 @@ layout: post
 category: Updates
 author: ben
 hero: /assets/heros/blog/kickstarter.png
+summary: "We couldn't have done it without your help. Now the hard work begins, and we couldn't be more excited."
 ---
 
 We're thrilled to announce the successful completion of [our Kickstarter campaign](https://www.kickstarter.com/projects/2098685356/jolt-sensor-better-concussion-detection-for-youth). The last 31 days have been a whirlwind. It was a bit of a grind, but around dinner time last night we finally passed our $60,000 goal, just hours ahead of this morning's deadline. Simply put, this has been a humbling experience. Without the outpouring of support by friends, family, and complete strangers, we would not be where we are. We're excited for the coming months, as we double down our efforts to bring the Jolt Sensor to market. With its successful funding, we will now be setting upon the task of selecting manufacturers and suppliers, setting up tooling, and beginning to produce production quality prototypes of the Jolt Sensor before we begin delivering units to our backers.
