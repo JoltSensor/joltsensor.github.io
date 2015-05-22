@@ -2,6 +2,8 @@ $(document).ready(function(){
     
     setup();
 
+    /*
+
     if($('#hero').length){
         
         $('#header_wrapper').css({'background-color' : "rgba(26,102,216,0)"});
@@ -11,6 +13,8 @@ $(document).ready(function(){
         $('#wrapper').css({'top' : 60+"px"});
     
     }
+
+    */
 
     // Fixes issues with rendering in some mobile browsers
     
@@ -26,6 +30,8 @@ $(window).scroll(function () {
     var scrolled = $(window).scrollTop();
     var difference = height - scrolled;
 
+    /*
+
     // Add fill to navbar when it hits bottom of hero
 
     if(difference > 60){
@@ -38,9 +44,11 @@ $(window).scroll(function () {
 
     }
 
+    */
+
     // Parallax scrolling for hero
 
-    $('#hero').css({'top' : (-scrolled/2)+"px"});
+    $('#hero').css({'top' : (60-scrolled/2)+"px"});
 
     // Stop any other animations affecting hero content & fade out with scroll
     
@@ -54,7 +62,7 @@ function setup() {
 
     // Push the wrapper past the bottom of the hero
 
-    $('#wrapper').css({'top': height+"px"});
+    $('#wrapper').css({'top': 60+height+"px"});
 
     // Center hero content vertically
 

@@ -18,7 +18,7 @@
 #mc_embed_signup input {
   -webkit-appearance: none;
   width: 100%;
-  max-width: 600px;
+  max-width: 400px;
   height: 48px;
   margin:0 auto;
   margin-bottom: 16px;
@@ -39,12 +39,6 @@
   text-align: center;
 }
 
-.footer #mc_embed_signup input {
-  color: rgb(255,255,255);
-  background-color: rgb(102,102,102);
-  border: none;
-}
-
 ::-webkit-input-placeholder { /* WebKit browsers */
   color: rgb(153,153,153);
 }
@@ -61,6 +55,29 @@
   color: rgb(153,153,153) !important;
 }
 
+.footer #mc_embed_signup input {
+  color: rgb(255,255,255);
+  background: none;
+  border: none;
+  border-bottom: 2px solid rgb(255,255,255);
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: rgb(255,255,255);
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: rgb(255,255,255);
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: rgb(255,255,255);
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: rgb(255,255,255) !important;
+}
+
 .clear {
   width: 100%;
   height: auto;
@@ -72,10 +89,10 @@
   width: auto;
   height: auto;
   margin: 20px auto;
-  padding: 14px 20px;
+  padding: 8px 18px;
   background: none;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   border-radius: 100px;
   outline: none;
@@ -98,18 +115,12 @@
 
 .footer #mc_embed_signup .button {
   background: none;
-  border: 2px solid rgb(255,255,255);
+  border: 2px solid rgb(212,235,11);
 }
 
 .footer #mc_embed_signup .button:hover {
-  background-color: rgb(249,249,249);
-  border-color: rgb(249,249,249);
-  color: rgb(77,77,77);
-}
-
-.footer #mc_embed_signup .button:active {
-  background-color: rgb(255,255,255);
-  border-color: rgb(255,255,255);
+  background-color: rgb(212,235,11);
+  color: rgb(39,70,99);
 }
 
 /* MEDIA QUERY - 625PX

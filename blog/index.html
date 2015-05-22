@@ -7,19 +7,16 @@ title: Jolt Blog - Better concussion detection through real-time head impact tra
   	<div class="section">
 	    <div class="content">
 			{% for post in site.posts limit:8 %}
-				{% assign i = forloop.index | modulo: 2 %}
-				{% if i == 1 %}
 				<div class="row">
-				{% endif %}
-				<div class="col-6">
-					<!--<div class="thumbnail" style="background-image: url('{{ post.hero }}');"></div>-->
-					<a href="{{ post.url }}"><h3 class="no-top">{{ post.title | replace: "</br>", " " }}</h3></a>
-					<p class="no-top no-bottom">{{ post.category }} | {{ post.date | date: "%B %-d" }}</p>
-					<p class="no-bottom">{{ post.summary }}</p>
+					<div class="col-4">
+						<img src="{{ post.hero }}"/>
+					</div>
+					<div class="col-8">
+						<a href="{{ post.url }}"><h3 class="no-top">{{ post.title | replace: "</br>", " " }}</h3></a>
+						<p class="no-top no-bottom">{{ post.category }} | {{ post.date | date: "%B %-d" }}</p>
+						<p class="no-bottom">{{ post.summary }}</p>
+					</div>
 				</div>
-				{% if i == 0 %}
-				</div>
-				{% endif %}
 		  	{% endfor %}
 		</div>
   	</div> <!-- End of section -->
