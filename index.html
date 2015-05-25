@@ -5,39 +5,39 @@ title: Jolt Sensor - Better concussion detection through real-time head impact t
 
 <div id="hero" style="background-image: url('/assets/heros/bg_football_overlay.png');">
   <div class="screen">
-    <div class="content left">
-      <h1 class="heavy" style="max-width: 460px;">PLAY SMARTER</h1>
-      <h3 style="max-width: 460px;">Get live head impact data and real-time alerts in the palm of your hand with the Jolt Sensor</h3>
-      <button class="cta">LEARN MORE</button>
+    <div class="content">
+      <div class="col-6 center" style="float: right;">
+        <img src="/assets/renders.png" style="max-width: 300px;"/>
+      </div>
+      <div class="col-6 left" style="float: right;">
+        <h1 class="heavy" style="max-width: 460px;">PLAY SMARTER</h1>
+        <h3 style="max-width: 460px;">Get live head impact data and real-time alerts in the palm of your hand with the Jolt Sensor</h3>
+        <button class="cta">SHOP NOW</button>
+      </div>
     </div>
   </div>
 </div>
 <div id="wrapper">
-  <div class="section dark">
-    <div class="content">
-      <div class="col-4 center">
-        <h2 class="heavy">3.5 million</h2>
-        <h4 class="dark">Annual diagnosed sports-related concussions in the United States</h4>
-      </div>
-      <div class="col-4 center">
-        <h2 class="heavy">80%</h2>
-        <h4 class="dark">of football concussions are missed according to a Harvard study</h4>
-      </div>
-      <div class="col-4 center">
-        <h2 class="heavy">1</h2>
-        <h4 class="dark">The Jolt Sensor is the only sensor you need. Any athlete. Any sport.</h4>
-      </div>
-    </div>
-  </div>
   <div class="section">
     <div class="content">
-      <div class="col-6 right" style="float: right;">
-        <img src="assets/renders.png"/>
-      </div>
-      <div class="col-6 left" style="float: right;">
+      <div class="col-12 center">
         <h2 class="heavy">A Solution For Every Sport</h2>
-        <p>Mount the sensor to whatever you wear on your head. Whether you wear a sweatband, helmet, hairband, baseball cap, or wrestling headgear, the sensor can quickly and easily detach and re-mount for seamless transitions between sports.</p>
-        <a href="/shop"><button>LEARN MORE</button></a>
+        <p>Clip the sensor to whatever you wear on your head. Whether you wear a sweatband, helmet, hairband, baseball cap, or wrestling headgear, the sensor can quickly and easily detach and re-mount for seamless transitions between sports.</p>
+      </div>
+      <div class="col-3 center">
+        <img class="circle border" src="/assets/sport_football.png" style="max-width: 200px;"/>
+      </div>
+      <div class="col-3 center">
+        <img class="circle border" src="/assets/sport_hockey.png" style="max-width: 200px;"/>
+      </div>
+      <div class="col-3 center">
+        <img class="circle border" src="/assets/sport_soccer.png" style="max-width: 200px;"/>
+      </div>
+      <div class="col-3 center">
+        <img class="circle border" src="/assets/sport_wrestling.png" style="max-width: 200px;"/>
+      </div>
+      <div class="col-12 center">
+        <a href="/shop"><button>SEE ALL SPORTS</button></a>
       </div>
     </div>
   </div>
@@ -90,3 +90,13 @@ title: Jolt Sensor - Better concussion detection through real-time head impact t
       <a href="/shop"><button>SEE ALL SPORTS</button></a>
     </div>
   </div>
+  {% for post in site.tags.featured %}
+  <div class="section blue" style="border: none;">
+    <div class="content center">
+      <p>Featured Blog Post:</p>
+      <h2 class="no-top no-bottom heavy">{{ post.title }}</h2>
+      <p class="no-top no-bottom">{{ post.summary }}</p>
+      <a href="{{ post.url }}"><button class="cta">READ NOW</button></a>
+    </div>
+  </div>
+  {% endfor %}

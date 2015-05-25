@@ -24,7 +24,7 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.87195775"
+     inkscape:zoom="0.86883117"
      inkscape:cx="186.5"
      inkscape:cy="385"
      inkscape:current-layer="layer1"
@@ -73,13 +73,14 @@
          id="rect5630-6-6-7"
          style="fill:#ffffff;fill-opacity:1;stroke:none" />
       <rect
-         ry="0"
+         ry="3"
          y="160.83734"
          x="-971.53345"
          height="602.18011"
          width="340.81723"
          id="rect5630-2-3-7-8"
-         style="fill:#274663;fill-opacity:1;stroke:none" />
+         style="fill:#274663;fill-opacity:1;stroke:none"
+         rx="3" />
       <path
          transform="matrix(1.1892012,0,0,1.1892012,142.35507,-145.64875)"
          d="m -768.75742,803.49115 c 0,13.5947 -11.02068,24.61538 -24.61538,24.61538 -13.5947,0 -24.61539,-11.02068 -24.61539,-24.61538 0,-13.5947 11.02069,-24.61539 24.61539,-24.61539 13.5947,0 24.61538,11.02069 24.61538,24.61539 z"

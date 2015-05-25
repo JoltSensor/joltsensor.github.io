@@ -117,6 +117,10 @@ a:hover {
   text-decoration: underline;
 }
 
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
+  text-decoration: none;
+}
+
 /* BUTTONS
 ============================================================*/
 
@@ -282,10 +286,14 @@ nav.right a.active {
   opacity: 0;
 }
 
+#hero a {
+  color: rgb(212,235,11);
+}
+
 .screen {
   width: 100%;
   height: 100%;
-  background-color: rgb(26,102,216);
+  background-color: rgba(26,102,216,0.8);
   z-index: 1;
   position: absolute;
   color: rgb(255,255,255);
@@ -293,6 +301,10 @@ nav.right a.active {
 
 .screen.blank {
   background-color: rgba(0,0,0,0);
+}
+
+.screen.blue {
+  background-color: rgba(26,102,216,1);
 }
 
 .screen h1, .screen h2, .screen h3, .screen h4, .screen a {
@@ -367,6 +379,22 @@ nav.right a.active {
 
 .col-6 {
   width: 50%;
+}
+
+.content>.col-6:nth-of-type(even) {
+  padding-left: 0;
+}
+
+.content>.col-6:nth-of-type(odd) {
+  padding-right: 0;
+}
+
+.row>.col-6:nth-of-type(odd) {
+  padding-left: 0;
+}
+
+.row>.col-6:nth-of-type(even) {
+  padding-right: 0;
 }
 
 .col-8 {
@@ -473,6 +501,32 @@ img.rss:hover {
 
 /* BLOG STUFF
 ============================================================*/
+
+.blog.card {
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(255,255,255);
+  border: 1px solid rgb(230,230,230);
+  box-sizing: border-box;
+}
+
+.blog.pic {
+  height: 240px;
+  width: 100%;
+  padding-top: 20px;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+.blog.featured {
+  width: 100px;
+  padding: 10px;
+  font-weight: 900;
+  text-align: center;
+  background-color: rgba(26,102,216,0.85);
+  color: rgb(255,255,255);
+}
 
 .article {
 	max-width: 700px;
@@ -617,6 +671,13 @@ pre code {
     text-align: center;
   }
 
+  .col-8 {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+
 }
 
 /* MEDIA QUERY - 625PX
@@ -663,10 +724,6 @@ pre code {
   blockquote {
     padding: 0 0 0 30px;
     line-height: 25px;
-  }
-
-  button {
-    width: 100%;
   }
 
   .hero {

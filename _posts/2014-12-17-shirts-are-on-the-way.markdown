@@ -2,9 +2,10 @@
 title: "T-shirts Are On The Way"
 layout: post
 category: Updates
+tags: none
 author: ben
 hero: /assets/blog/images/plastics facility.jpg
-summary: "We couldn't have done it without your help. Now the hard work begins, and we couldn't be more excited."
+summary: "Kickstarter backer shirts are on the way, in time for the holidays. As manufacturing moves along, please remember to answer backer surveys."
 ---
 
 While you all are enjoying the holiday season with friends and families, we hope we can bring you some more holiday cheer!

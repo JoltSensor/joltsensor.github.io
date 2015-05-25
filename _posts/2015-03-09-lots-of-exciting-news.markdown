@@ -2,9 +2,10 @@
 title: "Lots of Exciting News"
 layout: post
 category: Updates
+tags: none
 author: ben
 hero: /assets/heros/blog/sprint-day-1.jpg
-summary: "We couldn't have done it without your help. Now the hard work begins, and we couldn't be more excited."
+summary: "Our team is growing, and we're beginning an incredible three month journey at the Techstars Sprint Mobile Health Accelerator in Kansas City."
 ---
 
 ### Sprint Mobile Health Accelerator, powered by Techstars
