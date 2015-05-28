@@ -7,17 +7,18 @@ title: Jolt Blog - Better concussion detection through real-time head impact tra
   	<div class="section">
 	    <div class="content">
 			{% for post in site.categories.thoughts %}
-				<div class="row">
-					<div class="col-4">
-						<div style="background-image: url('{{ post.hero }}'); background-size: cover; background-position: center; height: 180px; width: 100%;">
-						</div>
-					</div>
-					<div class="col-8">
-						<a href="{{ post.url }}"><h3 class="no-top heavy">{{ post.title | replace: "</br>", " " | upcase }}</h3></a>
-						<p class="no-top no-bottom"><a href="/blog/{{ post.category }}">{{ post.category }}</a> | {{ post.date | date: "%B %-d" }}</p>
-						<p class="no-bottom">{{ post.summary }} <a href="{{ post.url }}">Read more...</a></p>
+			<div class="col-6">
+				<div class="blog card">
+					<a href="{{ post.url }}">
+						<div class="blog pic" style="background-image: url('{{ post.hero }}');"></div>
+					</a>
+					<div class=" blog text">
+						<p class="no-top no-bottom"><a href="/blog/{{ post.category }}">{{ post.category | upcase }}</a></p>
+						<h3 class="no-top no-bottom heavy dark"><a href="{{ post.url }}">{{ post.title | replace: "</br>", " " }}</a></h3>
+						<p class="no-top no-bottom">{{ post.summary }} <a href="{{ post.url }}">Read more...</a></p>
 					</div>
 				</div>
+			</div>
 		  	{% endfor %}
 		</div>
   	</div> <!-- End of section -->

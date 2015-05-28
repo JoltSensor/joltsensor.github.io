@@ -6,18 +6,31 @@ title: Jolt Blog - Better concussion detection through real-time head impact tra
 <div id="wrapper">
   	<div class="section">
 	    <div class="content">
+			{% assign loopindex = 0 %}
 			{% for post in site.posts %}
-				<div class="row">
-					<div class="col-4">
-						<div style="background-image: url('{{ post.hero }}'); background-size: cover; background-position: center; height: 180px; width: 100%;">
+				{% assign loopindex = loopindex | plus: 1 %}
+	    		{% assign rowfinder = loopindex | modulo: 2 %}
+	    		{% if rowfinder == 1 %}
+					<div class="row">
+				{% endif %}
+					<div class="col-6">
+						<div class="blog card">
+							<a href="{{ post.url }}">
+								<div class="blog pic" style="background-image: url('{{ post.hero }}');"></div>
+							</a>
+							<div class=" blog text">
+								<p class="no-top no-bottom"><a href="/blog/{{ post.category | downcase }}">{{ post.category | upcase }}</a></p>
+								<h3 class="no-top no-bottom heavy dark"><a href="{{ post.url }}">{{ post.title | replace: "</br>", " " }}</a></h3>
+								<p class="no-top no-bottom">{{ post.summary }} <a href="{{ post.url }}">Read more...</a></p>
+							</div>
 						</div>
 					</div>
-					<div class="col-8">
-						<a href="{{ post.url }}"><h3 class="no-top heavy">{{ post.title | replace: "</br>", " " | upcase }}</h3></a>
-						<p class="no-top no-bottom"><a href="/blog/{{ post.category }}">{{ post.category }}</a> | {{ post.date | date: "%B %-d" }}</p>
-						<p class="no-bottom">{{ post.summary }} <a href="{{ post.url }}">Read more...</a></p>
+				{% if rowfinder == 0 %}
 					</div>
+				{% endif %}
+			{% endfor %}
+			{% if rowfinder != 0 %}
 				</div>
-		  	{% endfor %}
+			{% endif %}
 		</div>
   	</div> <!-- End of section -->

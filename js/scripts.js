@@ -58,6 +58,8 @@ $(window).scroll(function () {
 
 function setup() {
 
+    $('#hero.full').css({'height' : $(window).height() - 60 + "px"});
+
     var height = $('#hero').height();
 
     // Push the wrapper past the bottom of the hero

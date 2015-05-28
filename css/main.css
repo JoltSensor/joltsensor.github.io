@@ -381,19 +381,11 @@ nav.right a.active {
   width: 50%;
 }
 
-.content>.col-6:nth-of-type(even) {
+.row .col-6:nth-of-type(odd) {
   padding-left: 0;
 }
 
-.content>.col-6:nth-of-type(odd) {
-  padding-right: 0;
-}
-
-.row>.col-6:nth-of-type(odd) {
-  padding-left: 0;
-}
-
-.row>.col-6:nth-of-type(even) {
+.row .col-6:nth-of-type(even) {
   padding-right: 0;
 }
 
@@ -504,8 +496,6 @@ img.rss:hover {
 
 .blog.card {
   width: 100%;
-  padding: 20px;
-  background-color: rgb(255,255,255);
   border: 1px solid rgb(230,230,230);
   box-sizing: border-box;
 }
@@ -526,6 +516,11 @@ img.rss:hover {
   text-align: center;
   background-color: rgba(26,102,216,0.85);
   color: rgb(255,255,255);
+}
+
+.blog.text {
+  padding: 40px;
+  background-color: rgb(255,255,255);
 }
 
 .article {
