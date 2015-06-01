@@ -60,6 +60,18 @@ function setup() {
 
     $('#hero.full').css({'height' : $(window).height() - 60 + "px"});
 
+    if($(window).height() < 600){
+        $('#hero').css({'height' : $(window).height() - 60 + "px"});
+    }else{
+        $('#hero').css({'height' : 500 + "px"});
+    };
+
+    if($(window).width() < 480){
+        $('#hero').css({'height' : $(window).height() - 60 + "px"});
+    }else{
+        $('#hero').css({'height' : 500 + "px"});
+    };
+
     var height = $('#hero').height();
 
     // Push the wrapper past the bottom of the hero
