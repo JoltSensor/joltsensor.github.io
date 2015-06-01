@@ -1,3 +1,10 @@
+- date: 2015-05-29
+  source: "KCUR 89.3"
+  title: "Kansas City Entrepreneurs Create Innovative Sports Technology"
+  author: "Steve Kraske"
+  link: http://kcur.org/post/kansas-city-entrepreneurs-create-innovative-sports-technology
+  icon: /assets/icons/press/kcur.svg
+
 - date: 2015-01-30
   source: "The Huffington Post"
   title: "Five Fabulous Fitness Wearables that Were Successfully Crowdfunded"
@@ -61,12 +68,6 @@
   link: https://www.yahoo.com/tech/mit-students-invent-gadget-to-detect-concussions-in-95944765704.html
   icon: /assets/icons/press/yahoo.svg
 
-- date: 2014-07-07 09:00:00
-  source: "Downtown T-REX"
-  title: "Arch Grants Class of 2014 Moves into T-REX"
-  link: http://downtowntrex.com/2014/07/arch-grants-2014/
-  icon: /assets/icons/press/downtowntrex.svg
-
 - date: 2014-05-21 14:47:00
   source: "BostInno"
   title: "Meet the 128 Startups Accepted Into MassChallenge's Summer 2014 Class"
@@ -78,6 +79,12 @@
   title: "Spike in high-tech, life sciences startups in this year's MassChallenge accelerator program"
   link: http://www.bizjournals.com/boston/blog/startups/2014/05/spike-in-high-tech-life-sciences-startups-in-this.html
   icon: /assets/icons/press/bbj.svg
+
+- date: 2014-07-07 09:00:00
+  source: "Downtown T-REX"
+  title: "Arch Grants Class of 2014 Moves into T-REX"
+  link: http://downtowntrex.com/2014/07/arch-grants-2014/
+  icon: /assets/icons/press/downtowntrex.svg
 
 - date: 2014-05-21 13:30:00
   source: "BetaBoston"

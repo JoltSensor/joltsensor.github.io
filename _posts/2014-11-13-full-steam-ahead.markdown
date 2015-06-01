@@ -4,7 +4,7 @@ layout: post
 category: Updates
 tags: none
 author: ben
-hero: /assets/heros/blog/sprint-day-1.jpg
+hero: "/assets/blog/banners/primary_blue_background.png"
 summary: "Our manufacturing efforts are moving along, and we're excited to share final designs for backer t-shirts and our recent re-branding efforts."
 ---
 
