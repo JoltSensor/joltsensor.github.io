@@ -671,6 +671,10 @@ pre code {
     padding-right: 0;
   }
 
+  .center-resize h1, .center-resize h3 {
+    margin: 0 auto;
+  }
+
 }
 
 /* MEDIA QUERY - 625PX

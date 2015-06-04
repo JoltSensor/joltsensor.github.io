@@ -2,23 +2,10 @@ $(document).ready(function(){
     
     setup();
 
-    /*
-
-    if($('#hero').length){
-        
-        $('#header_wrapper').css({'background-color' : "rgba(26,102,216,0)"});
-    
-    }else{
-        
-        $('#wrapper').css({'top' : 60+"px"});
-    
-    }
-
-    */
-
     // Fixes issues with rendering in some mobile browsers
     
-    setTimeout(function(){setup();}, 3000);
+    setTimeout(function(){setup();}, 1000);
+    setTimeout(function(){setup();}, 2000);
 
 });
 
@@ -26,33 +13,23 @@ $(window).resize(setup);
 
 $(window).scroll(function () { 
 
-    var height = $('#hero').height();
-    var scrolled = $(window).scrollTop();
-    var difference = height - scrolled;
+    var width = $(window).width();
 
-    /*
+    if(width > 480){
 
-    // Add fill to navbar when it hits bottom of hero
+        var height = $('#hero').height();
+        var scrolled = $(window).scrollTop();
+        var difference = height - scrolled;
 
-    if(difference > 60){
+        // Parallax scrolling for hero
 
-        $('#header_wrapper').css({'background-color' : "rgba(26,102,216,0)"});
+        $('#hero').css({'top' : (60-scrolled/2)+"px"});
 
-    }else {
-
-        $('#header_wrapper').css({'background-color' : "rgba(26,102,216,1)"});
-
-    }
-
-    */
-
-    // Parallax scrolling for hero
-
-    $('#hero').css({'top' : (60-scrolled/2)+"px"});
-
-    // Stop any other animations affecting hero content & fade out with scroll
+        // Stop any other animations affecting hero content & fade out with scroll
+        
+        $('#hero .content').stop().css({'opacity': 1-(1.5*scrolled/height)});
     
-    $('#hero .content').stop().css({'opacity': 1-(1.5*scrolled/height)});
+    }
 
 });
 
