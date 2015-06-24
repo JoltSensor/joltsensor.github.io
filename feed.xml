@@ -1,3 +1,5 @@
+---
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
@@ -7,7 +9,7 @@
 		<atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
 		{% for post in site.posts limit:10 %}
 			<item>
-				<title>{{ post.title | replace: '</br>', ' ' | xml_escape }}</title>
+				<title>{{ post.title | replace: '</br>', ' '] | xml_escape }}</title>
 				<description>{{ post.content | xml_escape }}</description>
 				<author>{{ post.author }}</author>
 				<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>

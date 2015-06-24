@@ -5,14 +5,14 @@
   box-sizing: border-box;
   position: relative;
   margin:0 auto;
-  padding: 32px;
+  padding: 0;
   height: auto;
   overflow: auto;
   width: 100%;
 }
 
-.footer #mc_embed_signup form {
-  padding: 0;
+#mc_embed_signup form p {
+  color: rgb(255,255,255);
 }
 
 #mc_embed_signup input {
@@ -30,52 +30,30 @@
   font-weight: 300;
   vertical-align: middle;
   text-decoration: none;
-  color: rgb(102,102,102); 
+  color: rgb(255,255,255);
   outline: none;
-  background: rgb(255,255,255);
+  background: none;
   box-sizing: border-box;
-  border: 1px solid rgb(210,210,210);
+  border: none;
+  border-bottom: 2px solid rgb(255,255,255);
   float: none;
   text-align: center;
 }
 
 ::-webkit-input-placeholder { /* WebKit browsers */
-  color: rgb(153,153,153);
+  color: rgba(255,255,255,0.5);
 }
 
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-  color: rgb(153,153,153);
+  color: rgba(255,255,255,0.5);
 }
 
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-  color: rgb(153,153,153);
+  color: rgba(255,255,255,0.5);
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10+ */
-  color: rgb(153,153,153) !important;
-}
-
-.footer #mc_embed_signup input {
-  color: rgb(255,255,255);
-  background: none;
-  border: none;
-  border-bottom: 2px solid rgb(255,255,255);
-}
-
-::-webkit-input-placeholder { /* WebKit browsers */
-  color: rgb(255,255,255);
-}
-
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-  color: rgb(255,255,255);
-}
-
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-  color: rgb(255,255,255);
-}
-
-:-ms-input-placeholder { /* Internet Explorer 10+ */
-  color: rgb(255,255,255) !important;
+  color: rgba(255,255,255,0.5) !important;
 }
 
 .clear {
@@ -97,43 +75,16 @@
   border-radius: 100px;
   outline: none;
   cursor: pointer;
-  color: rgb(26,102,216);
-  border: 2px solid rgb(26,102,216);
+  color: rgb(255,255,255);
+  border: 2px solid rgb(204,255,0);
   cursor: pointer;
   display: inline-block;
 }
 
 #mc_embed_signup .button:hover {
-  background-color: rgb(26,102,216);
-  color: rgb(255,255,255);
-}
-
-#mc_embed_signup .button:active {
-  background-color: rgb(23,92,194);
-  border-color: rgb(23,92,194);
-}
-
-.footer #mc_embed_signup .button {
-  background: none;
-  border: 2px solid rgb(212,235,11);
-}
-
-.footer #mc_embed_signup .button:hover {
-  background-color: rgb(212,235,11);
-  color: rgb(39,70,99);
-}
-
-/* MEDIA QUERY - 625PX
-============================================================*/
-
-@media (max-width:625px){
-
-  #mc_embed_signup input {
-    }
-
-  #mc_embed_signup .button {
-  }
-
+  color: rgb(26,102,216);
+  background: rgb(204,255,0);
+  border: 2px solid rgb(204,255,0);
 }
 
 /* MEDIA QUERY - 490PX

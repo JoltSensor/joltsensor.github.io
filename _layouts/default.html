@@ -23,76 +23,80 @@
     </script>
   </head>
   <body>
-    <div id="header_wrapper">
-      <div id="header">
+    <div id="header">
+      <div class="wrapper">
         <nav class="left">
           <a href="/">
             <img src="/assets/logos/white_text_small.png"/>
           </a>
         </nav>
+        <nav class="left center">
+          <img class="hamburger" src="/assets/icons/general/hamburger.svg"/>
+          <img class="exit" src="/assets/icons/general/exit.svg"/>
+        </nav>
         <nav class="right">
-          <li><a href="/shop" class="active"><button class="shop">SHOP NOW</button></a></li>
+          <li><a href="/shop" class="active"><button class="shop">ORDER NOW</button></a></li>
         </nav>
       </div>
-    </div> <!-- End of header -->
-
-    <!-- Content Start -->
-
+    </div>
+    <div id="menu">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/shop">Product</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/jobs">Jobs</a></li>
+        <li><a href="/press">Press</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+      <div id="mc_embed_signup">
+        <form action="http://joltsensor.us3.list-manage.com/subscribe/post?u=30b31dec2dac04ee2d025ff98&amp;id=fb4cff7c0c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <p>Subscribe for the latest updates, promotions, and development news.</p>
+          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email address" required autocomplete="off">
+          <div style="position: absolute; left: -5000px;">
+            <input type="text" name="b_30b31dec2dac04ee2d025ff98_fb4cff7c0c" value="">
+          </div>
+          <div class="clear"><input type="submit" value="SUBSCRIBE TO UPDATES" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </form>
+      </div>
+    </div>
     {{ content }}
-
-      <!-- Content End -->
-
-      <div class="section footer">
-        <div class="content">
-          <div class="col-12 center">
-            <a href="http://facebook.com/joltsensor"><img class="circle no-bottom social" src="/assets/icons/social/facebook-white.svg"/></a>
-            <a href="http://twitter.com/joltsensor"><img class="circle no-bottom social" src="/assets/icons/social/twitter-white.svg"/></a>
-            <a href="http://instagram.com/joltsensor"><img class="circle no-bottom social" src="/assets/icons/social/instagram-white.svg"/></a>
-            <a href="/feed.xml"><img class="circle no-bottom social" src="/assets/icons/social/rss-white.svg"/></a>
-          </div>
-          <div class="col-12 center">
-            <div id="mc_embed_signup">
-              <form action="http://joltsensor.us3.list-manage.com/subscribe/post?u=30b31dec2dac04ee2d025ff98&amp;id=fb4cff7c0c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email address" required autocomplete="off">
-                <div style="position: absolute; left: -5000px;">
-                  <input type="text" name="b_30b31dec2dac04ee2d025ff98_fb4cff7c0c" value="">
-                </div>
-                <div class="clear"><input type="submit" value="SUBSCRIBE TO UPDATES" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-              </form>
-            </div><!-- End of sign-up form -->
-          </div>
-          <div class="col-12 center">
-            <li><a href="/about">About</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/shop">Shop</a></li>
-            <li><a href="/press">Press</a></li>
-            <li><a href="/jobs">Jobs</a></li>
-            <li><a href="/contact">Contact</a></li></br></br>
-            <a href="/">© 2015, Jolt Athletics Inc.</a></br></br><span style="font-weight: 600;">MADE WITH <span style="color: rgb(236,93,87);">❤</span> IN MISSOURI</span></br>Accelerated by Techstars KC
-          </div>
+      <div id="footer">
+        <div class="wrapper">
+          <nav class="left">
+            <li><span style="font-weight: 600;">MADE WITH <span style="color: rgb(236,93,87);">❤</span> IN MISSOURI</span></li>
+          </nav>
+          <nav class="left center">
+            <li><a href="/">©2015, Jolt Athletics Inc.</a></li>
+          </nav>
+          <nav class="right">
+            <a href="http://facebook.com/joltsensor"><div class="facebook"></div></a>
+            <a href="http://twitter.com/joltsensor"><div class="twitter"></div></a>
+            <a href="http://instagram.com/joltsensor"><div class="instagram"></div></a>
+            <a href="/feed.xml"><div class="rss"></div></a>
+          </nav>
         </div>
-      </div><!-- End of footer -->
-    </div> <!-- End of wrapper -->
-      <!-- AdRoll tracking pixel start -->
+      </div>
+    </div>
     <script type="text/javascript">
-    adroll_adv_id = "UVINR5BABBAWZF7V7YJ27C";
-    adroll_pix_id = "2DBWH2LQOFANNF37EKNVKD";
-    (function () {
-    var oldonload = window.onload;
-    window.onload = function(){
-       __adroll_loaded=true;
-       var scr = document.createElement("script");
-       var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
-       scr.setAttribute('async', 'true');
-       scr.type = "text/javascript";
-       scr.src = host + "/j/roundtrip.js";
-       ((document.getElementsByTagName('head') || [null])[0] ||
-        document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
-       if(oldonload){oldonload()}};
-    }());
+      adroll_adv_id = "UVINR5BABBAWZF7V7YJ27C";
+      adroll_pix_id = "2DBWH2LQOFANNF37EKNVKD";
+      (function () {
+      var oldonload = window.onload;
+      window.onload = function(){
+         __adroll_loaded=true;
+         var scr = document.createElement("script");
+         var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+         scr.setAttribute('async', 'true');
+         scr.type = "text/javascript";
+         scr.src = host + "/j/roundtrip.js";
+         ((document.getElementsByTagName('head') || [null])[0] ||
+          document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+         if(oldonload){oldonload()}};
+      }());
     </script>
-    <!-- AdRoll tracking pixel end -->
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="/js/scripts.js"></script>
+  <script src="//my.hellobar.com/f0f73984cc15b3993cb3fbd05914289a3aeb8a28.js" type="text/javascript" charset="utf-8" async="async"></script>
 </html>

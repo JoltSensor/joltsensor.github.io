@@ -24,18 +24,14 @@ body {
 ============================================================*/
 
 h1, h2, h3, h4 {
-  font-weight: 300;
   color: rgb(26,102,216);
+  font-weight: 300;
   line-height: 130%;
 }
 
 h1 {  
   font-size: 40px;
   margin: 24px 0 16px 0;
-}
-
-h1.heavy, h2.heavy, h3.heavy, h4.heavy {
-  font-weight: 900;
 }
 
 h2 {
@@ -45,18 +41,20 @@ h2 {
 
 h3 {
   font-size: 24px;
-  font-weight: 300;
   margin: 24px 0 16px 0;
 }
 
 h4 {
   font-size: 20px;
-  font-weight: 300;
   margin: 24px 0 16px 0;
 }
 
 h1.dark, h2.dark, h3.dark, h4.dark {
   color: rgb(102,102,102);
+}
+
+.heavy {
+  font-weight: 900;
 }
 
 /* OTHER TEXT/CONTENT
@@ -76,10 +74,6 @@ ul, li {
 
 ul li, ol li {
   margin: 0;
-}
-
-.content img {
-	width: 100%;
 }
 
 p img {
@@ -117,7 +111,10 @@ a:hover {
   text-decoration: underline;
 }
 
-h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover {
   text-decoration: none;
 }
 
@@ -145,12 +142,12 @@ button:hover {
 
 button.cta {
   color: rgb(255,255,255);
-  border: 2px solid rgb(212,235,11);
+  border: 2px solid rgb(204,255,0);
 }
 
 button.cta:hover {
-  background-color: rgb(212,235,11);
-  border-color: rgb(212,235,11);
+  background-color: rgb(204,255,0);
+  border-color: rgb(204,255,0);
   color: rgb(26,102,216);
 }
 
@@ -158,54 +155,67 @@ button.shop {
   margin: 0;
   padding: 4px 12px;
   color: rgb(255,255,255);
-  border: 2px solid rgb(212,235,11);
+  border: 2px solid rgb(204,255,0);
 }
 
 button.shop:hover {
-  background-color: rgb(212,235,11);
-  color: rgb(39,70,99);
+  background-color: rgb(204,255,0);
+  color: rgb(26,102,216);
 }
 
 /* WRAPPER
 ============================================================*/
 
 #wrapper {
-  z-index: 9;
+  z-index: 1;
   position: relative;
   background-color: rgb(255,255,255);
-  top: 500px;
+  top: 570px;
 }
 
-/* HEADER
+/* HEADER/FOOTER
 ============================================================*/
 
-#header_wrapper {
+#header,
+#footer {
+  height: 30px;
   width: 90%;
-  padding: 0 5%;
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  background-color: rgb(39,70,99);
+  padding: 20px 5%;
+  background-color: rgb(21,82,173);
+  color: rgb(255,255,255);
+  font-size: 14px;
 }
 
 #header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+}
+
+#header .wrapper,
+#footer .wrapper {
   max-width: 1000px;
-  height: 30px;
-  padding: 15px 0;
   margin: 0 auto;
 }
 
-/* NAVIGATION
+/* NAVIGATION ELEMENTS
 ============================================================*/
 
 nav {
   color: rgb(255,255,255);
   height: 30px;
+  width: 33.33%;
   font-weight: 400;
 }
 
 nav a {
   color: rgb(255,255,255);
+  text-decoration: none;
+  border-bottom: none;
+}
+
+nav a:hover {
+  color: rgb(212,235,11);
   text-decoration: none;
   border-bottom: none;
 }
@@ -233,7 +243,7 @@ nav.left {
 
 nav.left li {
   margin: 0;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 nav.left a:hover {
@@ -269,6 +279,96 @@ nav.right a.active {
   text-decoration: none;
 }
 
+/* HEADER/FOOTER SOCIAL BUTTONS
+============================================================*/
+
+.facebook, .twitter, .instagram, .rss {
+  width: 24px;
+  height: 24px;
+  margin: 3px 8px;
+  background-size: cover;
+  background-position: left;
+  display: inline-block;
+}
+
+.facebook {
+  background-image: url('/assets/icons/social/facebook-white.svg');
+}
+
+.twitter {
+  background-image: url('/assets/icons/social/twitter-white.svg');
+}
+
+.instagram {
+  background-image: url('/assets/icons/social/instagram-white.svg');
+}
+
+.rss {
+  background-image: url('/assets/icons/social/rss-white.svg');
+}
+
+.facebook:hover, .twitter:hover, .instagram:hover, .rss:hover {
+  background-position: right;
+}
+
+/* MENU
+============================================================*/
+
+.exit {
+  visibility: hidden;
+}
+
+#menu {
+  z-index:9;
+  width:90%;
+  padding: 0 5%;
+  background-color: rgb(26,102,216);
+  position: fixed;
+  top: 70px;
+  visibility: hidden;
+  text-align: center;
+}
+
+#menu ul {
+  display: block;
+  list-style-type: none;
+  list-style-image: none;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+#menu li {
+  padding: 8px;
+  width: 100%;
+  display: inline-block;
+  font-size: 20px;
+  width: auto;
+  overflow: auto;
+}
+
+#menu li:hover a {
+  color: rgb(204,255,0);
+}
+
+#menu a { 
+  color: rgb(255,255,255);
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  overflow: auto;
+}
+
+#menu a:hover {
+  color: rgb(204,255,0);
+  text-decoration: none;
+}
+
+.hamburger,
+.exit {
+  cursor: pointer;
+}
+
 /* HERO
 ============================================================*/
 
@@ -278,12 +378,13 @@ nav.right a.active {
   background-size: cover;
   background-position: center;
   position: fixed;
+  top: 70px;
   z-index: 1;
-  top: 60px;
 }
 
 #hero .content {
   opacity: 0;
+  max-width: 1000px;
 }
 
 #hero a {
@@ -293,7 +394,7 @@ nav.right a.active {
 .screen {
   width: 100%;
   height: 100%;
-  background-color: rgba(26,102,216,0.8);
+  background-color: rgba(26,102,216,0.85);
   z-index: 1;
   position: absolute;
   color: rgb(255,255,255);
@@ -307,9 +408,18 @@ nav.right a.active {
   background-color: rgba(26,102,216,1);
 }
 
-.screen h1, .screen h2, .screen h3, .screen h4, .screen a {
+.screen h1,
+.screen h2,
+.screen h3,
+.screen h4,
+.screen a {
 	color: rgb(255,255,255);
   margin: 0;
+}
+
+.screen a:hover {
+  color: rgb(204,255,0);
+  text-decoration: none;
 }
 
 .content {
@@ -327,8 +437,7 @@ nav.right a.active {
 .section {
   width: 100%;
   height: auto;
-  overflow:auto;
-  border-bottom: 1px solid rgb(230,230,230);
+  overflow: auto;
 }
 
 .section.dark {
@@ -341,12 +450,19 @@ nav.right a.active {
   color: rgb(255,255,255);
 }
 
-.section.blue h1, .section.blue h2, .section.blue h3, .section.blue a {
+.section.blue h1,
+.section.blue h2,
+.section.blue h3,
+.section.blue a {
 	color: rgb(255,255,255);
 }
 
 .section .content {
   padding: 48px 5%;
+}
+
+.section .screen {
+  position: relative;
 }
 
 /* ROWS & COLUMNS
@@ -361,7 +477,11 @@ nav.right a.active {
   display: block;
 }
 
-.col-2, .col-3, .col-4, .col-6, .col-12 {
+.col-2,
+.col-3,
+.col-4,
+.col-6,
+.col-12 {
   box-sizing: border-box;
   padding: 20px;
   display: block;
@@ -378,6 +498,14 @@ nav.right a.active {
 
 .col-4 {
   width: 33.33%;
+}
+
+.row .col-4:nth-of-type(1) {
+  padding-left: 0;
+}
+
+.row .col-4:nth-of-type(3) {
+  padding-right: 0;
 }
 
 .col-6 {
@@ -404,13 +532,15 @@ nav.right a.active {
 img.circle {
   box-sizing: border-box;
   width: 100%;
+  max-width: 240px;
   margin: 0 auto;
   margin-bottom: 10px;
   border-radius: 50%;
   display: block;
 }
 
-img.border, img.partner:hover {
+img.border,
+img.partner:hover {
   border: 1px solid rgb(204,204,204);
 }
 
@@ -462,38 +592,6 @@ img.press:hover, img.sport:hover {
 	background-color: rgb(230,230,230);
 }
 
-img.email {
-	background-color: rgb(30,122,215);
-}
-
-img.email:hover {
-	background-color: rgb(27,110,193);
-}
-
-img.facebook {
-	background-color: rgb(73,109,168);
-}
-
-img.facebook:hover {
-	background-color: rgb(66,98,151);
-}
-
-img.twitter {
-	background-color: rgb(93,168,220);
-}
-
-img.twitter:hover {
-	background-color: rgb(84,151,198);
-}
-
-img.rss {
-	background-color: rgb(252,147,43);
-}
-
-img.rss:hover {
-	background-color: rgb(226,132,39);
-}
-
 /* BLOG STUFF
 ============================================================*/
 
@@ -536,43 +634,6 @@ img.rss:hover {
   text-align: justify;
 }
 
-/* FOOTER
-============================================================*/
-
-.footer {
-  background-color: rgb(39,70,99);
-  color: rgb(255,255,255);
-  font-size: 14px;
-}
-
-.footer a {
-  color: rgb(255,255,255);
-}
-
-.footer a:hover {
-  color: rgb(212,235,11);
-}
-
-.footer .content {
-	padding-bottom: 20px;
-}
-
-.footer li {
-	margin: 0;
-	display: inline-block;
-	padding: 0 5px;
-  font-size: 14px;
-}
-
-.footer img.social {
-  border: 2px solid rgb(255,255,255);
-  width: 48px;
-}
-
-.footer img.social:hover {
-  border: 2px solid rgb(212,235,11);
-}
-
 /* CODE FORMATTING
 ============================================================*/
 
@@ -599,15 +660,17 @@ pre code {
   padding: 0;
 }
 
-/* ALIGNMENT CLASSES
+/* STYLE & ALIGNMENT CLASSES
 ============================================================*/
 
 .no-bottom {
   margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .no-top {
   margin-top: 0;
+  padding-top: 0;
 }
 
 .left {
