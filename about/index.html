@@ -85,27 +85,59 @@ title: About Jolt - Better concussion detection through real-time head impact tr
       </div>
     </div>
   </div>
-  <div class="section dark">
-    <div class="content center">
-      <h2 class="no-top heavy">Manufacturing Operations</h2>
-      <div class="column col-3 center">
-        <img class="circle social" src="/assets/icons/states/usa.svg"/><p>Proudly American-made</p>
-      </div>
-      <div class="col-3 center">
-        <img class="circle social" src="/assets/icons/states/massachusetts.svg"/><p>Designed in Boston</p>
-      </div>
-      <div class="col-3 center">
-        <img class="circle social" src="/assets/icons/states/missouri.svg"/><p>Manufactured in Missouri</p>
-      </div>
-      <div class="col-3 center">
-        <img class="circle social" src="/assets/icons/states/illinois.svg"/><p>Assembled in Illinois</p>
+  <div class="section" style="background-image:url('/assets/heros/lights.jpg');">
+    <div class="screen">
+      <div class="content center">
+        <div class="col-12">
+          <h2 class="heavy">WE VALUE...</h2>
+        </div>
+        <div class="col-4">
+          <h4 class="heavy no-top no-bottom">COMMUNICATION</h4>
+          <p class="no-top no-bottom">Be direct, honest, and transparent. No bullshit. No drama.</p>
+        </div>
+        <div class="col-4">
+          <h4 class="heavy no-top no-bottom">TEAMWORK</h4>
+          <p class="no-top no-bottom">We rise and fall as a team. We neither succeed, nor fail, as individuals.</p>
+        </div>
+        <div class="col-4">
+          <h4 class="heavy no-top no-bottom">COMMITMENT</h4>
+          <p class="no-top no-bottom">No matter what, we do what it takes to get the job done. And we do it right.</p>
+        </div>
+        <div class="col-4">
+          <h4 class="heavy no-top no-bottom">RESILIENCE</h4>
+          <p class="no-top no-bottom">When problems arise, we focus on solutions and keep moving forward.</p>
+        </div>
+        <div class="col-4">
+          <h4 class="heavy no-top no-bottom">EFFICIENCY</h4>
+          <p class="no-top no-bottom">Stay focused, act decisively, and get shit done. We work smarter, not harder.</p>
+        </div>
+        <div class="col-4">
+          <h4 class="heavy no-top no-bottom">BALANCE</h4>
+          <p class="no-top no-bottom">Don't forget to have fun. All work and no play makes Jolt a dull company.</p>
+        </div>
       </div>
     </div>
   </div>
-  <div class="section blue" style="border: none;">
+  <div class="section">
+    <div class="content">
+      <h2 class="heavy">Working at Jolt</h2>
+      <p>We're a small team of engineers and athletes who work hard and play harder. We tackle big problems at a rapid pace, but always keeps things relaxed and fun. Sound like your kind of place? Check out the current job openings below. If you don't see the perfect spot for you, don't hesitate to shoot us your resume and a quick note at <a href="mailto:jobs@joltsensor.com">jobs@joltsensor.com</a>, and we'll keep you in mind for future openings, or we may even create a new position just for you. We're always on the lookout for the next great addition to our team.</p>
+    </div>
+  </div>
+  <div class="section dark">
     <div class="content center">
-      <h2 class="no-top no-bottom heavy">WANT TO JOIN THE TEAM?</h2>
-      <p class="no-top no-bottom">We're always on the lookout for great talent. Visit our jobs page to see if Jolt is the right fit for you.</p>
-      <a href="/jobs"><button class="cta">VIEW JOB OPENINGS</button></a>
+      <div class="col-12 center">
+          <img class="circle padded border spec" src="/assets/icons/general/nosymbol.svg"/>
+          <p>We don't have any open positions right now</p>
+      </div>
+      <!--{% for job in site.data.jobs %}
+        <div class="col-12 center">
+          <img class="circle padded border spec" src={% if job.type == "Mobile Developer" %}"/assets/icons/general/phone.png"{% elsif job.type == "Web Developer" %}"/assets/icons/general/monitor.png"{% elsif job.type == "Business" %}"/assets/icons/general/briefcase.png"{% elsif job.type == "Communication" %}"/assets/icons/general/megaphone.png"{% elsif job.type == "Mechanical Engineer" %}"/assets/icons/general/gear.png"{% elsif job.type == "Electrical Engineer" %}"/assets/icons/general/chip.png"{% elsif job.type == "Designer" %}"/assets/icons/general/palette.png"{% endif %}/>
+          <a href="mailto:jobs@joltsensor.com?subject={{ job.position }}"><h3>{{ job.position }}</h3></a>
+          <p>{{ job.hours }} in {{ job.location }}</p>
+          <p>{{ job.description }}</p>
+          <p>{{ job.qualifications }}</p>
+        </div>
+      {% endfor %}-->
     </div>
   </div>

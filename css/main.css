@@ -208,6 +208,15 @@ nav {
   font-weight: 400;
 }
 
+#header nav.left,
+#header nav.right {
+  width: 45%;
+}
+
+#header nav.center {
+  width: 10%;
+}
+
 nav a {
   color: rgb(255,255,255);
   text-decoration: none;
@@ -282,7 +291,7 @@ nav.right a.active {
 /* HEADER/FOOTER SOCIAL BUTTONS
 ============================================================*/
 
-.facebook, .twitter, .instagram, .rss {
+.facebook, .twitter, .instagram, .rss, .email {
   width: 24px;
   height: 24px;
   margin: 3px 8px;
@@ -307,7 +316,31 @@ nav.right a.active {
   background-image: url('/assets/icons/social/rss-white.svg');
 }
 
-.facebook:hover, .twitter:hover, .instagram:hover, .rss:hover {
+.email {
+  background-image: url('/assets/icons/general/email-white.svg');
+}
+
+.facebook:hover,
+.twitter:hover,
+.instagram:hover,
+.rss:hover,
+.email:hover {
+  background-position: right;
+}
+
+.share {
+  height: 30px;
+  display: inline-block;
+  padding: 13px 8px;
+  margin: 0 8px;
+  background-color: rgb(21,82,173);
+  border-radius: 100px;
+}
+
+.share:hover .facebook,
+.share:hover .twitter,
+.share:hover .rss,
+.share:hover .email {
   background-position: right;
 }
 
@@ -334,7 +367,7 @@ nav.right a.active {
   list-style-type: none;
   list-style-image: none;
   margin: 0 auto;
-  padding: 20px 0;
+  padding-top: 20px;
 }
 
 #menu li {
@@ -438,6 +471,9 @@ nav.right a.active {
   width: 100%;
   height: auto;
   overflow: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .section.dark {
@@ -453,8 +489,13 @@ nav.right a.active {
 .section.blue h1,
 .section.blue h2,
 .section.blue h3,
+.section.blue h4,
 .section.blue a {
 	color: rgb(255,255,255);
+}
+
+.section.blue a:hover {
+  color: rgb(204,255,0);
 }
 
 .section .content {
@@ -523,7 +564,7 @@ nav.right a.active {
 .col-12 {
 	width: 100%;
   padding: 10px 0;
-  margin: 10px auto;
+  margin: 0 auto;
 }
 
 /* CROPPED IMAGES/ICONS
@@ -557,20 +598,6 @@ img.headshot {
 
 img.team {
 	max-width: 160px;
-}
-
-.social {
-	float: none;
-	height: auto;
-	overflow: auto;
-}
-
-img.circle.social {
-	box-sizing: border-box;
-	width: 60px;
-	margin: 10px;
-	display: inline-block;
-	text-align: center;
 }
 
 img.circle.spec {
@@ -794,10 +821,20 @@ pre code {
     padding: 15px 5%;
   }
 
-  footer .container {
+  #menu li {
+    display: block;
+  }
+
+  #footer {
     height: auto;
     overflow: auto;
-    padding: 15px 15%;
+  }
+
+  #footer nav {
+    width: 100%;
+    float: none;
+    margin: 8px auto;
+    text-align: center;
   }
 
 }
