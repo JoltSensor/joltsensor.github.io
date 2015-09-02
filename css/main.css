@@ -63,13 +63,25 @@ h1.dark, h2.dark, h3.dark, h4.dark {
 p, li {
   font-size:17px;
   font-weight:300;
-  line-height:150%;
+  line-height: 150%;
   margin: 16px 0px 16px 0px;
 }
 
 ul, li {
   list-style-position: inside;
+}
+
+ul {
   margin: 20px 0;
+}
+
+ul ul {
+  margin: 0 20px;
+}
+
+ul.inline li {
+  display: inline-block;
+  padding: 0 8px;
 }
 
 ul li, ol li {
@@ -122,55 +134,67 @@ h4 a:hover {
 ============================================================*/
 
 button {
-  margin: 16px 16px 16px 0;
-  padding: 8px 18px;
-  background: none;
+  margin: 16px 0;
+  padding: 12px 24px;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  border-radius: 100px;
+  font-size: 18px;
+  font-weight: 300;
+  border-radius: 8px;
   outline: none;
   cursor: pointer;
-  color: rgb(26,102,216);
-  border: 3px solid rgb(26,102,216);
+  border: none;
+  color: rgb(255,255,255);
+  background-color: rgb(26,102,216);
 }
 
 button:hover {
-  background-color: rgb(26,102,216);
-  color: rgb(255,255,255);
+  border-bottom: 4px solid rgb(21,82,173);
+  margin-bottom: 12px;
 }
 
 button.cta {
-  color: rgb(255,255,255);
-  border: 2px solid rgb(204,255,0);
+  color: rgb(26,102,216);
+  background-color: rgb(204,255,0);
+  border: none;
+  border-radius: 12px;
+  font-size: 24px;
+  padding: 20px 32px;
+  font-weight: 300;
 }
 
 button.cta:hover {
-  background-color: rgb(204,255,0);
-  border-color: rgb(204,255,0);
-  color: rgb(26,102,216);
+  border-bottom: 4px solid rgb(168,224,43);
+  margin-bottom: 12px;
+}
+
+.section button.cta {
+
 }
 
 button.shop {
+  font-size: 14px;
+  font-weight: 400;
   margin: 0;
-  padding: 4px 12px;
-  color: rgb(255,255,255);
-  border: 2px solid rgb(204,255,0);
+  padding: 6px 12px;
+  color: rgb(26,102,216);
+  border: none;
+  background-color: rgb(204,255,0);
+  border-radius: 6px;
 }
 
 button.shop:hover {
-  background-color: rgb(204,255,0);
-  color: rgb(26,102,216);
+  border-bottom: 2px solid rgb(168,224,43);
+  margin-bottom: -2px;
 }
 
 /* WRAPPER
 ============================================================*/
 
 #wrapper {
-  z-index: 1;
+  z-index: 2;
   position: relative;
   background-color: rgb(255,255,255);
-  top: 570px;
+  top: 70px;
 }
 
 /* HEADER/FOOTER
@@ -178,18 +202,25 @@ button.shop:hover {
 
 #header,
 #footer {
-  height: 30px;
   width: 90%;
   padding: 20px 5%;
-  background-color: rgb(21,82,173);
-  color: rgb(255,255,255);
   font-size: 14px;
 }
 
 #header {
-  position: fixed;
-  z-index: 10;
+  height: 30px;
   top: 0;
+  position: fixed;
+  z-index: 8;
+  background-color: rgb(26,102,216);
+  color: rgb(255,255,255);
+}
+
+#footer {
+  height: auto;
+  overflow: auto;
+  background-color: rgb(26,102,216);
+  color: rgb(70,70,70);
 }
 
 #header .wrapper,
@@ -198,23 +229,27 @@ button.shop:hover {
   margin: 0 auto;
 }
 
+#footer nav li {
+  margin: 0 4px;
+}
+
 /* NAVIGATION ELEMENTS
 ============================================================*/
 
 nav {
   color: rgb(255,255,255);
   height: 30px;
-  width: 33.33%;
-  font-weight: 400;
+  font-weight: 300;
 }
 
-#header nav.left,
-#header nav.right {
-  width: 45%;
+#footer nav {
+  height: auto;
+  overflow: auto;
 }
 
-#header nav.center {
-  width: 10%;
+#header nav.menuburger {
+  padding-right: 20px;
+  opacity: 50%;
 }
 
 nav a {
@@ -240,7 +275,7 @@ nav img {
   height: 20px;
   display: inline-block;
   vertical-align: middle;
-  margin-top: 5px;
+  margin-top: 0px;
 }
 
 /* NAV LEFT
@@ -273,17 +308,14 @@ nav.right a {
 nav.right li {
   margin: 0 0 0 16px;
   font-size: 14px;
-  font-weight: 400;
 }
 
 nav.right a:hover {
-  font-weight: 400;
   opacity: 1.0;
   text-decoration: none;
 }
 
 nav.right a.active {
-  font-weight: 400;
   opacity: 1.0;
   text-decoration: none;
 }
@@ -353,13 +385,15 @@ nav.right a.active {
 
 #menu {
   z-index:9;
-  width:90%;
-  padding: 0 5%;
-  background-color: rgb(26,102,216);
+  width: 280px;
+  padding: 0;
+  background-color: rgb(13,51,108);
   position: fixed;
-  top: 70px;
+  top: 0px;
+  right: 0px;
   visibility: hidden;
-  text-align: center;
+  height: 100%;
+  overflow: auto;
 }
 
 #menu ul {
@@ -367,16 +401,22 @@ nav.right a.active {
   list-style-type: none;
   list-style-image: none;
   margin: 0 auto;
-  padding-top: 20px;
+  padding: 20px;
+  max-width: 1000px;
 }
 
 #menu li {
-  padding: 8px;
+  padding-bottom: 8px;
   width: 100%;
-  display: inline-block;
-  font-size: 20px;
-  width: auto;
-  overflow: auto;
+  display: block;
+  font-size: 16px;
+  line-height: 30px;
+  vertical-align: middle;
+}
+
+#menu li img {
+  margin-top: 2px;
+  float: right;
 }
 
 #menu li:hover a {
@@ -407,12 +447,10 @@ nav.right a.active {
 
 #hero {
   width: 100%;
-  height: 500px;
+  height: 400px;
   background-size: cover;
   background-position: center;
-  position: fixed;
-  top: 70px;
-  z-index: 1;
+  position: relative;
 }
 
 #hero .content {
@@ -437,8 +475,17 @@ nav.right a.active {
   background-color: rgba(0,0,0,0);
 }
 
-.screen.blue {
+.screen.dark {
+  background-color: rgba(100,100,110,0.8);
+}
+
+.screen.dark button.cta {
+  color: rgb(100,100,110);
+}
+
+.blue {
   background-color: rgba(26,102,216,1);
+  color: rgb(255,255,255);
 }
 
 .screen h1,
@@ -476,25 +523,32 @@ nav.right a.active {
   background-repeat: no-repeat;
 }
 
+.section.hero {
+  height: 500px;
+}
+
 .section.dark {
   background-color: rgb(240,240,240);
 }
 
+.section.darker {
+  background-color: rgb(180,180,190);
+}
 
-.section.blue {
-  background-color: rgb(26,102,216);
+.section.footer {
+  background-color: rgb(170,170,170);
   color: rgb(255,255,255);
 }
 
-.section.blue h1,
-.section.blue h2,
-.section.blue h3,
-.section.blue h4,
-.section.blue a {
+.blue h1,
+.blue h2,
+.blue h3,
+.blue h4,
+.blue a {
 	color: rgb(255,255,255);
 }
 
-.section.blue a:hover {
+.blue a:hover {
   color: rgb(204,255,0);
 }
 
@@ -567,6 +621,61 @@ nav.right a.active {
   margin: 0 auto;
 }
 
+/* ICONS
+============================================================*/
+
+img.icon {
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+}
+
+img.icon.huge {
+  width: 96px;
+  height: 96px;
+}
+
+img.icon.large {
+  width: 72px;
+  height: 72px;
+}
+
+img.icon.medium {
+  width: 48px;
+  height: 48px;
+}
+
+img.icon.small {
+  width: 24px;
+  height: 24px;
+}
+
+img.icon.border {
+  border-width: 2px;
+}
+
+.col-4.support:hover {
+  cursor: pointer;
+}
+
+.col-4.support:hover {
+  background-color: rgb(249,249,249);
+  border-radius: 12px;
+}
+
+img.screenshot {
+  width: 100%;
+  max-width: 180px;
+  border-radius: 50%;
+  border: 1px solid rgb(204,204,204);
+  box-sizing: border-box;
+}
+
+img#homerendering {
+  width: 200px;
+}
+
 /* CROPPED IMAGES/ICONS
 ============================================================*/
 
@@ -580,8 +689,7 @@ img.circle {
   display: block;
 }
 
-img.border,
-img.partner:hover {
+img.border {
   border: 1px solid rgb(204,204,204);
 }
 
@@ -607,15 +715,11 @@ img.circle.spec {
 	display: block;
 }
 
-img.press {
+img.press, img.partner {
   max-width: 120px;
 }
 
-img.partner {
-  max-width: 120px;
-}
-
-img.press:hover, img.sport:hover {
+img.press:hover {
 	background-color: rgb(230,230,230);
 }
 
@@ -624,12 +728,10 @@ img.press:hover, img.sport:hover {
 
 .blog.card {
   width: 100%;
-  border: 1px solid rgb(230,230,230);
-  box-sizing: border-box;
 }
 
 .blog.pic {
-  height: 240px;
+  height: 200px;
   width: 100%;
   padding-top: 20px;
   background-size: cover;
@@ -642,7 +744,7 @@ img.press:hover, img.sport:hover {
   padding: 10px;
   font-weight: 900;
   text-align: center;
-  background-color: rgba(26,102,216,0.85);
+  background-color: rgb(26,102,216);
   color: rgb(255,255,255);
 }
 
@@ -761,6 +863,10 @@ pre code {
     padding-right: 0;
   }
 
+  img#homerendering {
+    margin-top:-100px;
+  }
+
   .center-resize h1, .center-resize h3 {
     margin: 0 auto;
   }
@@ -813,8 +919,8 @@ pre code {
     line-height: 25px;
   }
 
-  .hero {
-    height: 300px;
+  #hero {
+    height: 500px;
   }
 
   .section.contents {
@@ -853,10 +959,10 @@ pre code {
     text-align: center;
   }
 
-  footer li {
-    margin: 10px 2px;
-    font-size: 12px;
-    color: rgb(255,255,255);
+  #footer nav li {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
   }
 
   .hidden {
@@ -865,6 +971,11 @@ pre code {
     margin: 0;
     padding: 0;
     visibility: hidden;
+  }
+
+  img#homerendering {
+    width: 150px;
+    margin-top:-40px;
   }
 
 }

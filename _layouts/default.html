@@ -27,28 +27,30 @@
       <div class="wrapper">
         <nav class="left">
           <a href="/">
-            <img src="/assets/logos/white_text_small.png"/>
+            <img src="/assets/logos/white_text_small.png" style="margin-top: 5px;"/>
           </a>
         </nav>
-        <nav class="left center">
+        <nav class="right">
+          <li class="hidden"><a href="/product">PRODUCT</a></li>
+          <li class="hidden"><a href="/support">SUPPORT</a></li>
+          <li><a href="/shop"><button class="shop" style="margin-right: 8px;">ORDER NOW</button></a></li>
           <img class="hamburger" src="/assets/icons/general/hamburger.svg"/>
           <img class="exit" src="/assets/icons/general/exit.svg"/>
-        </nav>
-        <nav class="right">
-          <li><a href="/shop" class="active"><button class="shop">ORDER NOW</button></a></li>
         </nav>
       </div>
     </div>
     <div id="menu">
       <ul>
-        <a href="/"><li>Home</li></a>
-        <a href="/about"><li>About</li></a>
-        <a href="/shop"><li>Product</li></a>
-        <a href="/blog"><li>Blog</li></a>
-        <a href="/press"><li>Press</li></a>
-        <a href="/contact"><li>Contact</li></a>
+        <a href="/"><li>Home<img class="icon small" src="/assets/icons/jolt-white.svg"/></li></a>
+        <a href="/about"><li>About<img class="icon small" src="/assets/icons/general/info-white.svg"/></li></a>
+        <a href="/product"><li>Product<img class="icon small" src="/assets/icons/general/wear-white.svg"/></li></a>
+        <a href="/support"><li>Support<img class="icon small" src="/assets/icons/general/page-white.svg"/></li></a>
+        <a href="/shop"><li>Shop<img class="icon small" src="/assets/icons/general/bag-white.svg"/></li></a>
+        <!--<a href="/blog"><li>Blog<img class="icon small" src="/assets/icons/general/blog-white.svg"/></li></a>-->
+        <a href="/press"><li>Press<img class="icon small" src="/assets/icons/general/press-white.svg"/></li></a>
+        <a href="/contact"><li>Contact<img class="icon small" src="/assets/icons/general/email-white.svg"/></li></a>
       </ul>
-      <div id="mc_embed_signup" class="hidden">
+      <!--<div id="mc_embed_signup" class="hidden">
         <form action="http://joltsensor.us3.list-manage.com/subscribe/post?u=30b31dec2dac04ee2d025ff98&amp;id=fb4cff7c0c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
           <p>Subscribe for the latest updates, promotions, and development news.</p>
           <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email address" required autocomplete="off">
@@ -57,23 +59,35 @@
           </div>
           <div class="clear"><input type="submit" value="SUBSCRIBE TO UPDATES" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
         </form>
-      </div>
+      </div>-->
     </div>
     {{ content }}
       <div id="footer">
         <div class="wrapper">
-          <nav class="right">
+          <div class="col-4 right" style="padding:0; float:right;">
+          <nav>
             <a href="http://facebook.com/joltsensor"><div class="facebook"></div></a>
             <a href="http://twitter.com/joltsensor"><div class="twitter"></div></a>
             <a href="http://instagram.com/joltsensor"><div class="instagram"></div></a>
-            <a href="/feed.xml"><div class="rss"></div></a>
+            <!--<a href="/feed.xml"><div class="rss"></div></a>-->
           </nav>
-          <nav class="left">
-            <li><span style="font-weight: 600;">MADE WITH <span style="color: rgb(236,93,87);">❤</span> IN MISSOURI</span></li>
+          </div>
+          <div class="col-4 center" style="padding:0; float:right;">
+          <nav>
+            <li><a href="/about">About</a></li>
+            <li><a href="/product">Product</a></li>
+            <li><a href="/support">Support</a></li>
+            <li><a href="/shop">Shop</a></li>
+            <!--<li><a href="/blog">Blog</a></li>-->
+            <li><a href="/press">Press</a></li>
+            <li><a href="/contact">Contact</a></li>
           </nav>
-          <nav class="left center">
+          </div>
+          <div class="col-4 left" style="padding:0; float:right;">
+          <nav>
             <li><a href="/">©2015, Jolt Athletics Inc.</a></li>
           </nav>
+          </div>
         </div>
       </div>
     </div>

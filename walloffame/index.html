@@ -3,19 +3,18 @@ layout: default
 title: Jolt Wall of Fame - Better concussion detection through real-time head impact tracking
 ---
 
-<div id="hero" style="background-image: url('/assets/heros/colorrun.jpg'); background-position: bottom center;">
-  <div class="screen">
-    <div class="content center">
-      <h1 class="heavy" style="max-width: 460px; margin: 0 auto;">BACKER WALL OF FAME</h1>
-      <h3 style="max-width: 460px; margin: 0 auto;">When it comes to crowdfunding, we have the coolest crowd!</h3>
-      <a href="/kickstarter"><button class="cta">VIEW KICKSTARTER CAMPAIGN</button></a>
+<div id="wrapper">
+  <div id="hero" style="background-image:url('/assets/heros/colorrun.jpg'); background-position:bottom;">
+    <div class="screen">
+      <div class="content center">
+        <h1>When it comes to crowdfunding, we have the coolest crowd!</h1>
+        <a href="/kickstarter"><button class="cta">VIEW KICKSTARTER</button></a>
+      </div>
     </div>
   </div>
-</div>
-<div id="wrapper">
-  	<div class="section">
-	    <div class="content">
-	    	<h4 class="justify dark">Over the last few months we have been humbled by the overwhelming outpouring of support we've received from friends, family, and complete strangers. Without their support, Jolt would not be where it is today. When putting together our <a href="https://www.kickstarter.com/projects/2098685356/jolt-sensor-better-concussion-detection-for-youth">Kickstarter campaign</a>, we wanted to find a way to properly recognize all of the amazing people helping us to realize our vision. In this day and age, a company's website amounts to its public face, and we wanted to recognize our earliest supporters in a very public way as a reminder to ourselves, and others, of our commitment to our community and the awesome people in it. So, without further ado, we present the Wall of Fame, or, as we like to call it, a list of Jolt's favorite people:</h4>
-			<p class="justify">&middot{% for backer in site.data.backers %} {{ backer.name }} &middot{% endfor %}</p>
-		</div>
+	<div class="section">
+    <div class="content">
+    	<h4 class="justify dark">Over the last few months we have been humbled by the overwhelming outpouring of support we've received from friends, family, and complete strangers. Without their support, Jolt would not be where it is today. When putting together our <a href="https://www.kickstarter.com/projects/2098685356/jolt-sensor-better-concussion-detection-for-youth">Kickstarter campaign</a>, we wanted to find a way to properly recognize all of the amazing people helping us to realize our vision. In this day and age, a company's website amounts to its public face, and we wanted to recognize our earliest supporters in a very public way as a reminder to ourselves, and others, of our commitment to our community and the awesome people in it. So, without further ado, we present the Wall of Fame, or, as we like to call it, a list of Jolt's favorite people:</h4>
+		  <p class="justify">&middot{% for backer in site.data.backers %} {{ backer.name }} &middot{% endfor %}</p>
+    </div>
 	</div>

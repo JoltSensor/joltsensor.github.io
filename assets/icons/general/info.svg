@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48px"
+   height="48px"
+   id="svg7396"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="New document 102">
+  <defs
+     id="defs7398" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="7"
+     inkscape:cx="6.0714286"
+     inkscape:cy="24"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:grid-bbox="true"
+     inkscape:document-units="px"
+     inkscape:window-width="1440"
+     inkscape:window-height="851"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7401">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <path
+       style="fill:#666666;fill-opacity:1;stroke:none"
+       d="M 24 6 C 14.058875 6 6 14.058875 6 24 C 6 33.941125 14.058875 42 24 42 C 33.941125 42 42 33.941125 42 24 C 42 14.058875 33.941125 6 24 6 z M 24 8 C 32.836556 8 40 15.163444 40 24 C 40 32.836556 32.836556 40 24 40 C 15.163444 40 8 32.836556 8 24 C 8 15.163444 15.163444 8 24 8 z M 24 15 C 22.895431 15 22 15.895431 22 17 C 22 18.104569 22.895431 19 24 19 C 25.104569 19 26 18.104569 26 17 C 26 15.895431 25.104569 15 24 15 z M 22 21 C 21.446 21 21 21.446 21 22 C 21 22.554 21.446 23 22 23 L 23 23 L 23 31 L 22 31 C 21.446 31 21 31.446 21 32 C 21 32.554 21.446 33 22 33 L 26 33 C 26.554 33 27 32.554 27 32 C 27 31.446 26.554 31 26 31 L 25 31 L 25 22 C 25 21.446 24.554 21 24 21 L 22 21 z "
+       id="path7287" />
+  </g>
+</svg>

@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="64px"
-   height="64px"
+   width="48"
+   height="48"
    id="svg4219"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="New document 14">
+   sodipodi:docname="email-white.svg">
   <defs
      id="defs4221" />
   <sodipodi:namedview
@@ -24,15 +24,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="13.203125"
-     inkscape:cx="22.494675"
-     inkscape:cy="32"
+     inkscape:zoom="13.854167"
+     inkscape:cx="6.6766917"
+     inkscape:cy="24"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:document-units="px"
      inkscape:grid-bbox="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1031"
+     inkscape:window-width="1440"
+     inkscape:window-height="851"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1" />
@@ -51,11 +51,12 @@
   <g
      id="layer1"
      inkscape:label="Layer 1"
-     inkscape:groupmode="layer">
+     inkscape:groupmode="layer"
+     transform="translate(0,-16)">
     <path
-       inkscape:connector-curvature="0"
-       id="rect4550-4-6-9-5-1-4"
-       d="m 17,18.5 c -1.662,0 -3,1.338 -3,3 l 0,21 c 0,1.662075 1.338,3 3,3 l 30,0 c 1.662,0 3,-1.337925 3,-3 l 0,-21 c 0,-1.661925 -1.338,-2.999925 -3,-3 l -30,0 z m 1.5,3 27,0 c 0.831,0 1.5,0.669075 1.5,1.5 L 47,24.2657 32,32.9375 17,24.2891 17,23 c 0,-0.831 0.669,-1.5 1.5,-1.5 z M 47,27.73445 47,41 c 0,0.831075 -0.669,1.5 -1.5,1.5 l -27,0 C 17.669,42.5 17,41.831075 17,41 l 0,-13.24215 15,8.6484 15,-8.6718 z"
-       style="fill:#666666;fill-opacity:1;stroke:none" />
+       style="fill:#666666;fill-opacity:1;stroke:none"
+       d="m 10,26 c -1.823325,0 -3.327215,1.212576 -3.8125,2.875 -0.045102,0.154504 -0.098565,0.306997 -0.125,0.46875 -0.00405,0.02064 0.00373,0.04176 0,0.0625 C 6.033824,29.60022 6,29.79781 6,30 L 6,31.09375 6,50 c 0,2.216 1.784,4 4,4 l 28,0 c 2.216,0 4,-1.784 4,-4 L 42,31.09375 42,30 c 0,-0.20219 -0.03382,-0.39978 -0.0625,-0.59375 -0.0037,-0.0207 0.004,-0.04191 0,-0.0625 C 41.91107,29.181997 41.8576,29.029504 41.8125,28.875 41.327215,27.212576 39.823325,26 38,26 l -28,0 z m 0,2 28,0 c 1.086818,0 1.966788,0.859026 2,1.9375 L 24.5,38.875 C 24.3546,38.9573 24.1787,39 24,39 23.8117,39 23.6501,38.9653 23.5,38.875 L 8,29.9375 C 8.033212,28.859026 8.913182,28 10,28 z m -2,4.25 14.5,8.375 c 0.928,0.5359 2.0716,0.5359 3,0 L 40,32.25 40,50 c 0,1.108 -0.892,2 -2,2 L 10,52 C 8.892,52 8,51.108 8,50 L 8,32.25 z"
+       id="rect5519-7"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>
