@@ -80,7 +80,7 @@ function setup() {
     
     };
 
-    $('#hero.full').css({'height' : $(window).height() + "px"});
+    $('#hero.full').css({'height' : $(window).height() - 70 + "px"});
 
     var height = $('#hero').height();
     var text_height = $('.content').height();
