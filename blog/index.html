@@ -3,62 +3,62 @@ layout: default
 title: Jolt Blog - Better concussion detection through real-time head impact tracking
 ---
 
-<div id="wrapper">
-	<div id="hero" class="blue">
-		<div class="screen">
-			<div class="content center">
-				<h1>Reflections on process, insights, and inspiration</h1>
+<div id="hero" class="mini" style="background-image:url('/assets/heros/psu.jpg');"><div class="screen dark"></div></div>
+<div class="section dark">
+    <div class="content">
+		{% for post in site.tags.featured %}
+		<div class="row">
+			<div class="col-12">
+				<div class="blog card">
+					<a href="{{ post.url }}">
+						<div class="blog pic" style="background-image: url('{{ post.hero }}');">							
+							<div class="screen dark">
+								<div class="content center">
+									<a href="/blog/{{ post.category | downcase }}"><img src={% if post.category == "Updates" %}"/assets/icons/general/clock-white.svg"{% elsif post.category == "Thoughts" %}"/assets/icons/general/helmet-white.svg"{% elsif post.category == "Process" %}"/assets/icons/general/bolt-white.svg"{% elsif post.category == "Announcement" %}"/assets/icons/general/monitor-white.svg"{% endif %}/></a>
+									<p class="no-top no-bottom"><a href="/blog/{{ post.category | downcase }}">{{ post.category | upcase }}</a></p>
+									<h2 class="no-top"><a href="{{ post.url }}">{{ post.title | replace: "</br>", " " }}</a></h2>
+									<p style="max-width:400px; margin: 0 auto;">{{ post.summary }}</p>
+								</div>
+								<div class="blog featured">FEATURED</div>
+							</div>
+						</div>
+					</a>
+				</div>
 			</div>
 		</div>
-	</div>
-  	<div class="section dark">
-	    <div class="content">
-			{% for post in site.tags.featured %}
-			<div class="row">
-				<div class="col-12">
+		{% endfor %}
+		{% assign loopindex = 0 %}
+		{% for post in site.tags.none limit:8 %}
+			{% assign loopindex = loopindex | plus: 1 %}
+    		{% assign rowfinder = loopindex | modulo: 2 %}
+    		{% if rowfinder == 1 %}
+				<div class="row">
+			{% endif %}
+				<div class="col-6">
 					<div class="blog card">
 						<a href="{{ post.url }}">
 							<div class="blog pic" style="background-image: url('{{ post.hero }}');">
-								<div class="blog featured">FEATURED</div>
+								<div class="screen dark">
+									<div class="content center">
+										<a href="/blog/{{ post.category | downcase }}"><img src={% if post.category == "Updates" %}"/assets/icons/general/clock-white.svg"{% elsif post.category == "Thoughts" %}"/assets/icons/general/helmet-white.svg"{% elsif post.category == "Process" %}"/assets/icons/general/bolt-white.svg"{% elsif post.category == "Announcement" %}"/assets/icons/general/monitor-white.svg"{% endif %}/></a>
+										<p class="no-top no-bottom"><a href="/blog/{{ post.category | downcase }}">{{ post.category | upcase }}</a></p>
+										<h2 class="no-top"><a href="{{ post.url }}">{{ post.title | replace: "</br>", " " }}</a></h2>
+										<p style="max-width:400px; margin: 0 auto;">{{ post.summary }}</p>
+									</div>
+								</div>
 							</div>
 						</a>
-						<div class=" blog text">
-							<p class="no-top no-bottom"><a href="/blog/{{ post.category | downcase }}">{{ post.category | upcase }}</a></p>
-							<h2 class="no-top"><a href="{{ post.url }}">{{ post.title | replace: "</br>", " " }}</a></h2>
-							<p class="no-top no-bottom">{{ post.summary }} <a href="{{ post.url }}">Read more...</a></p>
-						</div>
 					</div>
 				</div>
-			</div>
-			{% endfor %}
-			{% assign loopindex = 0 %}
-			{% for post in site.tags.none limit:8 %}
-				{% assign loopindex = loopindex | plus: 1 %}
-	    		{% assign rowfinder = loopindex | modulo: 2 %}
-	    		{% if rowfinder == 1 %}
-					<div class="row">
-				{% endif %}
-					<div class="col-6">
-						<div class="blog card">
-							<a href="{{ post.url }}">
-								<div class="blog pic" style="background-image: url('{{ post.hero }}');"></div>
-							</a>
-							<div class=" blog text">
-								<p class="no-top no-bottom"><a href="/blog/{{ post.category | downcase }}">{{ post.category | upcase }}</a></p>
-								<h3 class="no-top"><a href="{{ post.url }}">{{ post.title | replace: "</br>", " " }}</a></h2>
-								<p class="no-top no-bottom">{{ post.summary }} <a href="{{ post.url }}">Read more...</a></p>
-							</div>
-						</div>
-					</div>
-				{% if rowfinder == 0 %}
-					</div>
-				{% endif %}
-			{% endfor %}
-			{% if rowfinder != 0 %}
+			{% if rowfinder == 0 %}
 				</div>
 			{% endif %}
-		  	<div class="col-12 center">
-		  		<a href="/blog/archive"><button>SEE ALL POSTS</button></a>
-	        </div>
-		</div>
-  	</div> <!-- End of section -->
+		{% endfor %}
+		{% if rowfinder != 0 %}
+			</div>
+		{% endif %}
+	  	<div class="col-12 center">
+	  		<a href="/blog/archive"><button>SEE ALL POSTS</button></a>
+        </div>
+	</div>
+</div> <!-- End of section -->

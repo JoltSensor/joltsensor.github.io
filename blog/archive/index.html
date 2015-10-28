@@ -3,34 +3,34 @@ layout: default
 title: Jolt Blog - Better concussion detection through real-time head impact tracking
 ---
 
-<div id="wrapper">
-  	<div class="section dark">
-	    <div class="content">
-			{% assign loopindex = 0 %}
-			{% for post in site.posts %}
-				{% assign loopindex = loopindex | plus: 1 %}
-	    		{% assign rowfinder = loopindex | modulo: 2 %}
-	    		{% if rowfinder == 1 %}
-					<div class="row">
-				{% endif %}
-					<div class="col-6">
-						<div class="blog card">
-							<a href="{{ post.url }}">
-								<div class="blog pic" style="background-image: url('{{ post.hero }}');"></div>
-							</a>
-							<div class=" blog text">
-								<p class="no-top no-bottom"><a href="/blog/{{ post.category | downcase }}">{{ post.category | upcase }}</a></p>
-								<h3 class="no-top no-bottom heavy dark"><a href="{{ post.url }}">{{ post.title | replace: "</br>", " " }}</a></h3>
-								<p class="no-top no-bottom">{{ post.summary }} <a href="{{ post.url }}">Read more...</a></p>
-							</div>
+<div id="hero" class="mini" style="background-image:url('/assets/heros/psu.jpg');"><div class="screen dark"></div></div>
+<div class="section dark">
+    <div class="content">
+		{% assign loopindex = 0 %}
+		{% for post in site.posts %}
+			{% assign loopindex = loopindex | plus: 1 %}
+    		{% assign rowfinder = loopindex | modulo: 2 %}
+    		{% if rowfinder == 1 %}
+				<div class="row">
+			{% endif %}
+				<div class="col-6">
+					<div class="blog card">
+						<a href="{{ post.url }}">
+							<div class="blog pic" style="background-image: url('{{ post.hero }}');"></div>
+						</a>
+						<div class=" blog text">
+							<p class="no-top no-bottom"><a href="/blog/{{ post.category | downcase }}">{{ post.category | upcase }}</a></p>
+							<h3 class="no-top no-bottom heavy dark"><a href="{{ post.url }}">{{ post.title | replace: "</br>", " " }}</a></h3>
+							<p class="no-top no-bottom">{{ post.summary }} <a href="{{ post.url }}">Read more...</a></p>
 						</div>
 					</div>
-				{% if rowfinder == 0 %}
-					</div>
-				{% endif %}
-			{% endfor %}
-			{% if rowfinder != 0 %}
+				</div>
+			{% if rowfinder == 0 %}
 				</div>
 			{% endif %}
-		</div>
-  	</div> <!-- End of section -->
+		{% endfor %}
+		{% if rowfinder != 0 %}
+			</div>
+		{% endif %}
+	</div>
+</div> <!-- End of section -->

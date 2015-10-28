@@ -25,27 +25,30 @@ body {
 
 h1, h2, h3, h4 {
   color: rgb(26,102,216);
-  font-weight: 300;
   line-height: 130%;
 }
 
 h1 {  
   font-size: 40px;
+  font-weight: 400;
   margin: 24px 0 16px 0;
 }
 
 h2 {
   font-size: 32px;
+  font-weight: 400;
   margin: 24px 0 16px 0;
 }
 
 h3 {
   font-size: 24px;
+  font-weight: 300;
   margin: 24px 0 16px 0;
 }
 
 h4 {
   font-size: 20px;
+  font-weight: 300;
   margin: 24px 0 16px 0;
 }
 
@@ -134,57 +137,53 @@ h4 a:hover {
 ============================================================*/
 
 button {
+  -webkit-appearance: none;
   margin: 16px 0;
-  padding: 12px 24px;
+  padding: 16px 24px;
+  background: none;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 300;
-  border-radius: 8px;
   outline: none;
   cursor: pointer;
-  border: none;
-  color: rgb(255,255,255);
-  background-color: rgb(26,102,216);
+  color: rgb(65,83,110);
+  border: 2px solid rgb(65,83,110);
+  border-radius: 3px;
 }
 
 button:hover {
-  border-bottom: 4px solid rgb(21,82,173);
-  margin-bottom: 12px;
+  color: rgb(255,255,255);
+  background-color: rgb(65,83,110);
 }
 
 button.cta {
-  color: rgb(26,102,216);
-  background-color: rgb(204,255,0);
-  border: none;
-  border-radius: 12px;
-  font-size: 24px;
-  padding: 20px 32px;
-  font-weight: 300;
+  color: rgb(229,237,60);
+  border: 2px solid rgb(229,237,60);
 }
 
 button.cta:hover {
-  border-bottom: 4px solid rgb(168,224,43);
-  margin-bottom: 12px;
+  color: rgb(72,92,122);
+  background-color: rgb(229,237,60);
 }
 
-.section button.cta {
-
+#learnmore {
+  cursor: pointer;
 }
 
 button.shop {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0;
   padding: 6px 12px;
-  color: rgb(26,102,216);
-  border: none;
-  background-color: rgb(204,255,0);
-  border-radius: 6px;
+  color: rgb(229,237,60);
+  border: 2px solid rgb(229,237,60);
+  background: none;
+  border-radius: 3px;
 }
 
 button.shop:hover {
-  border-bottom: 2px solid rgb(168,224,43);
-  margin-bottom: -2px;
+  color: rgb(72,82,92);
+  background-color: rgb(229,237,60);
 }
 
 /* WRAPPER
@@ -194,7 +193,6 @@ button.shop:hover {
   z-index: 2;
   position: relative;
   background-color: rgb(255,255,255);
-  top: 70px;
 }
 
 /* HEADER/FOOTER
@@ -203,17 +201,17 @@ button.shop:hover {
 #header,
 #footer {
   width: 90%;
-  padding: 20px 5%;
+  padding: 30px 5%;
   font-size: 14px;
 }
 
 #header {
   height: 30px;
   top: 0;
-  position: fixed;
+  position: absolute;
   z-index: 8;
-  background-color: rgb(26,102,216);
   color: rgb(255,255,255);
+  margin-bottom: -90px;
 }
 
 #footer {
@@ -259,23 +257,23 @@ nav a {
 }
 
 nav a:hover {
-  color: rgb(212,235,11);
+  color: rgb(229,237,60);
   text-decoration: none;
   border-bottom: none;
 }
 
 nav li, footer li {
   display: inline-block;
-  font-size: 14px;
   vertical-align: middle;
   line-height: 30px;
+  font-size: 14px;
 }
 
 nav img {
-  height: 20px;
+  height: 50px;
+  margin-top: -10px;
   display: inline-block;
   vertical-align: middle;
-  margin-top: 0px;
 }
 
 /* NAV LEFT
@@ -287,7 +285,11 @@ nav.left {
 
 nav.left li {
   margin: 0;
-  font-size: 14px;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: italic;
+  margin-top: -10px;
+  margin-left: 4px;
 }
 
 nav.left a:hover {
@@ -379,6 +381,11 @@ nav.right a.active {
 /* MENU
 ============================================================*/
 
+.hamburger, .exit {
+  height: 20px;
+  margin-top: 2px;
+}
+
 .exit {
   visibility: hidden;
 }
@@ -387,11 +394,10 @@ nav.right a.active {
   z-index:9;
   width: 280px;
   padding: 0;
-  background-color: rgb(13,51,108);
+  background-color: rgb(65,83,110);
   position: fixed;
   top: 0px;
-  right: 0px;
-  visibility: hidden;
+  right: -280px;
   height: 100%;
   overflow: auto;
 }
@@ -401,7 +407,7 @@ nav.right a.active {
   list-style-type: none;
   list-style-image: none;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 30px;
   max-width: 1000px;
 }
 
@@ -420,7 +426,7 @@ nav.right a.active {
 }
 
 #menu li:hover a {
-  color: rgb(204,255,0);
+  color: rgb(229,237,60);
 }
 
 #menu a { 
@@ -433,7 +439,7 @@ nav.right a.active {
 }
 
 #menu a:hover {
-  color: rgb(204,255,0);
+  color: rgb(229,237,60);
   text-decoration: none;
 }
 
@@ -447,10 +453,14 @@ nav.right a.active {
 
 #hero {
   width: 100%;
-  height: 400px;
+  height: 600px;
   background-size: cover;
   background-position: center;
   position: relative;
+}
+
+#hero.mini {
+  height: 90px;
 }
 
 #hero .content {
@@ -460,6 +470,11 @@ nav.right a.active {
 
 #hero a {
   color: rgb(212,235,11);
+}
+
+#hero h1 {
+  max-width: 600px;
+  margin: 20px auto;
 }
 
 .screen {
@@ -476,15 +491,11 @@ nav.right a.active {
 }
 
 .screen.dark {
-  background-color: rgba(100,100,110,0.8);
-}
-
-.screen.dark button.cta {
-  color: rgb(100,100,110);
+  background-color: rgba(72,92,122,0.85);
 }
 
 .blue {
-  background-color: rgba(26,102,216,1);
+  background-color: rgb(65,83,110);
   color: rgb(255,255,255);
 }
 
@@ -498,7 +509,7 @@ nav.right a.active {
 }
 
 .screen a:hover {
-  color: rgb(204,255,0);
+  color: rgb(229,237,60);
   text-decoration: none;
 }
 
@@ -535,8 +546,8 @@ nav.right a.active {
   background-color: rgb(180,180,190);
 }
 
-.section.footer {
-  background-color: rgb(170,170,170);
+#footer {
+  background-color: rgb(58,75,99);
   color: rgb(255,255,255);
 }
 
@@ -549,7 +560,7 @@ nav.right a.active {
 }
 
 .blue a:hover {
-  color: rgb(204,255,0);
+  color: rgb(229,237,60);
 }
 
 .section .content {
@@ -558,6 +569,26 @@ nav.right a.active {
 
 .section .screen {
   position: relative;
+}
+
+.coverage {
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: rgb(229,237,60);
+  z-index: 10;
+  text-align: center;
+}
+
+.coverage img {
+  height: 30px;
+  display: inline-block;
+  padding: 10px 20px;
+  opacity: 0.4;
+}
+
+.coverage img:hover {
+  opacity: 0.6;
 }
 
 /* ROWS & COLUMNS
@@ -730,13 +761,20 @@ img.press:hover {
   width: 100%;
 }
 
+a:hover .featured {
+  text-decoration: none;
+}
+
 .blog.pic {
-  height: 200px;
+  height: 400px;
   width: 100%;
-  padding-top: 20px;
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
+}
+
+.blog .screen h2 a {
+  color: rgb(229,237,60);
 }
 
 .blog.featured {
@@ -744,8 +782,11 @@ img.press:hover {
   padding: 10px;
   font-weight: 900;
   text-align: center;
-  background-color: rgb(26,102,216);
-  color: rgb(255,255,255);
+  background-color: rgb(229,237,60);
+  color: rgb(72,92,122);
+  position: absolute;
+  top: 20px;
+  left: 0;
 }
 
 .blog.text {

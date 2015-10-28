@@ -2,37 +2,36 @@
 layout: default
 ---
 <div id="hero" style="background-image: url('{{ page.hero }}');">
-	<div class="screen">
+	<div class="screen dark">
     	<div class="content center">
     		<h1 class="no-top no-bottom heavy" style="max-width: 700px; margin: 0 auto;">{{ page.title }}</h1>
     		<h3 class="no-bottom" style="max-width: 700px; margin: 0 auto; margin-top: 20px;">{{ page.summary }}</h3>
     	</div>
   	</div>
 </div>
-<div id="wrapper">
-  	<div class="section">
-    	<div class="content">
-			<div  class="article">
-				{% assign author = site.data.authors[page.author] %}
-				{% if author %}
-				<h4 class="dark">Posted by <a href=/people/{{ author.permalink | downcase }}>{{ author.name }}</a> in <a href=/blog/{{ page.category | downcase }}>{{ page.category }}</a> on {{ page.date | date: "%B %-d, %Y" }}</h4>
-				{% endif %}
-				{{ content }}
-				{% include share-tile.html %}
-			</div>
+<div class="section">
+	<div class="content">
+		<div  class="article">
+			{% assign author = site.data.authors[page.author] %}
+			{% if author %}
+			<h4 class="dark">Posted by <a href=/people/{{ author.permalink | downcase }}>{{ author.name }}</a> in <a href=/blog/{{ page.category | downcase }}>{{ page.category }}</a> on {{ page.date | date: "%B %-d, %Y" }}</h4>
+			{% endif %}
+			{{ content }}
+			{% include share-tile.html %}
 		</div>
 	</div>
-	<div class="section dark">
-    	<div class="content">
-			<div  class="article">
-				{% include author-bio.html %}
-			</div>
+</div>
+<div class="section dark">
+	<div class="content">
+		<div  class="article">
+			{% include author-bio.html %}
 		</div>
 	</div>
-	<div class="section blue" style="border: none;">
-		<div class="content center">
-			<h1>Like what you're reading?</h1>
-			<h3>We're always writing about sports, concussions, startup life, and more.</h3>
-			<a href="/blog"><button class="cta">SEE MORE POSTS</button></a>
-		</div>
+</div>
+<div class="section blue" style="border: none;">
+	<div class="content center">
+		<h1>Like what you're reading?</h1>
+		<h3>We're always writing about sports, concussions, startup life, and more.</h3>
+		<a href="/blog"><button class="cta">SEE MORE POSTS</button></a>
 	</div>
+</div>

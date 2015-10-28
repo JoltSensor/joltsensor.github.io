@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48"
+   height="48"
+   id="svg4219"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="bolt-white.svg">
+  <defs
+     id="defs4221" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="13.203125"
+     inkscape:cx="9.0130182"
+     inkscape:cy="32"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:document-units="px"
+     inkscape:grid-bbox="true"
+     inkscape:window-width="1440"
+     inkscape:window-height="851"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4224">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     transform="translate(0,-16)">
+    <path
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none"
+       d="M 24 8 C 21.92 8 11.19625 14.198667 10.15625 16 C 9.11625 17.801333 9.1162499 30.198667 10.15625 32 C 11.19625 33.801333 21.92 40 24 40 C 26.08 40 36.80375 33.801333 37.84375 32 C 38.88375 30.198667 38.88375 17.801333 37.84375 16 C 36.80375 14.198667 26.08 8 24 8 z M 24 10 C 25.82 10 35.215 15.423834 36.125 17 C 37.035 18.576166 37.035 29.423834 36.125 31 C 35.215 32.576166 25.82 38 24 38 C 22.18 38 12.785 32.576166 11.875 31 C 10.965 29.423834 10.965 18.576166 11.875 17 C 12.785 15.423834 22.18 10 24 10 z "
+       transform="translate(0,16)"
+       id="path19747" />
+    <path
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none"
+       d="M 24 19 C 21.238576 19 19 21.238576 19 24 C 19 26.761424 21.238576 29 24 29 C 26.761424 29 29 26.761424 29 24 C 29 21.238576 26.761424 19 24 19 z M 24 21 C 25.656854 21 27 22.343146 27 24 C 27 25.656854 25.656854 27 24 27 C 22.343146 27 21 25.656854 21 24 C 21 22.343146 22.343146 21 24 21 z "
+       transform="translate(0,16)"
+       id="path19791-7" />
+  </g>
+</svg>
