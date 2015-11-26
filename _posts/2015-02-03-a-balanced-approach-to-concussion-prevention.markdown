@@ -2,7 +2,7 @@
 title: "A Balanced Approach to Concussion Prevention"
 layout: post
 category: Thoughts
-tags: featured
+tags: none
 author: ben
 hero: /assets/heros/blog/pocket-collapse.jpg
 summary: "Combining equipment improvements, educational efforts, safer playing styles, and trackable safety statistics to improve player safety."

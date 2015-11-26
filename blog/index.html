@@ -28,7 +28,7 @@ title: Jolt Blog - Better concussion detection through real-time head impact tra
 		</div>
 		{% endfor %}
 		{% assign loopindex = 0 %}
-		{% for post in site.tags.none limit:8 %}
+		{% for post in site.tags.none limit:4 %}
 			{% assign loopindex = loopindex | plus: 1 %}
     		{% assign rowfinder = loopindex | modulo: 2 %}
     		{% if rowfinder == 1 %}
