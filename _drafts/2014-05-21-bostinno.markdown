@@ -1,7 +1,0 @@
----
-date:   2014-05-21 14:47:00
-source:  "BostInno"
-title: "Meet the 128 Startups Accepted Into MassChallenge's Summer 2014 Class"
-categories: press
-link: http://bostinno.streetwise.co/2014/05/21/2014-masschallenge-startups-class-companies-in-masschallenges-2014-class/
----
