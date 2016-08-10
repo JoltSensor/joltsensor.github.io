@@ -1,103 +1,81 @@
-$(document).ready(function(){
-    
+$(document).ready(function () {
     setup();
-
     setTimeout(function(){setup();}, 1000);
-
 });
 
-$(window).resize(setup);
+$(window).scroll(function(){
 
-$("#learnmore").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#more").offset().top
-    }, 1000);
-});
-
-$('.hamburger').click(function() {
-
-    $('.hamburger').hide();
-    $('.exit').show();
-
-    var width = $(window).width();
-    var space = ((width-1000)/2)-20;
-
-    if (space > 280) {
-
-        $('#menu').animate({right : 0},200);
-
-    } else if (space >= 0) {
-
-        $('#menu').animate({right : 0},200);
-        $('#wrapper').animate({left : space-280},200);
-
+    var scrolled = $(window).scrollTop();
+    
+    if (scrolled > 0) {
+        $('.banner').addClass('scrolled');
     } else {
-
-        $('#menu').animate({right : 0},200);
-        $('#wrapper').animate({left : -280},200);
-
+        $('.banner').removeClass('scrolled');
     }
 
 });
 
-$('.exit').click(function() {
+$(window).resize(function(){
 
-    menu_hide(200);
+    align();
 
 });
-
-
-function menu_hide(delay) {
-
-    $('.exit').hide();
-    $('.hamburger').show();
-
-    $('#menu').animate({right : -280},delay);
-    $('#header').animate({left : 0},delay);
-    $('#wrapper').animate({left : 0},delay);
-
-};
 
 function setup() {
 
-    $('.hamburger').show();
-    $('.exit').hide().css({'visibility' : 'visible'});
+    //resetTop();
+    align();
 
-    if($(window).height() < 600 || $(window).width() < 480){
+}
 
-        $('#hero.full').css({'height' : $(window).height() + "px"});
-    
-    }else{
-    
-        $('#hero.full').css({'height' : $(window).height() - ($('.coverage').height() + 60) + "px"});
+function resetTop() {
+    $("html, body").animate({scrollTop:0}, 0);
+}
 
-    }
+function align() {
 
-    var height = $('#hero').height();
-    var text_height = $('.content').height();
-    var text_margin = (height - text_height) / 2;
+    var height = $('.promobar').outerHeight();
+    console.log(height);
+    $('#wrapper').css({'margin-top': height +"px"});
 
-    $('#hero .content').css({'opacity': 1});
-    $('#hero .content').css({'margin-top': 20 + text_margin +"px"});
+    $('.square').each(function() {
 
-    $('.section.hero').each(function() {
-    
-        var height1 = $(this).height();
-        var height2 = $(this).find('.screen > .content').height();
-        var margin = ( height1 - height2 )/2;
-
-        $(this).find('.screen > .content').css({'padding-top' : margin});
+        var w = $(this).width();
+        console.log(w);
+        $(this).css({'height' : w + "px"});
 
     });
 
-    $('.blog .screen').each(function() {
-    
-        var height1 = $(this).height();
-        var height2 = $(this).find('.content').height();
-        var margin = ( height1 - height2 )/2;
+}
 
-        $(this).find('.content').css({'padding-top' : margin});
+function register($form) {
+    
+    $.ajax({
+    
+        type: $form.attr('method'),
+        url: $form.attr('action'),
+        data: $form.serialize(),
+        cache       : false,
+        dataType    : 'json',
+        contentType: "application/json; charset=utf-8",
+        error       : function(err) { $('.alert').html('Could not connect to server. Please try again later.'); },
+        success     : function(data) {
+
+            if (data.result != "success") {
+
+                var message = data.msg.substring(4);
+                $('#notification_container-1').html('<span class="">' + message + '</span>');
+            
+            } else {
+    
+                var message = data.msg;
+                $('#notification_container-1').html('<span class="">' + message + '</span>');
+            }
+
+        }
 
     });
+
+    align();
 
 };

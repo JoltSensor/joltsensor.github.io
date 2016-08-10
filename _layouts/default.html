@@ -1,129 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>{{ page.title  | replace: "</br>", " " }}</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta name="p:domain_verify" content="963fb8b6037d52bd2cc58e579956670e"/>
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/mailchimp.css">
-    <link rel="icon" type="image/png" href="/assets/favicon.ico">
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600, 900" rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
-    <link href='http://joltsensor.com/feed.xml' rel='alternate' type='application/atom+xml'>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-48252918-1', 'joltsensor.com');
-      ga('send', 'pageview');
-    </script>
+    {% include head.html %}
   </head>
   <body>
-    <div id="menu">
-      <ul>
-        <a href="/"><li>Home</li></a>
-        <a href="/about"><li>About</li></a>
-        <a href="/shop"><li>Shop</li></a>
-        <a href="/blog"><li>Blog</li></a>
-        <a href="/press"><li>Press</li></a>
-        <a href="/contact"><li>Contact</li></a>
-        <a href="/support"><li>Support</li></a>
-      </ul>
-      <!--<div id="mc_embed_signup" class="hidden">
-        <form action="http://joltsensor.us3.list-manage.com/subscribe/post?u=30b31dec2dac04ee2d025ff98&amp;id=fb4cff7c0c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <p>Subscribe for the latest updates, promotions, and development news.</p>
-          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email address" required autocomplete="off">
-          <div style="position: absolute; left: -5000px;">
-            <input type="text" name="b_30b31dec2dac04ee2d025ff98_fb4cff7c0c" value="">
-          </div>
-          <div class="clear"><input type="submit" value="SUBSCRIBE TO UPDATES" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-        </form>
-      </div>-->
-    </div>
+    {% include header.html %}
     <div id="wrapper">
-      <div id="header">
-        <div class="wrapper">
-          <nav class="left">
-            <a href="/">
-              <img src="/assets/logos/jolt letters white.svg"/>
-              <li class="hidden"><a href="/">JOLT ATHLETICS</a></li>
-            </a>
-          </nav>
-          <nav class="right">
-            <li><a href="/shop"><button class="shop" style="margin-right: 8px;">ORDER NOW</button></a></li>
-            <img class="hamburger" src="/assets/icons/general/hamburger.svg"/>
-            <img class="exit" src="/assets/icons/general/exit.svg"/>
-          </nav>
-        </div>
-      </div>
-    {{ content }}
-      <div id="footer">
-        <div class="wrapper">
-          <div class="col-4 right" style="padding:0; float:right;">
-          <nav>
-            <a href="http://facebook.com/joltsensor"><div class="facebook"></div></a>
-            <a href="http://twitter.com/joltsensor"><div class="twitter"></div></a>
-            <a href="http://instagram.com/joltsensor"><div class="instagram"></div></a>
-            <!--<a href="/feed.xml"><div class="rss"></div></a>-->
-          </nav>
-          </div>
-          <div class="col-4 center" style="padding:0; float:right;">
-          <nav>
-            <li><a href="/about">About</a></li>
-            <li><a href="/shop">Shop</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/press">Press</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/support">Support</a></li>
-          </nav>
-          </div>
-          <div class="col-4 left" style="padding:0; float:right;">
-          <nav>
-            <li><a href="/">©2015, Jolt Athletics Inc.</a></li>
-          </nav>
-          </div>
-        </div>
-      </div>
+      {{ content }}
+      {% include footer.html %}
     </div>
-    <script type="text/javascript">
-      adroll_adv_id = "UVINR5BABBAWZF7V7YJ27C";
-      adroll_pix_id = "2DBWH2LQOFANNF37EKNVKD";
-      (function () {
-      var oldonload = window.onload;
-      window.onload = function(){
-         __adroll_loaded=true;
-         var scr = document.createElement("script");
-         var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
-         scr.setAttribute('async', 'true');
-         scr.type = "text/javascript";
-         scr.src = host + "/j/roundtrip.js";
-         ((document.getElementsByTagName('head') || [null])[0] ||
-          document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
-         if(oldonload){oldonload()}};
-      }());
-    </script>
   </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="/js/scripts.js"></script>
-  <script src="//my.hellobar.com/f0f73984cc15b3993cb3fbd05914289a3aeb8a28.js" type="text/javascript" charset="utf-8" async="async"></script>
-  <script>(function() {
-    var _fbq = window._fbq || (window._fbq = []);
-    if (!_fbq.loaded) {
-    var fbds = document.createElement('script');
-    fbds.async = true;
-    fbds.src = '//connect.facebook.net/en_US/fbds.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(fbds, s);
-    _fbq.loaded = true;
-    }
-    _fbq.push(['addPixelId', '1681495305411777']);
-    })();
-    window._fbq = window._fbq || [];
-    window._fbq.push(['track', 'PixelInitialized', {}]);
-  </script>
-  <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=1681495305411777&amp;ev=PixelInitialized" /></noscript>
+  {% include foot.html %}
 </html>

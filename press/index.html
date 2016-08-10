@@ -3,25 +3,90 @@ layout: default
 title: Jolt Press - Better concussion detection through real-time head impact tracking
 ---
 
-<div id="hero" style="background-image:url('/assets/heros/kickoff.jpg'); background-position: top left;">
-	<div class="screen dark">
-		<div class="content center">
-			<h1>Jolt is the future of keeping sports safe and fun. Help us share our story with the world.</h1>
-			<a href="/press/presspacket" target="_blank"><button class="cta">VIEW PRESS PACKET</button></a>
+<div id="hero" style="background-image:url('/assets/heros/kickoff.jpg'); background-position:top left;">
+	<div class="screen">
+		<div class="content">
+			<h1>JOLT IS THE FUTURE OF KEEPING SPORTS <span class="green">SAFE AND FUN</span>.</h1>
+			<h4>Help us share our story with the world.</h4>
+			<a href='https://www.dropbox.com/sh/ciy80vxkg202xem/AACjv1HTY3ag8rFqnsZVOI0Za?dl=0' target="_blank"><button class="cta">View Press Packet</button></a>
 		</div>
 	</div>
 </div>
-<div class="section">
-    <div class="content center">
-		<p class="no-top no-bottom">Jolt is on a mission to help athletes train smarter and safer through innovative technology solutions. We look forward to sharing more of our story with you. Start out with our <a href="/press/presspacket">press packet</a> for logos, headshots, photography, etc. If you'd like to learn more, contact us at <a href="mailto:press@joltsensor.com">press@joltsensor.com</a>. And be sure to subscribe to our press list to be the first to receive press releases, product announcements, and other important news.</p>
-		<a href="http://eepurl.com/bobvhT" target="_blank"><button>SUBSCRIBE TO PRESS LIST</button></a>
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-1">
+				<p>Jolt is on a mission to help athletes train smarter and safer through innovative technology solutions. We look forward to sharing more of our story with you. Start out with our press packet for logos, headshots, and product photography. If you'd like to learn more, contact us at <a href="mailto:press@joltsensor.com">press@joltsensor.com</a>.</p>
+			</div>
+		</div>
 	</div>
-</div>
-<div class="section dark">
-	<div class="content center">
-		<h2 class="no-top">Recent Coverage</h2>
-		{% for article in site.data.articles limit:12 %}
-		<div class="col-2"><a href={{ article.link }} target="_blank"><img class="circle padding press" src="{{ article.icon }}" /></a></div>
-  		{% endfor %}
+</section>
+<section class="gray center">
+	<div class="container">
+		<div class="row">
+			<div class="col-6">
+				<a href=http://http://time.com/4347545/sports-gadgets/ target="_blank">
+					<img class="press" src="/assets/icons/press/time.svg" />
+				</a>
+			</div>
+			<div class="col-6">
+				<a href=http://kcur.org/post/kansas-city-entrepreneurs-create-innovative-sports-technology target="_blank">
+					<img class="press" src="/assets/icons/press/kcur.svg" />
+				</a>
+			</div>
+			<div class="col-6">
+				<a href=http://www.huffingtonpost.com/kyle-mccarthy/five-fabulous-fitness-wea_b_6567882.html target="_blank">
+					<img class="press" src="/assets/icons/press/huffingtonpost.svg" />
+				</a>
+			</div>
+			<div class="col-6">
+				<a href=http://www.bostonglobe.com/business/2015/01/23/reebok-others-have-technology-help-prevent-concussions-but-few-sports-adopt/ToxlcL95oQEK6L5zBF9nsN/story.html target="_blank">
+					<img class="press" src="/assets/icons/press/bostonglobe.svg" />
+				</a>
+			</div>
+			<div class="col-6">
+				<a href=http://www.outsideonline.com/outdoor-gear/gear-shed/covet/The-JoltSensor.html target="_blank">
+					<img class="press" src="/assets/icons/press/outsidemagazine.svg" />
+				</a>
+			</div>
+			<div class="col-6">
+				<a href=http://www.fastcolabs.com/3035730/these-athletic-wearables-will-stop-injuries-before-they-happen target="_blank">
+					<img class="press" src="/assets/icons/press/fastcompany.svg" />
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				<a href=http://www.foxnews.com/health/2014/09/12/former-college-wrestler-aims-to-boost-concussion-prevention-with-clip-on-device/ target="_blank">
+					<img class="press" src="/assets/icons/press/foxnews.svg" />
+				</a>
+			</div>
+			<div class="col-6">
+				<a href=http://www.dailymail.co.uk/sciencetech/article-2741887/The-clip-sensor-prevents-concussion-Tiny-monitor-sends-alerts-referees-player-bangs-head.html target="_blank">
+					<img class="press" src="/assets/icons/press/dailymail.svg" />
+				</a>
+			</div>
+			<div class="col-6">
+				<a href=http://www.washingtonpost.com/blogs/early-lead/wp/2014/09/02/mit-graduates-are-on-a-quest-to-make-sports-related-head-injuries-history-with-better-technology/ target="_blank">
+					<img class="press" src="/assets/icons/press/washingtonpost.svg" />
+				</a>
+			</div>
+			<div class="col-6">
+				<a href=https://www.yahoo.com/tech/mit-students-invent-gadget-to-detect-concussions-in-95944765704.html target="_blank">
+					<img class="press" src="/assets/icons/press/yahoo.svg" />
+				</a>
+			</div>
+			<div class="col-6">
+				<a href=http://bostinno.streetwise.co/2014/05/21/2014-masschallenge-startups-class-companies-in-masschallenges-2014-class/ target="_blank">
+					<img class="press" src="/assets/icons/press/bostinno.svg" />
+				</a>
+			</div>
+			<div class="col-6">
+				<a href=http://www.bizjournals.com/boston/blog/startups/2014/05/spike-in-high-tech-life-sciences-startups-in-this.html target="_blank">
+					<img class="press" src="/assets/icons/press/bbj.svg" />
+				</a>
+			</div>
+		</div>
 	</div>
-</div>
+</section>
+{% include footbanner.html %}
